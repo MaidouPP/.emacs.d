@@ -1,0 +1,628 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "KDTree.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("KDTREE_INCLUDED" variable (:constant-flag t) nil [293 308])
+            ("Point.h" include nil nil [310 328])
+            ("BoundedPQueue.h" include nil nil [329 355])
+            ("stdexcept" include (:system-flag t) nil [356 376])
+            ("cmath" include (:system-flag t) nil [377 393])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [583 603])
+            ("KDTree" type
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [659 666])
+                    ("KDTree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("KDTree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [823 832])
+                    ("KDTree" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [997 1007])
+                    ("KDTree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("KDTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1280 1298]))                          
+                        :type ("KDTree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1273 1299])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("KDTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1320 1338]))                          
+                        :type ("KDTree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1302 1339])
+                    ("dimension" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1541 1566])
+                    ("size" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1798 1818])
+                    ("empty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1821 1840])
+                    ("contains" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2068 2087]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2054 2094])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2480 2499])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ElemType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2500 2522]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2468 2523])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2887 2906]))                          
+                        :type ("ElemType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2866 2907])
+                    ("at" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3266 3285]))                          
+                        :type ("ElemType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3253 3286])
+                    ("at" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3308 3327]))                          
+                        :type ("ElemType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3289 3334])
+                    ("kNNValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3759 3779])
+                            ("k" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3780 3789]))                          
+                        :type ("ElemType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3741 3796])
+                    ("private" label nil (reparse-symbol classsubparts) [3798 3806])
+                    ("Node" type
+                       (:members 
+                          ( ("key" variable (:type ("Point" type
+                                 (:template-specifier 
+                                    ( ("N" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3871 3884])
+                            ("level" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3889 3902])
+                            ("lChild" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3908 3921])
+                            ("rChild" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3926 3939])
+                            ("Node" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Point" type
+                                             (:template-specifier 
+                                                ( ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3950 3971])
+                                    ("_level" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3972 3992])
+                                    ("_value" variable
+                                       (:constant-flag t
+                                        :type ("ElemType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3993 4015]))                                  
+                                :type ("Node" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3945 4085])
+                            ("value" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4091 4106]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [3853 4111])
+                    ("root" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4115 4126])
+                    ("deleteNode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4146 4157]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4130 4158])
+                    ("numOfElem" variable (:type "int") (reparse-symbol classsubparts) [4162 4176])
+                    ("searchTree" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4197 4216]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4180 4223])
+                    ("copyTree" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("rootNode" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4242 4257]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4227 4258]))                  )
+                nil [605 4261])
+            ("KDTree" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type ("KDTree" type (:type "class") nil nil)
+                :parent "KDTree"
+                :constructor-flag t)
+                nil [4307 4436])
+            ("KDTree" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "KDTree"
+                :destructor-flag t)
+                nil [4438 4556])
+            ("=" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type ("KDTree" type
+                     (:template-specifier 
+                        ( ("N" type nil nil nil)
+                          ("ElemType" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("KDTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4649 4667]))                  
+                :parent "KDTree"
+                :operator-flag t)
+                nil [4558 4776])
+            ("copyTree" function
+               (:pointer 1
+                :parent "KDTree"
+                :arguments 
+                  ( ("" variable (:type ("KDTree" type
+                         (:template-specifier 
+                            ( ("N" type nil nil nil)
+                              ("ElemType" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4883 4903])
+                    ("rootNode" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4904 4919]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [4847 5169])
+            ("dimension" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :parent "KDTree")
+                nil [5171 5296])
+            ("deleteNode" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type ("KDTree" type
+                         (:template-specifier 
+                            ( ("N" type nil nil nil)
+                              ("ElemType" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5374 5394])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5395 5406]))                  
+                :parent "KDTree")
+                nil [5298 5494])
+            ("size" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :parent "KDTree")
+                nil [5496 5599])
+            ("empty" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type "bool"
+                :parent "KDTree")
+                nil [5601 5705])
+            ("searchTree" function
+               (:pointer 1
+                :parent "KDTree"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5814 5833]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [5776 6059])
+            ("contains" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6135 6154]))                  
+                :parent "KDTree")
+                nil [6061 6228])
+            ("insert" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("ElemType" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6302 6321])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ElemType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6322 6344]))                  
+                :parent "KDTree")
+                nil [6230 7159])
+            ("[]" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("Elemtype" type (:type "class") nil nil))                  
+                :type ("Elemtype" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7241 7260]))                  
+                :parent "KDTree"
+                :operator-flag t)
+                nil [7161 7430])
+            ("at" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("Elemtype" type (:type "class") nil nil))                  
+                :type ("Elemtype" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7504 7523]))                  
+                :parent "KDTree")
+                nil [7432 7663])
+            ("at" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("Elemtype" type (:type "class") nil nil))                  
+                :type ("Elemtype" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7743 7762]))                  
+                :constant-flag t
+                :parent "KDTree")
+                nil [7665 7908]))          
+      :file "KDTree.h"
+      :pointmax 7936
+      :fsize 7935
+      :lastmodtime '(22887 8780 987826 310000)
+      :unmatched-syntax '((punctuation 5775 . 5776) (punctuation 5774 . 5775) (punctuation 5773 . 5774) (symbol 5765 . 5773) (punctuation 5763 . 5764) (symbol 5762 . 5763) (punctuation 5761 . 5762) (symbol 5755 . 5761) (TYPENAME 5746 . 5754) (punctuation 5744 . 5745) (symbol 5736 . 5744) (TYPENAME 5727 . 5735) (punctuation 5725 . 5726) (symbol 5724 . 5725) (symbol 5717 . 5723) (punctuation 5716 . 5717) (TEMPLATE 5707 . 5715) (punctuation 5394 . 5395) (punctuation 5393 . 5394) (punctuation 4903 . 4904) (punctuation 4902 . 4903) (punctuation 4846 . 4847) (punctuation 4845 . 4846) (punctuation 4844 . 4845) (symbol 4836 . 4844) (punctuation 4834 . 4835) (symbol 4833 . 4834) (punctuation 4832 . 4833) (symbol 4826 . 4832) (TYPENAME 4817 . 4825) (punctuation 4815 . 4816) (symbol 4807 . 4815) (TYPENAME 4798 . 4806) (punctuation 4796 . 4797) (symbol 4795 . 4796) (symbol 4788 . 4794) (punctuation 4787 . 4788) (TEMPLATE 4778 . 4786))
+      :lexical-table 
+        '(("KDTREE_INCLUDED")
+          )
+)
+    (semanticdb-table "Point.h"
+      :file "Point.h"
+      :fsize 4129
+      :lastmodtime '(22899 28776 882911 850000))
+    (semanticdb-table "BoundedPQueue.h"
+      :file "BoundedPQueue.h"
+      :fsize 6875
+      :lastmodtime '(22699 60464 0 0))
+    (semanticdb-table "KDTree.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("KDTree.h" include nil nil [1 20])
+            ("test" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [33 39]))                  
+                :type "void")
+                nil [22 44]))          
+      :file "KDTree.cpp"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(22887 8733 255826 848000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test-harness.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [500 519])
+            ("string" include (:system-flag t) nil [520 537])
+            ("sstream" include (:system-flag t) nil [538 556])
+            ("vector" include (:system-flag t) nil [557 574])
+            ("iomanip" include (:system-flag t) nil [575 593])
+            ("cstdarg" include (:system-flag t) nil [594 612])
+            ("set" include (:system-flag t) nil [613 627])
+            ("KDTree.h" include nil nil [628 647])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [648 668])
+            ("BasicKDTreeTestEnabled" variable (:constant-flag t) nil [904 926])
+            ("ModerateKDTreeTestEnabled" variable (:constant-flag t) nil [954 979])
+            ("HarderKDTreeTestEnabled" variable (:constant-flag t) nil [1004 1027])
+            ("EdgeCaseKDTreeTestEnabled" variable (:constant-flag t) nil [1054 1079])
+            ("MutatingKDTreeTestEnabled" variable (:constant-flag t) nil [1104 1129])
+            ("ThrowingKDTreeTestEnabled" variable (:constant-flag t) nil [1146 1171])
+            ("ConstKDTreeTestEnabled" variable (:constant-flag t) nil [1188 1210])
+            ("NearestNeighborTestEnabled" variable (:constant-flag t) nil [1239 1265])
+            ("MoreNearestNeighborTestEnabled" variable (:constant-flag t) nil [1300 1330])
+            ("BasicCopyTestEnabled" variable (:constant-flag t) nil [1343 1363])
+            ("ModerateCopyTestEnabled" variable (:constant-flag t) nil [1406 1429])
+            ("PointFromRange" function
+               (:template 
+                  ( ("size_t" type nil nil nil)
+                    ("IteratorType" type (:type "class") nil nil))                  
+                :type ("Point" type
+                     (:template-specifier 
+                        ( ("N" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("begin" variable (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1581 1600])
+                    ("end" variable (:type ("IteratorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1601 1618]))                  )
+                nil [1514 1694])
+            ("MakePoint" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [1786 1795]))                  
+                :type ("Point" type
+                     (:template-specifier (("1"))
+                      :type "class")
+                      nil nil))
+                nil [1767 1852])
+            ("MakePoint" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [1872 1881])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [1882 1891]))                  
+                :type ("Point" type
+                     (:template-specifier (("2"))
+                      :type "class")
+                      nil nil))
+                nil [1853 1965])
+            ("MakePoint" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [1985 1994])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [1995 2004])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [2005 2014]))                  
+                :type ("Point" type
+                     (:template-specifier (("3"))
+                      :type "class")
+                      nil nil))
+                nil [1966 2105])
+            ("MakePoint" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [2125 2134])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [2135 2144])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [2145 2154])
+                    ("w" variable (:type "double") (reparse-symbol arg-sub-list) [2155 2164]))                  
+                :type ("Point" type
+                     (:template-specifier (("4"))
+                      :type "class")
+                      nil nil))
+                nil [2106 2272])
+            ("PressEnterToContinue" function (:type "void") nil [2336 2456])
+            ("DoCheckCondition" function
+               (:arguments 
+                  ( ("expr" variable (:type "bool") (reparse-symbol arg-sub-list) [2850 2860])
+                    ("rationale" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2861 2885])
+                    ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2886 2905])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2906 2915]))                  
+                :type "void")
+                nil [2828 3277])
+            ("FailTest" function
+               (:arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("exception" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3369 3388]))                  
+                :type "void")
+                nil [3355 3487])
+            ("CheckCondition" variable (:constant-flag t) nil [3769 3783])
+            ("PrintBanner" function
+               (:arguments 
+                  ( ("header" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3940 3961]))                  
+                :type "void")
+                nil [3923 4081])
+            ("TestDisabled" function
+               (:arguments 
+                  ( ("header" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4163 4184]))                  
+                :type "void")
+                nil [4145 4338])
+            ("EndTest" function (:type "void") nil [4392 4500])
+            ("BasicKDTreeTest" function (:type "void") nil [4584 6330])
+            ("ModerateKDTreeTest" function (:type "void") nil [6326 7951])
+            ("HarderKDTreeTest" function (:type "void") nil [7947 9824])
+            ("EdgeCaseKDTreeTest" function (:type "void") nil [9820 11078])
+            ("MutatingKDTreeTest" function (:type "void") nil [11074 12838])
+            ("ThrowingKDTreeTest" function (:type "void") nil [12834 13895])
+            ("ConstKDTreeTest" function (:type "void") nil [13891 16046])
+            ("NearestNeighborTest" function (:type "void") nil [16042 18321])
+            ("MoreNearestNeighborTest" function (:type "void") nil [18317 21197])
+            ("BasicCopyTest" function (:type "void") nil [21193 23372])
+            ("ModerateCopyTest" function (:type "void") nil [23368 25249])
+            ("main" function (:type "int") nil [25246 26214]))          
+      :file "test-harness.cpp"
+      :pointmax 26215
+      :fsize 26214
+      :lastmodtime '(22882 22065 773223 611000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ConstKDTreeTestEnabled" . ((number "0" 1220 . 1221)))
+          ("CheckCondition" (spp-arg-list ("expr" "rationale") 3783 . 3800) . ((symbol "DoCheckCondition" 3801 . 3817) (semantic-list "(expr, rationale, __FILE__, __LINE__)" 3817 . 3854)))
+          ("ModerateKDTreeTestEnabled" . ((number "0" 986 . 987)))
+          ("HarderKDTreeTestEnabled" . ((number "0" 1036 . 1037)))
+          ("MoreNearestNeighborTestEnabled" . ((number "0" 1332 . 1333)))
+          ("MutatingKDTreeTestEnabled" . ((number "0" 1136 . 1137)))
+          ("ThrowingKDTreeTestEnabled" . ((number "1" 1178 . 1179)))
+          ("NearestNeighborTestEnabled" . ((number "0" 1271 . 1272)))
+          ("BasicCopyTestEnabled" . ((number "0" 1375 . 1376)))
+          ("BasicKDTreeTestEnabled" . ((number "0" 936 . 937)))
+          ("EdgeCaseKDTreeTestEnabled" . ((number "0" 1086 . 1087)))
+          ("ModerateCopyTestEnabled" . ((number "0" 1438 . 1439)))
+          )
+))
+  :file "!home!shixin!course!cs106L!assign3!03_KDTree!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

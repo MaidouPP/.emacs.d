@@ -1,0 +1,175 @@
+;; Object CppRecursiveLambda/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CppRecursiveLambda/"
+  :tables
+  (list
+    (semanticdb-table "lambda.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("functional" include (:system-flag t) nil [15 36])
+            ("__thiscall" variable (:constant-flag t) nil [63 73])
+            ("iostream" include (:system-flag t) nil [82 101])
+            ("vczh" type
+               (:members 
+                  ( ("YBuilder" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [187 195])
+                            ("partialLambda" variable (:type "int") (reparse-symbol classsubparts) [265 279])
+                            ("what" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [282 295])
+                            ("public" label nil (reparse-symbol classsubparts) [298 305])
+                            ("YBuilder" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [317 331])
+                                    ("" variable (:type ("TResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [331 382])
+                                    ("" variable (:type ("_partialLambda" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [384 399]))                                  
+                                :type ("YBuilder" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [308 441])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("TArgs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [464 471])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [473 478]))                                  
+                                :type ("TResult" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [445 860]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [168 864])
+                    ("PartialLambdaTypeRetriver" type
+                       (:template 
+                          ( ("TMethod" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("FunctionType" type
+                               (:typedef ("void")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [933 959])
+                            ("LambdaType" type
+                               (:typedef ("void")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [962 986])
+                            ("YBuilderType" type
+                               (:typedef ("void")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [989 1015]))                          )
+                        (reparse-symbol namespacesubparts) [867 1019])
+                    ("PartialLambdaTypeRetriver" type
+                       (:template-specifier 
+                          ( ("TResult" type nil nil nil))                          
+                        :members 
+                          ( ("FunctionType" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("TArgs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1234])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1233 1237]))                                  
+                                :type ("TResult" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1207 1238])
+                            ("LambdaType" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1282])
+                                    ("" variable (:type ("TResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1282 1299])
+                                    ("" variable (:type ("TArgs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1302 1308])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1307 1311]))                                  
+                                :type ("TResult" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1249 1312])
+                            ("YBuilderType" variable (:type "int") (reparse-symbol classsubparts) [1351 1364]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1086 1368])
+                    ("TResult" function
+                       (:arguments 
+                          ( ("" variable (:type ("TClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1550 1557]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1531 1604])
+                    ("Y" function
+                       (:arguments 
+                          ( ("partialLambda" variable (:type ("TLambda" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1948 1970]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1946 2134]))                  
+                :type "namespace")
+                nil [103 2136])
+            ("PartialLambdaTypeRetriver" type
+               (:template 
+                  ( ("TMethod" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("FunctionType" type
+                       (:typedef ("void")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [933 959])
+                    ("LambdaType" type
+                       (:typedef ("void")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [962 986])
+                    ("YBuilderType" type
+                       (:typedef ("void")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [989 1015]))                  )
+                nil [867 1019])
+            ("PartialLambdaTypeRetriver" type
+               (:template-specifier 
+                  ( ("TResult" type nil nil nil))                  
+                :members 
+                  ( ("FunctionType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TArgs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1234])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1233 1237]))                          
+                        :type ("TResult" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1207 1238])
+                    ("LambdaType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1282])
+                            ("" variable (:type ("TResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1282 1299])
+                            ("" variable (:type ("TArgs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1302 1308])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1307 1311]))                          
+                        :type ("TResult" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1249 1312])
+                    ("YBuilderType" variable (:type "int") (reparse-symbol classsubparts) [1351 1364]))                  
+                :type "struct")
+                nil [1086 1368])
+            ("TResult" function
+               (:arguments 
+                  ( ("" variable (:type ("TClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1550 1557]))                  
+                :type "int")
+                nil [1531 1604])
+            ("Y" function
+               (:arguments 
+                  ( ("partialLambda" variable (:type ("TLambda" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1948 1970]))                  
+                :type "int")
+                nil [1946 2134]))          
+      :file "lambda.h"
+      :pointmax 2137
+      :fsize 2136
+      :lastmodtime '(22904 25342 506814 430000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__thiscall")
+          )
+)
+    (semanticdb-table "Main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("lambda.h" include nil nil [1 20])
+            ("iostream" include (:system-flag t) nil [21 40])
+            ("string" include (:system-flag t) nil [41 58])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [60 80])
+            ("vczh" using (:type ("vczh" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [81 102])
+            ("main" function (:type "int") nil [104 398]))          
+      :file "Main.cpp"
+      :pointmax 399
+      :fsize 398
+      :lastmodtime '(22904 23955 770863 660000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!course!vczh_toys!CppRecursiveLambda!CppRecursiveLambda!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

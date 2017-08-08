@@ -1,0 +1,224 @@
+;; Object hw/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hw/"
+  :tables
+  (list
+    (semanticdb-table "Main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("iostream" include (:system-flag t) nil [21 40])
+            ("assert.h" include (:system-flag t) nil [41 60])
+            ("array.h" include nil nil [61 79])
+            ("hw" using (:type ("hw" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [81 100])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [101 121])
+            ("main" function (:type "int") nil [123 883]))          
+      :file "Main.cpp"
+      :pointmax 884
+      :fsize 883
+      :lastmodtime '(22903 13546 177528 580000)
+      :unmatched-syntax nil)
+    (semanticdb-table "array.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ARRAY_H" variable (:constant-flag t) nil [26 34])
+            ("iostream" include (:system-flag t) nil [35 54])
+            ("hw" type
+               (:members 
+                  ( ("array_size" type
+                       (:template 
+                          ( ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [109 116])
+                            ("total" variable (:type "int") (reparse-symbol classsubparts) [119 146])
+                            ("size" variable (:type "int") (reparse-symbol classsubparts) [149 175])
+                            ("remains" variable (:type "int") (reparse-symbol classsubparts) [199 207])
+                            ("public" label nil (reparse-symbol classsubparts) [209 216])
+                            ("remains" function
+                               (:arguments 
+                                  ( ("" variable (:type ("_remains" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [343 352]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [335 355])
+                            ("," function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("new_dim" variable (:type "int") (reparse-symbol arg-sub-list) [387 399]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [377 461]))                          )
+                        (reparse-symbol namespacesubparts) [72 464])
+                    ("array_size" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [500 507])
+                            ("total" variable (:type "int") (reparse-symbol classsubparts) [510 520])
+                            ("public" label nil (reparse-symbol classsubparts) [522 529])
+                            ("array_size" function
+                               (:constructor-flag t
+                                :type ("array_size" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [532 561])
+                            ("," function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("new_dim" variable (:type "int") (reparse-symbol arg-sub-list) [589 601]))                                  
+                                :type ("array_size" type
+                                     (:template-specifier (("1"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [565 659]))                          
+                        :template-specifier (("0")))
+                        (reparse-symbol namespacesubparts) [466 662])
+                    ("array_ref" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [777 785])
+                            ("sizes" variable (:type ("array_size" type
+                                 (:template-specifier 
+                                    ( ("dim" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [788 815])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [818 844])
+                            ("public" label nil (reparse-symbol classsubparts) [846 853])
+                            ("array_ref" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_sizes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("array_size" type
+                                             (:template-specifier 
+                                                ( ("dim" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [866 896])
+                                    ("_data" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [897 906]))                                  
+                                :type ("array_ref" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [856 945])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [980 988]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [969 1075])
+                            ("size" function (:type "int") (reparse-symbol classsubparts) [1079 1118])
+                            ("total_size" function (:type "int") (reparse-symbol classsubparts) [1122 1168]))                          )
+                        (reparse-symbol namespacesubparts) [728 1171])
+                    ("array_ref" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [1219 1227])
+                            ("sizes" variable (:type ("array_size" type
+                                 (:template-specifier (("1"))
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1230 1258])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1261 1288])
+                            ("public" label nil (reparse-symbol classsubparts) [1290 1297])
+                            ("array_ref" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_sizes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("array_size" type
+                                             (:template-specifier (("1"))
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1310 1338])
+                                    ("_data" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1339 1348]))                                  
+                                :type ("array_ref" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1300 1387])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [1405 1413]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1391 1441])
+                            ("size" function (:type "int") (reparse-symbol classsubparts) [1445 1485])
+                            ("total_size" function (:type "int") (reparse-symbol classsubparts) [1489 1535]))                          
+                        :template-specifier 
+                          ( ("T" type nil nil nil)
+                            ("1"))                          )
+                        (reparse-symbol namespacesubparts) [1173 1538])
+                    ("array" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("int" type nil nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [1648 1656])
+                            ("sizes" variable (:type ("array_size" type
+                                 (:template-specifier 
+                                    ( ("dim" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1659 1687])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1690 1717])
+                            ("public" label nil (reparse-symbol classsubparts) [1719 1726])
+                            ("data" function
+                               (:arguments 
+                                  ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1814]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1790 1818])
+                            ("data" function
+                               (:arguments 
+                                  ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1890 1904]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1881 1973])
+                            ("size" function (:type "int") (reparse-symbol classsubparts) [1977 2016])
+                            ("total_size" function (:type "int") (reparse-symbol classsubparts) [2020 2066])
+                            ("ref" function (:type ("array_ref" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil)
+                                      ("dim" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2070 2142])
+                            ("decltype" function
+                               (:arguments 
+                                  ( ("" variable (:type ("this" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2188 2193])
+                                    ("" variable (:type ("ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2194 2199]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2179 2236])
+                            ("array" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2240 2289]))                          )
+                        (reparse-symbol namespacesubparts) [1603 2292]))                  
+                :type "namespace")
+                nil [56 2295]))          
+      :file "array.h"
+      :pointmax 2305
+      :fsize 2304
+      :lastmodtime '(22903 13587 5529 288000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ARRAY_H")
+          )
+))
+  :file "!home!shixin!course!vczh_toys!CppMultiDimentionArray!hw!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

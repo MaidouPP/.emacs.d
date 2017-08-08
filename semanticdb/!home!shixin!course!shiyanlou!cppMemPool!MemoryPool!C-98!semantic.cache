@@ -1,0 +1,215 @@
+;; Object C-98/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "C-98/"
+  :tables
+  (list
+    (semanticdb-table "MemoryPool.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("MEMORY_POOL_H" variable (:constant-flag t) nil [1174 1187])
+            ("limits.h" include (:system-flag t) nil [1189 1208])
+            ("stddef.h" include (:system-flag t) nil [1209 1228])
+            ("MemoryPool" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1298 1305])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1333 1368])
+                    ("pointer" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1373 1405])
+                    ("reference" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1418 1444])
+                    ("const_pointer" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1449 1487])
+                    ("const_reference" variable
+                       (:constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1500 1532])
+                    ("size_type" type
+                       (:typedef ("size_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1537 1571])
+                    ("difference_type" type
+                       (:typedef ("ptrdiff_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1576 1616])
+                    ("rebind" type
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("other" type
+                               (:typedef ("MemoryPool" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1666 1694]))                          )
+                        (reparse-symbol classsubparts) [1622 1701])
+                    ("MemoryPool" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MemoryPool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1734 1755])
+                    ("MemoryPool" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("memoryPool" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MemoryPool" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1771 1800]))                          
+                        :type ("MemoryPool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1760 1809])
+                    ("MemoryPool" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("MemoryPool" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("memoryPool" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MemoryPool" type
+                                     (:template-specifier 
+                                        ( ("U" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1844 1876]))                          
+                        :constructor-flag t
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [1814 1885])
+                    ("MemoryPool" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1891 1913])
+                    ("address" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1935 1947]))                          
+                        :type ("pointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1919 1962])
+                    ("address" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1989 2007]))                          
+                        :type ("const_pointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1967 2022])
+                    ("allocate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:default-value "1"
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2115 2130])
+                            ("hint" variable
+                               (:default-value "0"
+                                :type ("const_pointer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2132 2154]))                          
+                        :type ("pointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2098 2156])
+                    ("deallocate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2177 2187])
+                            ("n" variable
+                               (:default-value "1"
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2188 2203]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2161 2205])
+                    ("max_size" function
+                       (:prototype-flag t
+                        :type ("size_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2211 2246])
+                    ("construct" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2267 2277])
+                            ("val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2298]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2252 2299])
+                    ("destroy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2317 2327]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2304 2328])
+                    ("newElement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable (:type ("const_reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2353 2373]))                          
+                        :type ("pointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2334 2374])
+                    ("deleteElement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2398 2408]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2379 2409])
+                    ("private" label nil (reparse-symbol classsubparts) [2413 2421])
+                    ("Slot_" type
+                       (:members 
+                          ( ("element" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2446 2465])
+                            ("next" variable
+                               (:pointer 1
+                                :type ("Slot_" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2472 2484]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [2426 2491])
+                    ("data_pointer_" type
+                       (:typedef ("char")
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2497 2525])
+                    ("slot_type_" type
+                       (:typedef ("Slot_" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2530 2555])
+                    ("slot_pointer_" type
+                       (:typedef ("Slot_" type (:type "class") nil nil)
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2560 2589])
+                    ("currentBlock_" variable (:type ("slot_pointer_" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2595 2623])
+                    ("currentSlot_" variable (:type ("slot_pointer_" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2628 2655])
+                    ("lastSlot_" variable (:type ("slot_pointer_" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2660 2684])
+                    ("freeSlots_" variable (:type ("slot_pointer_" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2689 2714])
+                    ("padPointer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("data_pointer_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2741 2757])
+                            ("align" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2758 2774]))                          
+                        :type ("size_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2720 2789])
+                    ("allocateBlock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2794 2815]))                  
+                :type "class")
+                nil [1277 2911])
+            ("MemoryPool.tcc" include nil nil [2913 2938]))          
+      :file "MemoryPool.h"
+      :pointmax 2964
+      :fsize 2963
+      :lastmodtime '(22878 16414 841258 0)
+      :unmatched-syntax '((TYPEDEF 1492 . 1499) (TYPEDEF 1410 . 1417) (punctuation 1275 . 1276) (number 1271 . 1275) (punctuation 1269 . 1270) (symbol 1259 . 1268) (symbol 1252 . 1258) (punctuation 1250 . 1251) (symbol 1249 . 1250) (TYPENAME 1240 . 1248) (punctuation 1239 . 1240) (TEMPLATE 1230 . 1238))
+      :lexical-table 
+        '(("MEMORY_POOL_H")
+          )
+)
+    (semanticdb-table "MemoryPool.tcc"
+      :file "MemoryPool.tcc"
+      :fsize 4985
+      :lastmodtime '(22878 16414 841258 0)))
+  :file "!home!shixin!course!shiyanlou!cppMemPool!MemoryPool!C-98!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

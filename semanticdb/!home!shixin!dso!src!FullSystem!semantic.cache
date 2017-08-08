@@ -1,0 +1,1550 @@
+;; Object FullSystem/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "FullSystem/"
+  :tables
+  (list
+    (semanticdb-table "CoarseTracker.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FullSystem/CoarseTracker.h" include nil nil [999 1036])
+            ("FullSystem/FullSystem.h" include nil nil [1037 1071])
+            ("FullSystem/HessianBlocks.h" include nil nil [1072 1109])
+            ("FullSystem/Residuals.h" include nil nil [1110 1143])
+            ("OptimizationBackend/EnergyFunctionalStructs.h" include nil nil [1144 1200])
+            ("IOWrapper/ImageRW.h" include nil nil [1201 1231])
+            ("algorithm" include (:system-flag t) nil [1232 1252])
+            ("dso" type
+               (:members 
+                  ( ("CoarseTracker" function
+                       (:constructor-flag t
+                        :parent "CoarseTracker"
+                        :arguments 
+                          ( ("ww" variable (:type "int") (reparse-symbol arg-sub-list) [1299 1306])
+                            ("hh" variable (:type "int") (reparse-symbol arg-sub-list) [1307 1314]))                          
+                        :type ("CoarseTracker" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1270 2130])
+                    ("CoarseTracker" function
+                       (:destructor-flag t
+                        :parent "CoarseTracker"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2131 2627])
+                    ("makeK" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2655 2676]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2629 3399])
+                    ("makeCoarseDepthL0" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("frameHessians" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameHessian" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3441 3482]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3403 7947])
+                    ("calcGSSSE" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("lvl" variable (:type "int") (reparse-symbol arg-sub-list) [7981 7989])
+                            ("H_out" variable
+                               (:reference 1
+                                :type ("Mat88" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7990 8003])
+                            ("b_out" variable
+                               (:reference 1
+                                :type ("Vec8" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8004 8016])
+                            ("refToNew" variable (:type ("SE3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8017 8030])
+                            ("aff_g2l" variable (:type ("AffLight" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8031 8048]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7951 9952])
+                    ("calcRes" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("lvl" variable (:type "int") (reparse-symbol arg-sub-list) [9985 9993])
+                            ("refToNew" variable (:type ("SE3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9994 10007])
+                            ("aff_g2l" variable (:type ("AffLight" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10008 10025])
+                            ("cutoffTH" variable (:type "float") (reparse-symbol arg-sub-list) [10026 10041]))                          
+                        :type ("Vec6" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9957 14252])
+                    ("setCoarseTrackingRef" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("frameHessians" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameHessian" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [14303 14344]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14259 14548])
+                    ("trackNewestCoarse" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("newFrameHessian" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14590 14620])
+                            ("lastToNew_out" variable
+                               (:reference 1
+                                :type ("SE3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14623 14642])
+                            ("aff_g2l_out" variable
+                               (:reference 1
+                                :type ("AffLight" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14643 14665])
+                            ("coarsestLvl" variable (:type "int") (reparse-symbol arg-sub-list) [14668 14684])
+                            ("minResForAbort" variable (:type ("Vec5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14687 14707])
+                            ("wrap" variable
+                               (:pointer 1
+                                :type ("IOWrap::Output3DWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14710 14740]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14549 20001])
+                    ("debugPlotIDepthMap" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("minID_pt" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [20044 20060])
+                            ("maxID_pt" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [20061 20077])
+                            ("wraps" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("IOWrap::Output3DWrapper" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20078 20123]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20005 22192])
+                    ("debugPlotIDepthMapFloat" function
+                       (:parent "CoarseTracker"
+                        :arguments 
+                          ( ("wraps" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("IOWrap::Output3DWrapper" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22240 22285]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22196 22477])
+                    ("CoarseDistanceMap" function
+                       (:constructor-flag t
+                        :parent "CoarseDistanceMap"
+                        :arguments 
+                          ( ("ww" variable (:type "int") (reparse-symbol arg-sub-list) [22526 22533])
+                            ("hh" variable (:type "int") (reparse-symbol arg-sub-list) [22534 22541]))                          
+                        :type ("CoarseDistanceMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22489 22853])
+                    ("CoarseDistanceMap" function
+                       (:destructor-flag t
+                        :parent "CoarseDistanceMap"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22854 23036])
+                    ("makeDistanceMap" function
+                       (:parent "CoarseDistanceMap"
+                        :arguments 
+                          ( ("frameHessians" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameHessian" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [23085 23126])
+                            ("frame" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23129 23149]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23042 24017])
+                    ("makeInlierVotes" function
+                       (:parent "CoarseDistanceMap"
+                        :arguments 
+                          ( ("frameHessians" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameHessian" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [24062 24103]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24022 24108])
+                    ("growDistBFS" function
+                       (:parent "CoarseDistanceMap"
+                        :arguments 
+                          ( ("bfsNum" variable (:type "int") (reparse-symbol arg-sub-list) [24148 24159]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24112 26533])
+                    ("addIntoDistFinal" function
+                       (:parent "CoarseDistanceMap"
+                        :arguments 
+                          ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [26577 26583])
+                            ("v" variable (:type "int") (reparse-symbol arg-sub-list) [26584 26590]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26536 26708])
+                    ("makeK" function
+                       (:parent "CoarseDistanceMap"
+                        :arguments 
+                          ( ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26742 26763]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26712 27486]))                  
+                :type "namespace")
+                nil [1254 27489]))          
+      :file "CoarseTracker.cpp"
+      :pointmax 27490
+      :fsize 27489
+      :lastmodtime '(22699 6538 832758 243000)
+      :unmatched-syntax nil)
+    (semanticdb-table "CoarseTracker.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("util/NumType.h" include nil nil [937 962])
+            ("vector" include nil nil [963 980])
+            ("math.h" include (:system-flag t) nil [981 998])
+            ("util/settings.h" include nil nil [999 1025])
+            ("OptimizationBackend/MatrixAccumulators.h" include nil nil [1026 1077])
+            ("IOWrapper/Output3DWrapper.h" include nil nil [1078 1116])
+            ("dso" type
+               (:members 
+                  ( ("CalibHessian" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1137 1157])
+                    ("FrameHessian" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1158 1178])
+                    ("PointFrameResidual" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1179 1205])
+                    ("CoarseTracker" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1229 1236])
+                            ((("EIGEN_MAKE_ALIGNED_OPERATOR_NEW" 0 nil nil nil)) variable (:type "int") (reparse-symbol classsubparts) [1238 1270])
+                            ("CoarseTracker" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1303 1320])
+                            ((("debugPrint" 0 nil nil nil) ("debugPlot" 0 nil nil nil)) variable (:type "bool") (reparse-symbol classsubparts) [1622 1649])
+                            ((("K" 0 nil (1) nil)) variable (:type ("Mat33f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1652 1673])
+                            ((("Ki" 0 nil (1) nil)) variable (:type ("Mat33f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1675 1697])
+                            ((("fx" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1699 1720])
+                            ((("fy" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1722 1743])
+                            ((("fxi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1745 1767])
+                            ((("fyi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1769 1791])
+                            ((("cx" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1793 1814])
+                            ((("cy" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1816 1837])
+                            ((("cxi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1839 1861])
+                            ((("cyi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [1863 1885])
+                            ((("w" 0 nil (1) nil)) variable (:type "int") (reparse-symbol classsubparts) [1887 1905])
+                            ((("h" 0 nil (1) nil)) variable (:type "int") (reparse-symbol classsubparts) [1907 1925])
+                            ((("lastRef" 1 nil nil nil)) variable (:type ("FrameHessian" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2112 2134])
+                            ((("lastRef_aff_g2l" 0 nil nil nil)) variable (:type ("AffLight" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2136 2161])
+                            ((("newFrame" 1 nil nil nil)) variable (:type ("FrameHessian" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2163 2186])
+                            ((("refFrameID" 0 nil nil nil)) variable (:type "int") (reparse-symbol classsubparts) [2188 2203])
+                            ((("lastResiduals" 0 nil nil nil)) variable (:type ("Vec5" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2229 2248])
+                            ((("lastFlowIndicators" 0 nil nil nil)) variable (:type ("Vec3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2250 2274])
+                            ((("firstCoarseRMSE" 0 nil nil nil)) variable (:type "double") (reparse-symbol classsubparts) [2276 2299])
+                            ("private" label nil (reparse-symbol classsubparts) [2300 2308])
+                            ((("idepth" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2379 2405])
+                            ((("weightSums" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2407 2437])
+                            ((("weightSums_bak" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2439 2473])
+                            ((("pc_u" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2836 2860])
+                            ((("pc_v" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2862 2886])
+                            ((("pc_idepth" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2888 2917])
+                            ((("pc_color" 1 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [2919 2947])
+                            ((("pc_n" 0 nil (1) nil)) variable (:type "int") (reparse-symbol classsubparts) [2949 2970])
+                            ((("buf_warped_idepth" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [2992 3017])
+                            ((("buf_warped_u" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3019 3039])
+                            ((("buf_warped_v" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3041 3061])
+                            ((("buf_warped_dx" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3063 3084])
+                            ((("buf_warped_dy" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3086 3107])
+                            ((("buf_warped_residual" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3109 3136])
+                            ((("buf_warped_weight" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3138 3163])
+                            ((("buf_warped_refColor" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3165 3192])
+                            ((("buf_warped_n" 0 nil nil nil)) variable (:type "int") (reparse-symbol classsubparts) [3194 3211])
+                            ((("acc" 0 nil nil nil)) variable (:type ("Accumulator9" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3214 3231]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1207 3234])
+                    ("CoarseDistanceMap" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3263 3270])
+                            ((("EIGEN_MAKE_ALIGNED_OPERATOR_NEW" 0 nil nil nil)) variable (:type "int") (reparse-symbol classsubparts) [3272 3304])
+                            ("CoarseDistanceMap" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3341 3362])
+                            ((("fwdWarpedIDDistFinal" 1 nil nil nil)) variable (:type "float") (reparse-symbol classsubparts) [3567 3595])
+                            ((("K" 0 nil (1) nil)) variable (:type ("Mat33f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3598 3619])
+                            ((("Ki" 0 nil (1) nil)) variable (:type ("Mat33f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3621 3643])
+                            ((("fx" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3645 3666])
+                            ((("fy" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3668 3689])
+                            ((("fxi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3691 3713])
+                            ((("fyi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3715 3737])
+                            ((("cx" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3739 3760])
+                            ((("cy" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3762 3783])
+                            ((("cxi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3785 3807])
+                            ((("cyi" 0 nil (1) nil)) variable (:type "float") (reparse-symbol classsubparts) [3809 3831])
+                            ((("w" 0 nil (1) nil)) variable (:type "int") (reparse-symbol classsubparts) [3833 3851])
+                            ((("h" 0 nil (1) nil)) variable (:type "int") (reparse-symbol classsubparts) [3853 3871])
+                            ("private" label nil (reparse-symbol classsubparts) [3913 3921])
+                            ((("coarseProjectionGrid" 2 nil nil nil)) variable (:type ("PointFrameResidual" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3924 3966])
+                            ((("coarseProjectionGridNum" 1 nil nil nil)) variable (:type "int") (reparse-symbol classsubparts) [3968 3997])
+                            ((("bfsList1" 1 nil nil nil)) variable (:type ("Eigen::Vector2i" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3999 4025])
+                            ((("bfsList2" 1 nil nil nil)) variable (:type ("Eigen::Vector2i" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4027 4053]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3237 4088]))                  
+                :type "namespace")
+                nil [1121 4091]))          
+      :file "CoarseTracker.h"
+      :pointmax 4093
+      :fsize 4092
+      :lastmodtime '(22578 36939 428221 104000)
+      :unmatched-syntax '((punctuation 4084 . 4085) (semantic-list 4072 . 4084) (symbol 4061 . 4072) (VOID 4056 . 4060) (punctuation 3909 . 3910) (semantic-list 3895 . 3909) (symbol 3879 . 3895) (VOID 3874 . 3878) (punctuation 3562 . 3563) (semantic-list 3539 . 3562) (symbol 3534 . 3539) (VOID 3529 . 3533) (punctuation 3525 . 3526) (semantic-list 3479 . 3525) (symbol 3464 . 3479) (VOID 3459 . 3463) (punctuation 3455 . 3456) (semantic-list 3385 . 3455) (symbol 3370 . 3385) (VOID 3365 . 3369) (punctuation 3338 . 3339) (semantic-list 3324 . 3338) (symbol 3307 . 3324) (punctuation 2817 . 2818) (semantic-list 2749 . 2817) (symbol 2743 . 2749) (VOID 2738 . 2742) (punctuation 2735 . 2736) (semantic-list 2667 . 2735) (symbol 2658 . 2667) (VOID 2653 . 2657) (punctuation 2650 . 2651) (semantic-list 2593 . 2650) (symbol 2586 . 2593) (symbol 2581 . 2585) (punctuation 2578 . 2579) (semantic-list 2494 . 2578) (symbol 2482 . 2494) (symbol 2477 . 2481) (punctuation 2376 . 2377) (semantic-list 2334 . 2376) (symbol 2317 . 2334) (VOID 2312 . 2316) (punctuation 2108 . 2109) (semantic-list 2062 . 2108) (symbol 2039 . 2062) (VOID 2034 . 2038) (punctuation 2028 . 2029) (semantic-list 1954 . 2028) (symbol 1936 . 1954) (VOID 1931 . 1935) (punctuation 1618 . 1619) (semantic-list 1592 . 1618) (symbol 1587 . 1592) (VOID 1582 . 1586) (punctuation 1578 . 1579) (semantic-list 1532 . 1578) (symbol 1512 . 1532) (VOID 1507 . 1511) (punctuation 1503 . 1504) (semantic-list 1345 . 1503) (symbol 1328 . 1345) (BOOL 1323 . 1327) (punctuation 1300 . 1301) (semantic-list 1286 . 1300) (symbol 1273 . 1286) (symbol 929 . 933) (symbol 922 . 928) (punctuation 921 . 922)))
+    (semanticdb-table "FullSystem.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("MAX_ACTIVE_FRAMES" variable (:constant-flag t) nil [942 959])
+            ("util/NumType.h" include nil nil [965 990])
+            ("util/globalCalib.h" include nil nil [991 1020])
+            ("vector" include nil nil [1021 1038])
+            ("iostream" include (:system-flag t) nil [1041 1060])
+            ("fstream" include (:system-flag t) nil [1061 1079])
+            ("util/NumType.h" include nil nil [1080 1105])
+            ("FullSystem/Residuals.h" include nil nil [1106 1139])
+            ("FullSystem/HessianBlocks.h" include nil nil [1140 1177])
+            ("util/FrameShell.h" include nil nil [1178 1206])
+            ("util/IndexThreadReduce.h" include nil nil [1207 1242])
+            ("OptimizationBackend/EnergyFunctional.h" include nil nil [1243 1292])
+            ("FullSystem/PixelSelector2.h" include nil nil [1293 1331])
+            ("math.h" include (:system-flag t) nil [1333 1350])
+            ("dso" type
+               (:members 
+                  ( ("IOWrap" type
+                       (:members 
+                          ( ("Output3DWrapper" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1387 1409]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1368 1411])
+                    ("PixelSelector" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1413 1433])
+                    ("PCSyntheticPoint" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1434 1457])
+                    ("CoarseTracker" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1458 1478])
+                    ("FrameHessian" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1479 1499])
+                    ("PointHessian" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1500 1520])
+                    ("CoarseInitializer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1521 1545])
+                    ("ImmaturePointTemporaryResidual" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1546 1584])
+                    ("ImageAndExposure" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1585 1608])
+                    ("CoarseDistanceMap" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1609 1633])
+                    ("EnergyFunctional" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1635 1658])
+                    ("deleteOut" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1703 1722])
+                            ("i" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1723 1735]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1660 1786])
+                    ("deleteOutPt" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1832 1851])
+                            ("i" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1852 1863]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1787 1978])
+                    ("deleteOutOrder" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2027 2046])
+                            ("i" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2047 2059]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1979 2150])
+                    ("deleteOutOrder" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2199 2218])
+                            ("element" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2219 2236]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [2151 2452])
+                    ("eigenTestNan" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("m" variable (:type ("MatXX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2480 2488])
+                            ("msg" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2489 2505]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2455 2762])
+                    ("FullSystem" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2787 2794])
+                            ("FullSystem" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("FullSystem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2796 2809])
+                            ("FullSystem" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2811 2833])
+                            ("addActiveFrame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("image" variable
+                                       (:pointer 1
+                                        :type ("ImageAndExposure" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2916 2940])
+                                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [2941 2948]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2896 2949])
+                            ("marginalizeFrame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("frame" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3041 3061]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3019 3062])
+                            ("blockUntilMappingIsFinished" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3064 3099])
+                            ("optimize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("mnumOptIts" variable (:type "int") (reparse-symbol arg-sub-list) [3117 3132]))                                  
+                                :type "float")
+                                (reparse-symbol classsubparts) [3102 3133])
+                            ("printResult" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3153 3170]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3136 3171])
+                            ("debugPlot" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3189 3206]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3174 3207])
+                            ("printFrameLifetimes" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3210 3237])
+                            ("outputWrapper" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("IOWrap::Output3DWrapper" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3282 3334])
+                            ("isLost" variable (:type "bool") (reparse-symbol classsubparts) [3337 3349])
+                            ("initFailed" variable (:type "bool") (reparse-symbol classsubparts) [3351 3367])
+                            ("initialized" variable (:type "bool") (reparse-symbol classsubparts) [3369 3386])
+                            ("linearizeOperation" variable (:type "bool") (reparse-symbol classsubparts) [3388 3412])
+                            ("setGammaFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BInv" variable
+                                       (:pointer 1
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [3438 3450]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3416 3451])
+                            ("setOriginalCalib" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("originalCalib" variable (:type ("VecXf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3475 3495])
+                                    ("originalW" variable (:type "int") (reparse-symbol arg-sub-list) [3496 3510])
+                                    ("originalH" variable (:type "int") (reparse-symbol arg-sub-list) [3511 3525]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3453 3526])
+                            ("private" label nil (reparse-symbol classsubparts) [3528 3536])
+                            ("Hcalib" variable (:type ("CalibHessian" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3539 3559])
+                            ("optimizePoint" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("point" variable
+                                       (:pointer 1
+                                        :type ("PointHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3604 3624])
+                                    ("minObs" variable (:type "int") (reparse-symbol arg-sub-list) [3625 3636])
+                                    ("flagOOB" variable (:type "bool") (reparse-symbol arg-sub-list) [3637 3650]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3586 3651])
+                            ("optimizeImmaturePoint" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("point" variable
+                                       (:pointer 1
+                                        :type ("ImmaturePoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3689 3710])
+                                    ("minObs" variable (:type "int") (reparse-symbol arg-sub-list) [3711 3722])
+                                    ("residuals" variable
+                                       (:pointer 1
+                                        :type ("ImmaturePointTemporaryResidual" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3723 3765]))                                  
+                                :type ("PointHessian" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3653 3766])
+                            ("linAllPointSinle" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("point" variable
+                                       (:pointer 1
+                                        :type ("PointHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3793 3813])
+                                    ("outlierTHSlack" variable (:type "float") (reparse-symbol arg-sub-list) [3814 3835])
+                                    ("plot" variable (:type "bool") (reparse-symbol arg-sub-list) [3836 3846]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [3769 3847])
+                            ("trackNewCoarse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fh" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3896 3913]))                                  
+                                :type ("Vec4" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3876 3914])
+                            ("traceNewCoarse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fh" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3936 3953]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3916 3954])
+                            ("activatePoints" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3956 3978])
+                            ("activatePointsMT" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3980 4004])
+                            ("activffatePointsOldFirst" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4006 4038])
+                            ("flagPointsForRemoval" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4040 4068])
+                            ("makeNewTraces" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("newFrame" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4089 4112])
+                                    ("gtDepth" variable
+                                       (:pointer 1
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [4113 4128]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4070 4129])
+                            ("initializeFromInitializer" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("newFrame" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4162 4185]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4131 4186])
+                            ("flagFramesForMarginalization" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("newFH" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4222 4242]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4188 4243])
+                            ("removeOutliers" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4247 4269])
+                            ("setPrecalcValues" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4297 4321])
+                            ("solveSystem" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("iteration" variable (:type "int") (reparse-symbol arg-sub-list) [4379 4393])
+                                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [4394 4408]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4362 4409])
+                            ("linearizeAll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fixLinearization" variable (:type "bool") (reparse-symbol arg-sub-list) [4429 4451]))                                  
+                                :type ("Vec3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4411 4452])
+                            ("doStepFromBackup" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("stepfacC" variable (:type "float") (reparse-symbol arg-sub-list) [4476 4491])
+                                    ("stepfacT" variable (:type "float") (reparse-symbol arg-sub-list) [4491 4506])
+                                    ("stepfacR" variable (:type "float") (reparse-symbol arg-sub-list) [4506 4521])
+                                    ("stepfacA" variable (:type "float") (reparse-symbol arg-sub-list) [4521 4536])
+                                    ("stepfacD" variable (:type "float") (reparse-symbol arg-sub-list) [4536 4551]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4454 4552])
+                            ("backupState" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("backupLastStep" variable (:type "bool") (reparse-symbol arg-sub-list) [4571 4591]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4554 4592])
+                            ("loadSateBackup" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4594 4616])
+                            ("calcLEnergy" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [4618 4639])
+                            ("calcMEnergy" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [4641 4662])
+                            ("linearizeAll_Reductor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fixLinearization" variable (:type "bool") (reparse-symbol arg-sub-list) [4691 4713])
+                                    ("toRemove" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("PointFrameResidual" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4714 4757])
+                                    ("min" variable (:type "int") (reparse-symbol arg-sub-list) [4758 4766])
+                                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [4767 4775])
+                                    ("stats" variable
+                                       (:pointer 1
+                                        :type ("Vec10" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4776 4789])
+                                    ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [4790 4798]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4664 4799])
+                            ("activatePointsMT_Reductor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("optimized" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("PointHessian" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4832 4870])
+                                    ("toOptimize" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("ImmaturePoint" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4870 4910])
+                                    ("min" variable (:type "int") (reparse-symbol arg-sub-list) [4910 4918])
+                                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [4919 4927])
+                                    ("stats" variable
+                                       (:pointer 1
+                                        :type ("Vec10" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4928 4941])
+                                    ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [4942 4950]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4801 4951])
+                            ("applyRes_Reductor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("copyJacobians" variable (:type "bool") (reparse-symbol arg-sub-list) [4976 4995])
+                                    ("min" variable (:type "int") (reparse-symbol arg-sub-list) [4996 5004])
+                                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [5005 5013])
+                                    ("stats" variable
+                                       (:pointer 1
+                                        :type ("Vec10" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5014 5027])
+                                    ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [5028 5036]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4953 5037])
+                            ("printOptRes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("res" variable (:type ("Vec3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5057 5066])
+                                    ("resL" variable (:type "double") (reparse-symbol arg-sub-list) [5067 5079])
+                                    ("resM" variable (:type "double") (reparse-symbol arg-sub-list) [5080 5092])
+                                    ("resPrior" variable (:type "double") (reparse-symbol arg-sub-list) [5093 5109])
+                                    ("LExact" variable (:type "double") (reparse-symbol arg-sub-list) [5110 5124])
+                                    ("a" variable (:type "float") (reparse-symbol arg-sub-list) [5125 5133])
+                                    ("b" variable (:type "float") (reparse-symbol arg-sub-list) [5134 5142]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5040 5143])
+                            ("debugPlotTracking" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5146 5171])
+                            ("getNullspaces" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("nullspaces_pose" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VecX" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5210 5245])
+                                    ("nullspaces_scale" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VecX" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5249 5285])
+                                    ("nullspaces_affA" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VecX" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5289 5324])
+                                    ("nullspaces_affB" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VecX" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5328 5363]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VecX" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5174 5364])
+                            ("setNewFrameEnergyTH" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5367 5394])
+                            ("printLogLine" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5398 5418])
+                            ("printEvalLine" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5420 5441])
+                            ("printEigenValLine" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5443 5468])
+                            ("calibLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5470 5494])
+                            ("numsLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5496 5519])
+                            ("errorsLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5521 5546])
+                            ("eigenAllLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5548 5575])
+                            ("eigenPLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5577 5602])
+                            ("eigenALog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5604 5629])
+                            ("DiagonalLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5631 5658])
+                            ("variancesLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5660 5688])
+                            ("nullspacesLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5690 5719])
+                            ("coarseTrackingLog" variable
+                               (:pointer 1
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5722 5755])
+                            ("statistics_lastNumOptIts" variable (:type "long int") (reparse-symbol classsubparts) [5773 5807])
+                            ("statistics_numDroppedPoints" variable (:type "long int") (reparse-symbol classsubparts) [5809 5846])
+                            ("statistics_numActivatedPoints" variable (:type "long int") (reparse-symbol classsubparts) [5848 5887])
+                            ("statistics_numCreatedPoints" variable (:type "long int") (reparse-symbol classsubparts) [5889 5926])
+                            ("statistics_numForceDroppedResBwd" variable (:type "long int") (reparse-symbol classsubparts) [5928 5970])
+                            ("statistics_numForceDroppedResFwd" variable (:type "long int") (reparse-symbol classsubparts) [5972 6014])
+                            ("statistics_numMargResFwd" variable (:type "long int") (reparse-symbol classsubparts) [6016 6050])
+                            ("statistics_numMargResBwd" variable (:type "long int") (reparse-symbol classsubparts) [6052 6086])
+                            ("statistics_lastFineTrackRMSE" variable (:type "float") (reparse-symbol classsubparts) [6088 6123])
+                            ("trackMutex" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6220 6244])
+                            ("allFrameHistory" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameShell" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6246 6287])
+                            ("coarseInitializer" variable
+                               (:pointer 1
+                                :type ("CoarseInitializer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6289 6326])
+                            ("lastCoarseRMSE" variable (:type ("Vec5" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6328 6348])
+                            ("mapMutex" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6441 6463])
+                            ("allKeyFramesHistory" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameShell" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6465 6510])
+                            ("ef" variable
+                               (:pointer 1
+                                :type ("EnergyFunctional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6513 6534])
+                            ("treadReduce" variable (:type ("IndexThreadReduce" type
+                                 (:template-specifier 
+                                    ( ("Vec10" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6536 6573])
+                            ("selectionMap" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [6576 6596])
+                            ("pixelSelector" variable
+                               (:pointer 1
+                                :type ("PixelSelector" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6598 6627])
+                            ("coarseDistanceMap" variable
+                               (:pointer 1
+                                :type ("CoarseDistanceMap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6629 6666])
+                            ("frameHessians" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("FrameHessian" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6669 6710])
+                            ("activeResiduals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("PointFrameResidual" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6762 6811])
+                            ("currentMinActDist" variable (:type "float") (reparse-symbol classsubparts) [6813 6837])
+                            ("allResVec" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6841 6870])
+                            ("coarseTrackerSwapMutex" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6912 6948])
+                            ("coarseTracker_forNewKF" variable
+                               (:pointer 1
+                                :type ("CoarseTracker" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7060 7098])
+                            ("coarseTracker" variable
+                               (:pointer 1
+                                :type ("CoarseTracker" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7165 7194])
+                            ("minIdJetVisTracker" variable (:type "float") (reparse-symbol classsubparts) [7263 7308])
+                            ("maxIdJetVisTracker" variable (:type "float") (reparse-symbol classsubparts) [7263 7308])
+                            ("minIdJetVisDebug" variable (:type "float") (reparse-symbol classsubparts) [7310 7351])
+                            ("maxIdJetVisDebug" variable (:type "float") (reparse-symbol classsubparts) [7310 7351])
+                            ("shellPoseMutex" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7438 7466])
+                            ("makeKeyFrame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fh" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7553 7570]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7534 7571])
+                            ("makeNonKeyFrame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fh" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7595 7612]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7573 7613])
+                            ("deliverTrackedFrame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fh" variable
+                                       (:pointer 1
+                                        :type ("FrameHessian" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7640 7657])
+                                    ("needKF" variable (:type "bool") (reparse-symbol arg-sub-list) [7658 7670]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7615 7671])
+                            ("mappingLoop" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7673 7692])
+                            ("trackMapSyncMutex" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7773 7804])
+                            ("trackedFrameSignal" variable (:type ("boost::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7806 7851])
+                            ("mappedFrameSignal" variable (:type ("boost::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7853 7897])
+                            ("unmappedTrackedFrames" variable (:type ("std::deque" type
+                                 (:template-specifier 
+                                    ( ("FrameHessian" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7899 7947])
+                            ("needNewKFAfter" variable (:type "int") (reparse-symbol classsubparts) [7949 7968])
+                            ("mappingThread" variable (:type ("boost::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8047 8075])
+                            ("runMapping" variable (:type "bool") (reparse-symbol classsubparts) [8077 8093])
+                            ("needToKetchupMapping" variable (:type "bool") (reparse-symbol classsubparts) [8095 8121])
+                            ("lastRefStopID" variable (:type "int") (reparse-symbol classsubparts) [8124 8142]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2768 8145]))                  
+                :type "namespace")
+                nil [1352 8147]))          
+      :file "FullSystem.h"
+      :pointmax 8149
+      :fsize 8146
+      :lastmodtime '(22578 36939 428221 104000)
+      :unmatched-syntax '((symbol 929 . 933) (symbol 922 . 928) (punctuation 921 . 922))
+      :lexical-table 
+        '(("MAX_ACTIVE_FRAMES" . ((number "100" 960 . 963)))
+          )
+)
+    (semanticdb-table "HessianBlocks.h"
+      :file "HessianBlocks.h"
+      :fsize 13002
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "Residuals.h"
+      :file "Residuals.h"
+      :fsize 2357
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "FullSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FullSystem/FullSystem.h" include nil nil [999 1033])
+            ("stdio.h" include nil nil [1036 1054])
+            ("util/globalFuncs.h" include nil nil [1055 1084])
+            ("Eigen/LU" include (:system-flag t) nil [1085 1104])
+            ("algorithm" include (:system-flag t) nil [1105 1125])
+            ("IOWrapper/ImageDisplay.h" include nil nil [1126 1161])
+            ("util/globalCalib.h" include nil nil [1162 1191])
+            ("Eigen/SVD" include (:system-flag t) nil [1192 1212])
+            ("Eigen/Eigenvalues" include (:system-flag t) nil [1213 1241])
+            ("FullSystem/PixelSelector.h" include nil nil [1242 1279])
+            ("FullSystem/PixelSelector2.h" include nil nil [1280 1318])
+            ("FullSystem/ResidualProjections.h" include nil nil [1319 1362])
+            ("FullSystem/ImmaturePoint.h" include nil nil [1363 1400])
+            ("FullSystem/CoarseTracker.h" include nil nil [1402 1439])
+            ("FullSystem/CoarseInitializer.h" include nil nil [1440 1481])
+            ("OptimizationBackend/EnergyFunctional.h" include nil nil [1483 1532])
+            ("OptimizationBackend/EnergyFunctionalStructs.h" include nil nil [1533 1589])
+            ("IOWrapper/Output3DWrapper.h" include nil nil [1591 1629])
+            ("util/ImageAndExposure.h" include nil nil [1631 1665])
+            ("cmath" include (:system-flag t) nil [1667 1683])
+            ("dso" type
+               (:members 
+                  ( ("FrameHessian::instanceCounter" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1701 1737])
+                    ("PointHessian::instanceCounter" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1738 1774])
+                    ("CalibHessian::instanceCounter" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1775 1811])
+                    ("FullSystem" function
+                       (:constructor-flag t
+                        :parent "FullSystem"
+                        :type ("FullSystem" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1815 4521])
+                    ("FullSystem" function
+                       (:destructor-flag t
+                        :parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4523 5328])
+                    ("setOriginalCalib" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("originalCalib" variable (:type ("VecXf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5364 5384])
+                            ("originalW" variable (:type "int") (reparse-symbol arg-sub-list) [5385 5399])
+                            ("originalH" variable (:type "int") (reparse-symbol arg-sub-list) [5400 5414]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5330 5419])
+                    ("setGammaFunction" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("BInv" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [5455 5467]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5421 5893])
+                    ("printResult" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5926 5943]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5897 6610])
+                    ("trackNewCoarse" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fh" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6645 6662]))                          
+                        :type ("Vec4" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6613 16139])
+                    ("traceNewCoarse" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fh" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16173 16190]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16141 18008])
+                    ("activatePointsMT_Reductor" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("optimized" variable
+                               (:pointer 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("PointHessian" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18059 18097])
+                            ("toOptimize" variable
+                               (:pointer 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ImmaturePoint" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18100 18140])
+                            ("min" variable (:type "int") (reparse-symbol arg-sub-list) [18143 18151])
+                            ("max" variable (:type "int") (reparse-symbol arg-sub-list) [18152 18160])
+                            ("stats" variable
+                               (:pointer 1
+                                :type ("Vec10" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18161 18174])
+                            ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [18175 18183]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18013 18395])
+                    ("activatePointsMT" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18399 23343])
+                    ("activatePointsOldFirst" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23350 23411])
+                    ("flagPointsForRemoval" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23413 25803])
+                    ("addActiveFrame" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("image" variable
+                               (:pointer 1
+                                :type ("ImageAndExposure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25839 25863])
+                            ("id" variable (:type "int") (reparse-symbol arg-sub-list) [25864 25872]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25806 28686])
+                    ("deliverTrackedFrame" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fh" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28724 28741])
+                            ("needKF" variable (:type "bool") (reparse-symbol arg-sub-list) [28742 28754]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [28687 29549])
+                    ("mappingLoop" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29551 31137])
+                    ("blockUntilMappingIsFinished" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31139 31344])
+                    ("makeNonKeyFrame" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fh" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31380 31397]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31346 31795])
+                    ("makeKeyFrame" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fh" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31828 31845]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31797 35574])
+                    ("initializeFromInitializer" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("newFrame" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35620 35643]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35577 38555])
+                    ("makeNewTraces" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("newFrame" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38588 38611])
+                            ("gtDepth" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [38612 38627]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [38557 39558])
+                    ("setPrecalcValues" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39562 39833])
+                    ("printLogLine" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39836 41436])
+                    ("printEigenValLine" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41440 43942])
+                    ("printFrameLifetimes" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [43944 44460])
+                    ("printEvalLine" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [44463 44508]))                  
+                :type "namespace")
+                nil [1685 44515]))          
+      :file "FullSystem.cpp"
+      :pointmax 44516
+      :fsize 44515
+      :lastmodtime '(22578 36939 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "PixelSelector.h"
+      :file "PixelSelector.h"
+      :fsize 6017
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "PixelSelector2.h"
+      :file "PixelSelector2.h"
+      :fsize 1639
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "ResidualProjections.h"
+      :file "ResidualProjections.h"
+      :fsize 2413
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "ImmaturePoint.h"
+      :file "ImmaturePoint.h"
+      :fsize 2690
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "CoarseInitializer.h"
+      :file "CoarseInitializer.h"
+      :fsize 4449
+      :lastmodtime '(22578 36939 428221 104000))
+    (semanticdb-table "FullSystemOptimize.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FullSystem/FullSystem.h" include nil nil [922 956])
+            ("stdio.h" include nil nil [959 977])
+            ("util/globalFuncs.h" include nil nil [978 1007])
+            ("Eigen/LU" include (:system-flag t) nil [1008 1027])
+            ("algorithm" include (:system-flag t) nil [1028 1048])
+            ("IOWrapper/ImageDisplay.h" include nil nil [1049 1084])
+            ("util/globalCalib.h" include nil nil [1085 1114])
+            ("Eigen/SVD" include (:system-flag t) nil [1115 1135])
+            ("Eigen/Eigenvalues" include (:system-flag t) nil [1136 1164])
+            ("FullSystem/ResidualProjections.h" include nil nil [1165 1208])
+            ("OptimizationBackend/EnergyFunctional.h" include nil nil [1210 1259])
+            ("OptimizationBackend/EnergyFunctionalStructs.h" include nil nil [1260 1316])
+            ("cmath" include (:system-flag t) nil [1318 1334])
+            ("algorithm" include (:system-flag t) nil [1336 1356])
+            ("dso" type
+               (:members 
+                  ( ("linearizeAll_Reductor" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fixLinearization" variable (:type "bool") (reparse-symbol arg-sub-list) [1418 1440])
+                            ("toRemove" variable
+                               (:pointer 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("PointFrameResidual" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1441 1484])
+                            ("min" variable (:type "int") (reparse-symbol arg-sub-list) [1485 1493])
+                            ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1494 1502])
+                            ("stats" variable
+                               (:pointer 1
+                                :type ("Vec10" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1503 1516])
+                            ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [1517 1525]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1379 2355])
+                    ("applyRes_Reductor" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("copyJacobians" variable (:type "bool") (reparse-symbol arg-sub-list) [2393 2412])
+                            ("min" variable (:type "int") (reparse-symbol arg-sub-list) [2413 2421])
+                            ("max" variable (:type "int") (reparse-symbol arg-sub-list) [2422 2430])
+                            ("stats" variable
+                               (:pointer 1
+                                :type ("Vec10" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2431 2444])
+                            ("tid" variable (:type "int") (reparse-symbol arg-sub-list) [2445 2453]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2358 2521])
+                    ("setNewFrameEnergyTH" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2522 3935])
+                    ("linearizeAll" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("fixLinearization" variable (:type "bool") (reparse-symbol arg-sub-list) [3966 3988]))                          
+                        :type ("Vec3" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3936 5545])
+                    ("doStepFromBackup" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("stepfacC" variable (:type "float") (reparse-symbol arg-sub-list) [5624 5639])
+                            ("stepfacT" variable (:type "float") (reparse-symbol arg-sub-list) [5639 5654])
+                            ("stepfacR" variable (:type "float") (reparse-symbol arg-sub-list) [5654 5669])
+                            ("stepfacA" variable (:type "float") (reparse-symbol arg-sub-list) [5669 5684])
+                            ("stepfacD" variable (:type "float") (reparse-symbol arg-sub-list) [5684 5699]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5590 8236])
+                    ("backupState" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("backupLastStep" variable (:type "bool") (reparse-symbol arg-sub-list) [8298 8318]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8269 9272])
+                    ("loadSateBackup" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9303 9643])
+                    ("calcMEnergy" function
+                       (:parent "FullSystem"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [9646 9864])
+                    ("printOptRes" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("res" variable (:type ("Vec3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9896 9905])
+                            ("resL" variable (:type "double") (reparse-symbol arg-sub-list) [9906 9918])
+                            ("resM" variable (:type "double") (reparse-symbol arg-sub-list) [9919 9931])
+                            ("resPrior" variable (:type "double") (reparse-symbol arg-sub-list) [9932 9948])
+                            ("LExact" variable (:type "double") (reparse-symbol arg-sub-list) [9949 9963])
+                            ("a" variable (:type "float") (reparse-symbol arg-sub-list) [9964 9972])
+                            ("b" variable (:type "float") (reparse-symbol arg-sub-list) [9973 9981]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9867 10157])
+                    ("optimize" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("mnumOptIts" variable (:type "int") (reparse-symbol arg-sub-list) [10187 10202]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [10160 14773])
+                    ("solveSystem" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("iteration" variable (:type "int") (reparse-symbol arg-sub-list) [14808 14822])
+                            ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [14823 14837]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14779 15050])
+                    ("calcLEnergy" function
+                       (:parent "FullSystem"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [15054 15178])
+                    ("removeOutliers" function
+                       (:parent "FullSystem"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15181 15695])
+                    ("getNullspaces" function
+                       (:parent "FullSystem"
+                        :arguments 
+                          ( ("nullspaces_pose" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VecX" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15747 15782])
+                            ("nullspaces_scale" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VecX" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15785 15821])
+                            ("nullspaces_affA" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VecX" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15824 15859])
+                            ("nullspaces_affB" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VecX" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15862 15897]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("VecX" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [15700 17402]))                  
+                :type "namespace")
+                nil [1358 17405]))          
+      :file "FullSystemOptimize.cpp"
+      :pointmax 17406
+      :fsize 17405
+      :lastmodtime '(22578 36939 428221 104000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ImmaturePoint.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FullSystem/ImmaturePoint.h" include nil nil [922 959])
+            ("util/FrameShell.h" include nil nil [960 988])
+            ("FullSystem/ResidualProjections.h" include nil nil [989 1032])
+            ("dso" type
+               (:members 
+                  ( ("ImmaturePoint" function
+                       (:constructor-flag t
+                        :parent "ImmaturePoint"
+                        :arguments 
+                          ( ("u_" variable (:type "int") (reparse-symbol arg-sub-list) [1079 1086])
+                            ("v_" variable (:type "int") (reparse-symbol arg-sub-list) [1087 1094])
+                            ("host_" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1095 1115])
+                            ("type" variable (:type "float") (reparse-symbol arg-sub-list) [1116 1127])
+                            ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1128 1149]))                          
+                        :type ("ImmaturePoint" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1050 1873])
+                    ("ImmaturePoint" function
+                       (:destructor-flag t
+                        :parent "ImmaturePoint"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1875 1910])
+                    ("traceOn" function
+                       (:parent "ImmaturePoint"
+                        :arguments 
+                          ( ("frame" variable
+                               (:pointer 1
+                                :type ("FrameHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2104 2124])
+                            ("hostToFrame_KRKi" variable (:type ("Mat33f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2125 2149])
+                            ("hostToFrame_Kt" variable (:type ("Vec3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2150 2171])
+                            ("hostToFrame_affine" variable (:type ("Vec2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2172 2197])
+                            ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2219])
+                            ("debugPrint" variable (:type "bool") (reparse-symbol arg-sub-list) [2220 2236]))                          
+                        :type ("ImmaturePointStatus" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2061 12549])
+                    ("getdPixdd" function
+                       (:parent "ImmaturePoint"
+                        :arguments 
+                          ( ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12586 12609])
+                            ("tmpRes" variable
+                               (:pointer 1
+                                :type ("ImmaturePointTemporaryResidual" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12612 12651])
+                            ("idepth" variable (:type "float") (reparse-symbol arg-sub-list) [12654 12667]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [12552 13146])
+                    ("calcResidual" function
+                       (:parent "ImmaturePoint"
+                        :arguments 
+                          ( ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13186 13209])
+                            ("outlierTHSlack" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [13210 13237])
+                            ("tmpRes" variable
+                               (:pointer 1
+                                :type ("ImmaturePointTemporaryResidual" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13240 13279])
+                            ("idepth" variable (:type "float") (reparse-symbol arg-sub-list) [13282 13295]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [13149 14347])
+                    ("linearizeResidual" function
+                       (:parent "ImmaturePoint"
+                        :arguments 
+                          ( ("HCalib" variable
+                               (:pointer 1
+                                :type ("CalibHessian" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14395 14418])
+                            ("outlierTHSlack" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [14419 14446])
+                            ("tmpRes" variable
+                               (:pointer 1
+                                :type ("ImmaturePointTemporaryResidual" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14449 14488])
+                            ("Hdd" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [14491 14502])
+                            ("bd" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [14503 14513])
+                            ("idepth" variable (:type "float") (reparse-symbol arg-sub-list) [14516 14529]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [14352 16352]))                  
+                :type "namespace")
+                nil [1034 16357]))          
+      :file "ImmaturePoint.cpp"
+      :pointmax 16358
+      :fsize 16357
+      :lastmodtime '(22578 36939 428221 104000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!dso!src!FullSystem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

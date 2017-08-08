@@ -1,0 +1,510 @@
+;; Object bankSimu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bankSimu/"
+  :tables
+  (list
+    (semanticdb-table "Random.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_RANDOM_HPP" variable (:constant-flag t) nil [29 40])
+            ("cstdlib" include (:system-flag t) nil [42 60])
+            ("Random" type
+               (:type "class"
+                :members 
+                  ( ("public" label (:depth 1) (reparse-symbol classsubparts) [77 84])
+                    ("uniformDist" function
+                       (:depth 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("max" variable
+                               (:default-value "1"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [113 127]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [87 185]))                  )
+                nil [62 188]))          
+      :file "Random.hpp"
+      :pointmax 197
+      :fsize 196
+      :lastmodtime '(22898 49042 628356 95000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_RANDOM_HPP")
+          )
+)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [44 63])
+            ("cstdlib" include (:system-flag t) nil [64 82])
+            ("ctime" include (:system-flag t) nil [83 99])
+            ("System.hpp" include nil nil [101 122])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [133 142])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [143 155]))                  
+                :type "int")
+                nil [124 644]))          
+      :file "main.cpp"
+      :pointmax 645
+      :fsize 644
+      :lastmodtime '(22899 34135 922891 407000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ServiceWindow.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SERVICE_WINDOW_HPP" variable (:constant-flag t) nil [37 56])
+            ("Customer.hpp" include nil nil [58 81])
+            ("ServiceWindow" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [106 114])
+                    ("windowStatus" type
+                       (:members 
+                          ( ("BUSY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [142 147])
+                            ("IDLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [152 160]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [118 161])
+                    ("status" variable (:type ("windowStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [165 185])
+                    ("customer" variable (:type ("Customer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [188 206])
+                    ("public" label nil (reparse-symbol classsubparts) [208 215])
+                    ("ServiceWindow" function
+                       (:constructor-flag t
+                        :type ("ServiceWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [218 258])
+                    ("isIDLE" function (:type "bool") (reparse-symbol classsubparts) [262 308])
+                    ("setBusy" function (:type "void") (reparse-symbol classsubparts) [312 351])
+                    ("setIDLE" function (:type "void") (reparse-symbol classsubparts) [355 394])
+                    ("serveCustomer" function
+                       (:arguments 
+                          ( ("_customer" variable
+                               (:reference 1
+                                :type ("Customer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [417 437]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [398 469])
+                    ("getCustomerArriveTime" function (:type "int") (reparse-symbol classsubparts) [473 544])
+                    ("getCustomerProcessTime" function (:type "int") (reparse-symbol classsubparts) [548 621]))                  
+                :type "class")
+                nil [83 624]))          
+      :file "ServiceWindow.hpp"
+      :pointmax 633
+      :fsize 632
+      :lastmodtime '(22899 11029 890979 549000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SERVICE_WINDOW_HPP")
+          )
+)
+    (semanticdb-table "Customer.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CUSTOMER_HPP" variable (:constant-flag t) nil [31 44])
+            ("Random.hpp" include nil nil [46 67])
+            ("Customer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [87 94])
+                    ("arriveTime" variable (:type "int") (reparse-symbol classsubparts) [97 112])
+                    ("processTime" variable (:type "int") (reparse-symbol classsubparts) [115 131])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("Customer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [135 150])
+                    ("next" function
+                       (:arguments 
+                          ( ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [311 319]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [306 322]))                  
+                :type "class")
+                nil [69 325]))          
+      :file "Customer.hpp"
+      :pointmax 334
+      :fsize 333
+      :lastmodtime '(22900 19383 89096 467000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CUSTOMER_HPP")
+          )
+)
+    (semanticdb-table "Event.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_EVENT_HPP" variable (:constant-flag t) nil [28 38])
+            ("Random.hpp" include nil nil [40 61])
+            ("RANDOM_PARAM" variable
+               (:constant-flag t
+                :default-value "100"
+                :type "int")
+                nil [63 92])
+            ("Event" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [108 115])
+                    ("occurTime" variable (:type "int") (reparse-symbol classsubparts) [118 132])
+                    ("eventType" variable (:type "int") (reparse-symbol classsubparts) [136 150])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [186 198])
+                    ("Event" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_occurTime" variable
+                               (:default-value "Random::uniformDist(RANDOM_PARAM)"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [208 258])
+                            ("_eventType" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [268 287]))                          
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [202 364]))                  
+                :type "class")
+                nil [94 367]))          
+      :file "Event.hpp"
+      :pointmax 376
+      :fsize 375
+      :lastmodtime '(22899 27017 630918 561000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_EVENT_HPP")
+          )
+)
+    (semanticdb-table "Queue.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_QUEUE_HPP" variable (:constant-flag t) nil [28 38])
+            ("iostream" include (:system-flag t) nil [40 59])
+            ("Event.hpp" include nil nil [60 80])
+            ("Queue" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [119 127])
+                    ("front" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [130 139])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [142 149])
+                    ("length" variable (:type "int") (reparse-symbol classsubparts) [152 163])
+                    ("public" label nil (reparse-symbol classsubparts) [165 172])
+                    ("Queue" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Queue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [175 183])
+                    ("Queue" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [186 195])
+                    ("clearQueue" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [198 216])
+                    ("enqueue" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [230 244]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [219 245])
+                    ("dequeue" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [248 263])
+                    ("getLength" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [266 289])
+                    ("orderEnqueue" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [312 330]))                          
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [292 331])
+                    ("getFront" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [334 354]))                  )
+                nil [82 357])
+            ("Queue" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Queue" type (:type "class") nil nil)
+                :parent "Queue"
+                :constructor-flag t)
+                nil [359 450])
+            ("Queue" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Queue"
+                :destructor-flag t)
+                nil [452 528])
+            ("getLength" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :parent "Queue")
+                nil [530 603])
+            ("clearQueue" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Queue")
+                nil [829 1070])
+            ("enqueue" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("node" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1115 1129]))                  
+                :parent "Queue"
+                :pointer 1)
+                nil [1072 1422])
+            ("dequeue" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Queue")
+                nil [1424 1608])
+            ("orderEnqueue" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Event" type (:type "class") nil nil)
+                :arguments 
+                  ( ("node" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1662 1680]))                  
+                :parent "Queue"
+                :pointer 1)
+                nil [1610 2171])
+            ("getFront" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :parent "Queue"
+                :pointer 1)
+                nil [2173 2244]))          
+      :file "Queue.hpp"
+      :pointmax 2254
+      :fsize 2253
+      :lastmodtime '(22900 18762 241098 835000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_QUEUE_HPP")
+          )
+)
+    (semanticdb-table "System.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ServiceWindow.hpp" include nil nil [42 70])
+            ("Customer.hpp" include nil nil [71 94])
+            ("Queue.hpp" include nil nil [95 115])
+            ("Event.hpp" include nil nil [116 136])
+            ("System" type
+               (:type "class"
+                :members 
+                  ( ("public" label (:depth 1) (reparse-symbol classsubparts) [153 160])
+                    ("System" function
+                       (:depth 1
+                        :prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("_totalServiceTime" variable (:type "int") (reparse-symbol arg-sub-list) [170 192])
+                            ("_numWindow" variable (:type "int") (reparse-symbol arg-sub-list) [193 208]))                          
+                        :type ("System" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [163 209])
+                    ("System" function
+                       (:depth 1
+                        :prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [212 222])
+                    ("simulate" function
+                       (:type "void"
+                        :arguments 
+                          ( ("period" variable (:type "int") (reparse-symbol arg-sub-list) [239 250]))                          
+                        :prototype-flag t
+                        :depth 1)
+                        (reparse-symbol classsubparts) [225 251])
+                    ("getAvgStayTime" function
+                       (:type "double"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [255 314])
+                    ("getAvgCustomers" function
+                       (:type "double"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [318 379])
+                    ("windows" variable
+                       (:depth 1
+                        :pointer 1
+                        :type ("ServiceWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [392 415])
+                    ("customers" variable
+                       (:type ("Queue" type
+                             (:template-specifier 
+                                ( ("Customer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :depth 1)
+                        (reparse-symbol classsubparts) [418 444])
+                    ("events" variable
+                       (:depth 1
+                        :type ("Queue" type
+                             (:template-specifier 
+                                ( ("Event" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [447 467])
+                    ("currEvent" variable
+                       (:depth 1
+                        :pointer 1
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [470 487])
+                    ("avgCustomers" variable
+                       (:type "double"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [491 511])
+                    ("avgStayTime" variable
+                       (:type "double"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [514 533])
+                    ("numWindows" variable
+                       (:type "int"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [536 551])
+                    ("totalServiceTime" variable
+                       (:type "int"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [554 575])
+                    ("customerStayTime" variable
+                       (:type "int"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [578 599])
+                    ("numCustomers" variable
+                       (:type "int"
+                        :depth 1)
+                        (reparse-symbol classsubparts) [602 619])
+                    ("init" function
+                       (:type "void"
+                        :prototype-flag t
+                        :depth 1)
+                        (reparse-symbol classsubparts) [623 635])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [638 651])
+                    ("end" function
+                       (:type "void"
+                        :prototype-flag t
+                        :depth 1)
+                        (reparse-symbol classsubparts) [654 665])
+                    ("customerArrive" function
+                       (:type "void"
+                        :prototype-flag t
+                        :depth 1)
+                        (reparse-symbol classsubparts) [669 691])
+                    ("customerDeparture" function
+                       (:type "void"
+                        :prototype-flag t
+                        :depth 1)
+                        (reparse-symbol classsubparts) [694 719])
+                    ("getIdleWindow" function
+                       (:type "int"
+                        :prototype-flag t
+                        :depth 1)
+                        (reparse-symbol classsubparts) [722 742]))                  )
+                nil [138 745]))          
+      :file "System.hpp"
+      :pointmax 754
+      :fsize 753
+      :lastmodtime '(22899 12667 502973 302000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SYSTEM_HPP")
+          )
+)
+    (semanticdb-table "System.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("System.hpp" include nil nil [1 22])
+            ("getIdleWindow" function
+               (:parent "System"
+                :type "int")
+                nil [25 155])
+            ("customerDeparture" function
+               (:parent "System"
+                :type "void")
+                nil [157 689])
+            ("customerArrive" function
+               (:parent "System"
+                :type "void")
+                nil [691 1623])
+            ("end" function
+               (:parent "System"
+                :type "void")
+                nil [1625 1801])
+            ("run" function
+               (:parent "System"
+                :type "double")
+                nil [1803 2242])
+            ("init" function
+               (:parent "System"
+                :type "void")
+                nil [2244 2316])
+            ("simulate" function
+               (:parent "System"
+                :arguments 
+                  ( ("period" variable (:type "int") (reparse-symbol arg-sub-list) [2340 2351]))                  
+                :type "void")
+                nil [2318 2586])
+            ("System" function
+               (:destructor-flag t
+                :parent "System"
+                :type "void")
+                nil [2588 2629])
+            ("System" function
+               (:constructor-flag t
+                :parent "System"
+                :arguments 
+                  ( ("_totalServiceTime" variable (:type "int") (reparse-symbol arg-sub-list) [2646 2668])
+                    ("_numWindows" variable (:type "int") (reparse-symbol arg-sub-list) [2669 2685]))                  
+                :type ("System" type (:type "class") nil nil))
+                nil [2631 2878]))          
+      :file "System.cpp"
+      :pointmax 2879
+      :fsize 2878
+      :lastmodtime '(22900 19332 329096 660000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!course!shiyanlou!cppBankSimu!bankSimu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

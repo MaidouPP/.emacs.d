@@ -11,6 +11,8 @@
 (semantic-add-system-include "/usr/include")
 (semantic-add-system-include "/usr/include/c++/4.8")
 (semantic-add-system-include "/usr/include/c++/4.8.4")
+(semantic-add-system-include "/usr/include/c++/5")
+(semantic-add-system-include "/usr/include/c++/5.4.1")
 
 (defun shixin/cedet-hook ()
   (local-set-key "\C-c\C-j" 'semantic-ia-fast-jump)

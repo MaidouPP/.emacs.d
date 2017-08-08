@@ -1,0 +1,455 @@
+;; Object range_shixin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "range_shixin/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("transform.hpp" include nil nil [1 25])
+            ("zip.hpp" include nil nil [26 44])
+            ("algorithm.hpp" include nil nil [46 70])
+            ("variadic.hpp" include nil nil [71 94])
+            ("iostream" include (:system-flag t) nil [96 115])
+            ("sstream" include (:system-flag t) nil [116 134])
+            ("vector" include (:system-flag t) nil [135 152])
+            ("unnamed" type
+               (:members 
+                  ( ("multiplyBy2" function
+                       (:arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [183 189]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [167 211])
+                    ("testTransform" function (:type "bool") (reparse-symbol namespacesubparts) [213 508])
+                    ("letterPlusNumber" function
+                       (:arguments 
+                          ( ("line" variable (:type "char") (reparse-symbol arg-sub-list) [539 549])
+                            ("column" variable (:type "int") (reparse-symbol arg-sub-list) [550 561]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [510 657])
+                    ("testZip" function (:type "bool") (reparse-symbol namespacesubparts) [659 1041])
+                    ("testResult" function
+                       (:template 
+                          ( ("Function" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("test" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1095 1109]))                          )
+                        (reparse-symbol namespacesubparts) [1043 1154])
+                    ("launchTests" function (:type "void") (reparse-symbol namespacesubparts) [1156 1328]))                  
+                :type "namespace")
+                nil [154 1331])
+            ("main" function (:type "int") nil [1333 1366]))          
+      :file "main.cpp"
+      :pointmax 1372
+      :fsize 1956
+      :lastmodtime '(22920 33840 110916 677000)
+      :unmatched-syntax nil)
+    (semanticdb-table "transform.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_TRANSFORM_HPP" variable (:constant-flag t) nil [32 46])
+            ("type_traits" include (:system-flag t) nil [48 70])
+            ("iostream" include (:system-flag t) nil [71 90])
+            ("ranges" type
+               (:members 
+                  ( ("make_transform_iterator" function
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil)
+                            ("Function" type (:type "class") nil nil))                          
+                        :type ("transform_iterator" type
+                             (:template-specifier 
+                                ( ("Iterator" type nil nil nil)
+                                  ("Function" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("underlyingIterator" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1810 1838])
+                            ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1839 1853]))                          )
+                        (reparse-symbol namespacesubparts) [1697 1937])
+                    ("view" type
+                       (:members 
+                          ( ("transform_adaptor" type
+                               (:template 
+                                  ( ("Function" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2084 2091])
+                                    ("transform_adaptor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2125 2139]))                                          
+                                        :type ("transform_adaptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2107 2164])
+                                    ("getFunction" function (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2171 2231])
+                                    ("private" label nil (reparse-symbol classsubparts) [2236 2244])
+                                    ("func_" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2251 2266]))                                  )
+                                (reparse-symbol namespacesubparts) [2021 2273])
+                            ("transform" function
+                               (:template 
+                                  ( ("Function" type (:type "class") nil nil))                                  
+                                :type ("transform_adaptor" type
+                                     (:template-specifier 
+                                        ( ("Function" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2350 2364]))                                  )
+                                (reparse-symbol namespacesubparts) [2279 2420])
+                            ("|" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("range" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Range" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2563 2582])
+                                    ("adaptor" variable (:type ("transform_adaptor" type
+                                         (:template-specifier 
+                                            ( ("Function" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [2583 2619]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2552 3023]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1941 3028]))                  
+                :type "namespace")
+                nil [123 3050]))          
+      :file "transform.hpp"
+      :pointmax 3080
+      :fsize 3079
+      :lastmodtime '(22920 30343 962930 14000)
+      :unmatched-syntax nil)
+    (semanticdb-table "iterator_range.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ITERATOR_RANGE_HPP" variable (:constant-flag t) nil [37 56])
+            ("iterator" include (:system-flag t) nil [58 77])
+            ("type_traits" include (:system-flag t) nil [78 100])
+            ("is_const_iterator" type
+               (:template 
+                  ( ("Iterator" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("value" variable (:type "int") (reparse-symbol classsubparts) [320 326]))                  )
+                nil [102 329])
+            ("iterator_range_impl" type
+               (:template 
+                  ( ("bool" type nil nil nil)
+                    ("Iterator" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [415 422])
+                    ("iterator_range_impl" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [445 460])
+                            ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [461 474]))                          
+                        :type ("iterator_range_impl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [425 504])
+                    ("begin" function (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [507 546])
+                    ("end" function (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [549 584])
+                    ("size" function
+                       (:typemodifiers ("typename")
+                        :type ("std::iterator_traits::difference_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [587 680])
+                    ("const_iterator" variable
+                       (:default-value "Iterator"
+                        :type "int")
+                        (reparse-symbol classsubparts) [690 716])
+                    ("private" label nil (reparse-symbol classsubparts) [717 725])
+                    ("end_" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [728 750])
+                    ("begin_" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [728 750]))                  )
+                nil [331 753])
+            ("iterator_range_impl" type
+               (:template 
+                  ( ("Iterator" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [829 836])
+                    ("iterator_range_impl" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [859 874])
+                            ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [875 888]))                          
+                        :type ("iterator_range_impl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [839 918])
+                    ("begin" function (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [921 960])
+                    ("end" function (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [963 998])
+                    ("size" function
+                       (:typemodifiers ("typename")
+                        :type ("std::iterator_traits::difference_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1001 1094])
+                    ("iterator" variable
+                       (:default-value "Iterator"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1104 1124])
+                    ("private" label nil (reparse-symbol classsubparts) [1125 1133])
+                    ("end_" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1136 1158])
+                    ("begin_" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1136 1158]))                  
+                :template-specifier 
+                  ( ("false" type nil nil nil)
+                    ("Iterator" type nil nil nil))                  )
+                nil [755 1161]))          
+      :file "iterator_range.hpp"
+      :pointmax 1461
+      :fsize 1460
+      :lastmodtime '(22911 5895 682108 512000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ITERATOR_RANGE_HPP")
+          )
+)
+    (semanticdb-table "algorithm.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ALGORITH_HPP" variable (:constant-flag t) nil [31 44])
+            ("algorithm" include (:system-flag t) nil [46 66])
+            ("copy" function
+               (:template 
+                  ( ("Range" type (:type "class") nil nil)
+                    ("Iterator" type (:type "class") nil nil))                  
+                :type ("Iterator" type (:type "class") nil nil)
+                :arguments 
+                  ( ("range" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127 146])
+                    ("output" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147 163]))                  )
+                nil [68 262])
+            ("ranges" type
+               (:members 
+                  ( ("push_back" function
+                       (:template 
+                          ( ("DestinationContainer" type (:type "class") nil nil)
+                            ("SourceRange" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("destination" variable
+                               (:reference 1
+                                :type ("DestinationContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [365 399])
+                            ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SourceRange" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [400 426]))                          )
+                        (reparse-symbol namespacesubparts) [285 535]))                  
+                :type "namespace")
+                nil [264 537]))          
+      :file "algorithm.hpp"
+      :pointmax 546
+      :fsize 565
+      :lastmodtime '(22920 32295 938922 567000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ALGORITH_HPP")
+          )
+)
+    (semanticdb-table "filter.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_FILTER_HPP" variable (:constant-flag t) nil [29 40])
+            ("iostream" include (:system-flag t) nil [42 61])
+            ("type_traits" include (:system-flag t) nil [62 84])
+            ("iterator" include (:system-flag t) nil [85 104])
+            ("iterator_range.hpp" include nil nil [106 135])
+            ("ranges" type
+               (:members 
+                  ( ("make_filter_iterator" function
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil)
+                            ("Function" type (:type "class") nil nil))                          
+                        :type ("filter_iterator" type
+                             (:template-specifier 
+                                ( ("Iterator" type nil nil nil)
+                                  ("Function" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1796 1811])
+                            ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1812 1825])
+                            ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1826 1840]))                          )
+                        (reparse-symbol namespacesubparts) [1689 1962])
+                    ("view" type
+                       (:members 
+                          ( ("filter_adaptor" type
+                               (:template 
+                                  ( ("Function" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2040 2047])
+                                    ("filter_adaptor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2076 2090]))                                          
+                                        :type ("filter_adaptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2061 2107])
+                                    ("getFunction" function (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2112 2156])
+                                    ("private" label nil (reparse-symbol classsubparts) [2159 2167])
+                                    ("func_" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2172 2187]))                                  )
+                                (reparse-symbol namespacesubparts) [1984 2192])
+                            ("filter" function
+                               (:template 
+                                  ( ("Function" type (:type "class") nil nil))                                  
+                                :type ("filter_adaptor" type
+                                     (:template-specifier 
+                                        ( ("Function" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2259 2273]))                                  )
+                                (reparse-symbol namespacesubparts) [2196 2322])
+                            ("|" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("range" variable (:type ("Range" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2451 2463])
+                                    ("adaptor" variable (:type ("filter_adaptor" type
+                                         (:template-specifier 
+                                            ( ("Function" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [2464 2497]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2441 2976]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1964 2979]))                  
+                :type "namespace")
+                nil [137 2999]))          
+      :file "filter.hpp"
+      :pointmax 3028
+      :fsize 3027
+      :lastmodtime '(22912 28647 524007 588000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_FILTER_HPP")
+          )
+)
+    (semanticdb-table "zip.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_ZIP_HPP" variable (:constant-flag t) nil [26 34])
+            ("variadic.hpp" include nil nil [36 59])
+            ("iterator_range.hpp" include nil nil [60 89])
+            ("iterator" include (:system-flag t) nil [91 110])
+            ("tuple" include (:system-flag t) nil [111 127])
+            ("ranges" type
+               (:members 
+                  ( ("make_zip_iterator" function
+                       (:arguments 
+                          ( ("" variable (:type ("UnderlyingIterators" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1683 1703])
+                            ("" variable (:type ("iters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1706 1712]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1665 1777])
+                    ("view" type
+                       (:members 
+                          ( ("zip" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ranges" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1905 1919])
+                                    ("" variable (:type ("ranges" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1922 1929]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1901 2168]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1781 2173]))                  
+                :type "namespace")
+                nil [129 2183]))          
+      :file "zip.hpp"
+      :pointmax 2202
+      :fsize 2365
+      :lastmodtime '(22920 33712 694917 163000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ZIP_HPP")
+          )
+)
+    (semanticdb-table "variadic.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_VARIADIC_HPP" variable (:constant-flag t) nil [31 44])
+            ("tuple" include (:system-flag t) nil [46 62])
+            ("utility" include (:system-flag t) nil [63 81])
+            ("For_each_tuple_impl" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::tuple" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [200 211])
+                            ("" variable (:type ("TupleElements" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [211 225])
+                            ("" variable (:type ("input" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [230 236])
+                            ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [237 251]))                          
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [180 379]))                  
+                :type "struct")
+                nil [149 382])
+            ("for_each_tuple" function
+               (:arguments 
+                  ( ("" variable (:type ("std::tuple" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [923 934])
+                    ("" variable (:type ("TupleElements" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [934 948])
+                    ("" variable (:type ("input" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [953 959])
+                    ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [960 974]))                  
+                :type ("Function" type (:type "class") nil nil))
+                nil [899 1085])
+            ("transform_tuple_impl" function
+               (:arguments 
+                  ( ("input" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tuple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1171 1190])
+                    ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1191 1205])
+                    ("" variable (:type ("std::index_sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1206 1226])
+                    ("" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1228]))                  
+                :type ("auto" type (:type "class") nil nil))
+                nil [1145 1291])
+            ("transform_tuple" function
+               (:arguments 
+                  ( ("" variable (:type ("std::tuple" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1370 1381])
+                    ("" variable (:type ("TupleElements" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1381 1395])
+                    ("" variable (:type ("input" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1406 1412])
+                    ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1413 1427]))                  
+                :type ("auto" type (:type "class") nil nil))
+                nil [1349 1529])
+            ("get_type" type
+               (:members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [1644 1649]))                  
+                :type "struct")
+                nil [1580 1652])
+            ("type" variable (:type "int") nil [1832 1837])
+            ("tupled_args_impl" function
+               (:arguments 
+                  ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1929])
+                    ("args" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1930 1938])
+                    ("" variable (:type ("std::index_sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1939 1959])
+                    ("" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1959 1961]))                  
+                :type ("auto" type (:type "class") nil nil))
+                nil [1893 2006])
+            ("tupled_args" function
+               (:arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2075 2077])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2076 2080]))                          
+                        :type ("ret" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("auto" type (:type "class") nil nil))
+                nil [2047 2221]))          
+      :file "variadic.hpp"
+      :pointmax 2230
+      :fsize 2229
+      :lastmodtime '(22920 34130 478915 569000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_VARIADIC_HPP")
+          )
+)
+)
+  :file "!home!shixin!course!range!range_shixin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

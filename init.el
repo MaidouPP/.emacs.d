@@ -31,9 +31,11 @@
 
 ;; function-args
 (require 'function-args)
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (fa-config-default)
 (define-key c-mode-map  [(tab)] 'company-complete)
 (define-key c++-mode-map  [(tab)] 'company-complete)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -1,0 +1,16 @@
+;; Object smartparens-20170708.1326/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "smartparens-20170708.1326/"
+  :tables
+  (list
+    (semanticdb-table "smartparens-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "smartparens-autoloads.el"
+      :pointmax 295
+      :fsize 6686
+      :lastmodtime '(22887 9120 763822 478000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!smartparens-20170708.1326!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

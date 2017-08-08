@@ -1,0 +1,92 @@
+;; Object MemoryPool/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MemoryPool/"
+  :tables
+  (list
+    (semanticdb-table "StackAlloc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("STACK_ALLOC_H" variable (:constant-flag t) nil [1324 1337])
+            ("memory" include (:system-flag t) nil [1339 1356])
+            ("StackNode_" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("data" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1402 1409])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("StackNode_" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1412 1429]))                  )
+                nil [1358 1432])
+            ("StackAlloc" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1584 1591])
+                    ("Node" type
+                       (:typedef ("StackNode_" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1596 1623])
+                    ("allocator" variable (:type ("other" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1675 1691])
+                    ("StackAlloc" function
+                       (:constructor-flag t
+                        :type ("StackAlloc" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1728 1754])
+                    ("StackAlloc" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1789 1815])
+                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [1867 1902])
+                    ("clear" function (:type "void") (reparse-symbol classsubparts) [1963 2192])
+                    ("push" function
+                       (:arguments 
+                          ( ("element" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2258 2268]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2248 2450])
+                    ("pop" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2518 2706])
+                    ("top" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2750 2783])
+                    ("private" label nil (reparse-symbol classsubparts) [2787 2795])
+                    ("allocator_" variable (:type ("allocator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2800 2821])
+                    ("head_" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2826 2838]))                  
+                :type "class")
+                nil [1563 2841]))          
+      :file "StackAlloc.h"
+      :pointmax 2867
+      :fsize 2866
+      :lastmodtime '(22895 28647 916858 138000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STACK_ALLOC_H")
+          )
+)
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1770 1789])
+            ("cassert" include (:system-flag t) nil [1790 1808])
+            ("time.h" include (:system-flag t) nil [1809 1826])
+            ("vector" include (:system-flag t) nil [1827 1844])
+            ("MemoryPool.h" include nil nil [1846 1869])
+            ("StackAlloc.h" include nil nil [1870 1893])
+            ("ELEMS" variable (:constant-flag t) nil [1975 1980])
+            ("REPS" variable (:constant-flag t) nil [1997 2001])
+            ("main" function (:type "int") nil [2006 4736]))          
+      :file "test.cpp"
+      :pointmax 4737
+      :fsize 4736
+      :lastmodtime '(22878 16414 841258 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ELEMS" . ((number "1000000" 1981 . 1988)))
+          ("REPS" . ((number "50" 2002 . 2004)))
+          )
+))
+  :file "!home!shixin!course!shiyanlou!cppMemPool!MemoryPool!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

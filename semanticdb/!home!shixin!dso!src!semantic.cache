@@ -1,0 +1,126 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main_dso_pangolin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("locale.h" include (:system-flag t) nil [922 941])
+            ("signal.h" include (:system-flag t) nil [942 961])
+            ("stdlib.h" include (:system-flag t) nil [962 981])
+            ("stdio.h" include (:system-flag t) nil [982 1000])
+            ("unistd.h" include (:system-flag t) nil [1001 1020])
+            ("IOWrapper/Output3DWrapper.h" include nil nil [1022 1060])
+            ("IOWrapper/ImageDisplay.h" include nil nil [1061 1096])
+            ("boost/thread.hpp" include (:system-flag t) nil [1099 1126])
+            ("util/settings.h" include nil nil [1127 1153])
+            ("util/globalFuncs.h" include nil nil [1154 1183])
+            ("util/DatasetReader.h" include nil nil [1184 1215])
+            ("util/globalCalib.h" include nil nil [1216 1245])
+            ("util/NumType.h" include nil nil [1247 1272])
+            ("FullSystem/FullSystem.h" include nil nil [1273 1307])
+            ("OptimizationBackend/MatrixAccumulators.h" include nil nil [1308 1359])
+            ("FullSystem/PixelSelector2.h" include nil nil [1360 1398])
+            ("IOWrapper/Pangolin/PangolinDSOViewer.h" include nil nil [1402 1451])
+            ("IOWrapper/OutputWrapper/SampleOutputWrapper.h" include nil nil [1452 1508])
+            ("vignette" variable
+               (:default-value "\"\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1511 1537])
+            ("gammaCalib" variable
+               (:default-value "\"\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1538 1566])
+            ("source" variable
+               (:default-value "\"\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1567 1591])
+            ("calib" variable
+               (:default-value "\"\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1592 1615])
+            ("rescale" variable
+               (:default-value "1"
+                :type "double")
+                nil [1616 1635])
+            ("reverse" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1636 1657])
+            ("disableROS" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1658 1682])
+            ("start" variable
+               (:default-value "0"
+                :type "int")
+                nil [1683 1695])
+            ("end" variable
+               (:default-value "100000"
+                :type "int")
+                nil [1696 1711])
+            ("prefetch" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1712 1734])
+            ("playbackSpeed" variable
+               (:default-value "0"
+                :type "float")
+                nil [1735 1757])
+            ("preload" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1880 1899])
+            ("useSampleOutput" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1900 1927])
+            ("mode" variable
+               (:default-value "0"
+                :type "int")
+                nil [1930 1941])
+            ("firstRosSpin" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1943 1967])
+            ("dso" using (:type ("dso" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1969 1989])
+            ("my_exit_handler" function
+               (:arguments 
+                  ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [2013 2019]))                  
+                :type "void")
+                nil [1992 2066])
+            ("exitThread" function (:type "void") nil [2068 2319])
+            ("settingsDefault" function
+               (:arguments 
+                  ( ("preset" variable (:type "int") (reparse-symbol arg-sub-list) [2344 2355]))                  
+                :type "void")
+                nil [2323 3626])
+            ("parseArgument" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3652 3662]))                  
+                :type "void")
+                nil [3633 7669])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7683 7692])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7693 7706]))                  
+                :type "int")
+                nil [7673 12980]))          
+      :file "main_dso_pangolin.cpp"
+      :pointmax 12981
+      :fsize 12980
+      :lastmodtime '(22692 28183 0 0)
+      :unmatched-syntax nil))
+  :file "!home!shixin!dso!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
