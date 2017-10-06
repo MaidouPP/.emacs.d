@@ -6,41 +6,49 @@
     (semanticdb-table "main.cpp"
       :major-mode 'c++-mode
       :tags 
-        '( ("transform.hpp" include nil nil [1 25])
-            ("zip.hpp" include nil nil [26 44])
-            ("algorithm.hpp" include nil nil [46 70])
-            ("variadic.hpp" include nil nil [71 94])
-            ("iostream" include (:system-flag t) nil [96 115])
-            ("sstream" include (:system-flag t) nil [116 134])
-            ("vector" include (:system-flag t) nil [135 152])
-            ("unnamed" type
-               (:members 
-                  ( ("multiplyBy2" function
-                       (:arguments 
-                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [183 189]))                          
-                        :type "int")
-                        (reparse-symbol namespacesubparts) [167 211])
-                    ("testTransform" function (:type "bool") (reparse-symbol namespacesubparts) [213 508])
-                    ("letterPlusNumber" function
-                       (:arguments 
-                          ( ("line" variable (:type "char") (reparse-symbol arg-sub-list) [539 549])
-                            ("column" variable (:type "int") (reparse-symbol arg-sub-list) [550 561]))                          
-                        :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol namespacesubparts) [510 657])
-                    ("testZip" function (:type "bool") (reparse-symbol namespacesubparts) [659 1041])
-                    ("testResult" function
-                       (:template 
-                          ( ("Function" type (:type "class") nil nil))                          
-                        :type ("std::string" type (:type "class") nil nil)
-                        :arguments 
-                          ( ("test" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1095 1109]))                          )
-                        (reparse-symbol namespacesubparts) [1043 1154])
-                    ("launchTests" function (:type "void") (reparse-symbol namespacesubparts) [1156 1328]))                  
-                :type "namespace")
-                nil [154 1331])
-            ("main" function (:type "int") nil [1333 1366]))          
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("sstream" include (:system-flag t) nil [21 39])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("algorithm.hpp" include nil nil [59 83])
+            ("transform.hpp" include nil nil [84 108])
+            ("filter.hpp" include nil nil [109 130])
+            ("zip.hpp" include nil nil [131 149])
+            ("variadic.hpp" include nil nil [150 173])
+            ("multiplyBy2" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [191 197]))                  
+                :type "int")
+                nil [175 215])
+            ("biggerThan7" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [234 240]))                  
+                :type "bool")
+                nil [217 260])
+            ("isEven" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [274 280]))                  
+                :type "bool")
+                nil [262 303])
+            ("testTransform" function (:type "bool") nil [305 650])
+            ("testFilter" function (:type "bool") nil [652 997])
+            ("testResult" function
+               (:template 
+                  ( ("Function" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1051 1065]))                  )
+                nil [999 1108])
+            ("letterPlusNumber" function
+               (:arguments 
+                  ( ("letter" variable (:type "char") (reparse-symbol arg-sub-list) [1139 1151])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [1152 1163]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1110 1237])
+            ("testZip" function (:type "bool") nil [1239 1674])
+            ("launchTests" function (:type "void") nil [1676 1923])
+            ("main" function (:type "int") nil [1925 1956]))          
       :file "main.cpp"
-      :pointmax 1372
+      :pointmax 1957
       :fsize 1956
       :lastmodtime '(22920 33840 110916 677000)
       :unmatched-syntax nil)
@@ -53,7 +61,8 @@
             ("ranges" type
                (:members 
                   ( ("make_transform_iterator" function
-                       (:template 
+                       (:depth 1
+                        :template 
                           ( ("Iterator" type (:type "class") nil nil)
                             ("Function" type (:type "class") nil nil))                          
                         :type ("transform_iterator" type
@@ -67,25 +76,35 @@
                             ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1839 1853]))                          )
                         (reparse-symbol namespacesubparts) [1697 1937])
                     ("view" type
-                       (:members 
+                       (:depth 1
+                        :members 
                           ( ("transform_adaptor" type
-                               (:template 
+                               (:depth 2
+                                :template 
                                   ( ("Function" type (:type "class") nil nil))                                  
                                 :type "class"
                                 :members 
-                                  ( ("public" label nil (reparse-symbol classsubparts) [2084 2091])
+                                  ( ("public" label (:depth 3) (reparse-symbol classsubparts) [2084 2091])
                                     ("transform_adaptor" function
-                                       (:constructor-flag t
+                                       (:depth 3
+                                        :constructor-flag t
                                         :arguments 
                                           ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2125 2139]))                                          
                                         :type ("transform_adaptor" type (:type "class") nil nil))
                                         (reparse-symbol classsubparts) [2107 2164])
-                                    ("getFunction" function (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2171 2231])
-                                    ("private" label nil (reparse-symbol classsubparts) [2236 2244])
-                                    ("func_" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2251 2266]))                                  )
+                                    ("getFunction" function
+                                       (:depth 3
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2171 2231])
+                                    ("private" label (:depth 3) (reparse-symbol classsubparts) [2236 2244])
+                                    ("func_" variable
+                                       (:depth 3
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2251 2266]))                                  )
                                 (reparse-symbol namespacesubparts) [2021 2273])
                             ("transform" function
-                               (:template 
+                               (:depth 2
+                                :template 
                                   ( ("Function" type (:type "class") nil nil))                                  
                                 :type ("transform_adaptor" type
                                      (:template-specifier 
@@ -96,7 +115,8 @@
                                   ( ("func" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2350 2364]))                                  )
                                 (reparse-symbol namespacesubparts) [2279 2420])
                             ("|" function
-                               (:operator-flag t
+                               (:depth 2
+                                :operator-flag t
                                 :arguments 
                                   ( ("range" variable
                                        (:reference 1
@@ -348,19 +368,19 @@
                                        (:reference 1
                                         :constant-flag t
                                         :type ("Ranges" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [1905 1919])
-                                    ("" variable (:type ("ranges" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1922 1929]))                                  
+                                        (reparse-symbol arg-sub-list) [1907 1921])
+                                    ("" variable (:type ("ranges" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1924 1931]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [1901 2168]))                          
+                                (reparse-symbol namespacesubparts) [1903 2332]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [1781 2173]))                  
+                        (reparse-symbol namespacesubparts) [1781 2337]))                  
                 :type "namespace")
-                nil [129 2183]))          
+                nil [129 2347]))          
       :file "zip.hpp"
-      :pointmax 2202
+      :pointmax 2366
       :fsize 2365
       :lastmodtime '(22920 33712 694917 163000)
-      :unmatched-syntax nil
+      :unmatched-syntax '((punctuation 1922 . 1923) (punctuation 1921 . 1922) (punctuation 1920 . 1921) (punctuation 1901 . 1902) (punctuation 1900 . 1901) (punctuation 1899 . 1900) (punctuation 1898 . 1899) (punctuation 1897 . 1898) (symbol 1883 . 1897) (punctuation 1882 . 1883) (punctuation 1881 . 1882) (symbol 1875 . 1881) (TYPENAME 1866 . 1874) (punctuation 1865 . 1866) (symbol 1853 . 1865) (punctuation 1852 . 1853) (symbol 1838 . 1852) (punctuation 1832 . 1833) (symbol 1826 . 1832) (punctuation 1824 . 1825) (punctuation 1823 . 1824) (punctuation 1822 . 1823) (TYPENAME 1814 . 1822) (punctuation 1813 . 1814) (TEMPLATE 1805 . 1813) (punctuation 1704 . 1705) (punctuation 1703 . 1704) (punctuation 1702 . 1703) (punctuation 1663 . 1664) (punctuation 1662 . 1663) (punctuation 1661 . 1662) (punctuation 1660 . 1661) (symbol 1641 . 1660) (punctuation 1640 . 1641) (symbol 1628 . 1640) (punctuation 1624 . 1625) (symbol 1605 . 1624) (punctuation 1603 . 1604) (punctuation 1602 . 1603) (punctuation 1601 . 1602) (TYPENAME 1593 . 1601) (punctuation 1592 . 1593) (TEMPLATE 1583 . 1591) (punctuation 1578 . 1579) (semantic-list 741 . 1578) (punctuation 737 . 738) (punctuation 711 . 712) (punctuation 710 . 711) (punctuation 709 . 710) (punctuation 708 . 709) (punctuation 707 . 708) (symbol 698 . 707) (punctuation 697 . 698) (punctuation 696 . 697) (punctuation 695 . 696) (symbol 676 . 695) (punctuation 675 . 676) (symbol 660 . 675) (punctuation 659 . 660) (punctuation 658 . 659) (symbol 655 . 658) (TYPENAME 646 . 654) (punctuation 645 . 646) (symbol 640 . 645) (punctuation 639 . 640) (punctuation 638 . 639) (symbol 635 . 638) (TYPENAME 626 . 634) (CONST 620 . 625) (punctuation 612 . 613) (punctuation 611 . 612) (punctuation 610 . 611) (punctuation 609 . 610) (punctuation 608 . 609) (punctuation 607 . 608) (symbol 598 . 607) (punctuation 597 . 598) (punctuation 596 . 597) (punctuation 595 . 596) (symbol 576 . 595) (punctuation 575 . 576) (symbol 560 . 575) (punctuation 559 . 560) (punctuation 558 . 559) (symbol 555 . 558) (TYPENAME 546 . 554) (punctuation 545 . 546) (symbol 540 . 545) (punctuation 539 . 540) (punctuation 538 . 539) (symbol 535 . 538) (TYPENAME 526 . 534) (CONST 520 . 525) (punctuation 512 . 513) (symbol 497 . 512) (punctuation 496 . 497) (punctuation 495 . 496) (punctuation 494 . 495) (punctuation 493 . 494) (punctuation 492 . 493) (punctuation 491 . 492) (punctuation 490 . 491) (symbol 471 . 490) (punctuation 469 . 470) (number 468 . 469) (punctuation 467 . 468) (symbol 457 . 467) (punctuation 456 . 457) (symbol 441 . 456) (punctuation 440 . 441) (punctuation 439 . 440) (symbol 436 . 439) (TYPENAME 427 . 435) (punctuation 419 . 420) (punctuation 418 . 419) (punctuation 417 . 418) (punctuation 416 . 417) (punctuation 415 . 416) (symbol 406 . 415) (punctuation 405 . 406) (punctuation 404 . 405) (punctuation 403 . 404) (symbol 384 . 403) (punctuation 383 . 384) (symbol 368 . 383) (punctuation 367 . 368) (punctuation 366 . 367) (symbol 363 . 366) (TYPENAME 354 . 362) (punctuation 353 . 354) (symbol 348 . 353) (punctuation 347 . 348) (punctuation 346 . 347) (symbol 343 . 346) (punctuation 335 . 336) (symbol 318 . 335) (punctuation 317 . 318) (punctuation 316 . 317) (punctuation 315 . 316) (punctuation 314 . 315) (punctuation 313 . 314) (punctuation 312 . 313) (punctuation 311 . 312) (symbol 292 . 311) (punctuation 290 . 291) (number 289 . 290) (punctuation 288 . 289) (symbol 278 . 288) (punctuation 277 . 278) (symbol 262 . 277) (punctuation 261 . 262) (punctuation 260 . 261) (symbol 257 . 260) (TYPENAME 248 . 256) (punctuation 240 . 241) (symbol 232 . 240) (punctuation 231 . 232) (punctuation 230 . 231) (symbol 227 . 230) (PUBLIC 220 . 226) (punctuation 214 . 215) (symbol 201 . 213) (CLASS 195 . 200) (punctuation 191 . 192) (symbol 172 . 191) (punctuation 170 . 171) (punctuation 169 . 170) (punctuation 168 . 169) (TYPENAME 160 . 168) (punctuation 159 . 160) (TEMPLATE 150 . 158))
       :lexical-table 
         '(("_ZIP_HPP")
           )
@@ -448,8 +468,7 @@
       :lexical-table 
         '(("_VARIADIC_HPP")
           )
-)
-)
+))
   :file "!home!shixin!course!range!range_shixin!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

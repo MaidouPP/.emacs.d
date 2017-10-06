@@ -1,0 +1,16 @@
+;; Object deferred-20170901.630/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "deferred-20170901.630/"
+  :tables
+  (list
+    (semanticdb-table "deferred-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "deferred-autoloads.el"
+      :pointmax 289
+      :fsize 369
+      :lastmodtime '(22998 26423 405356 669000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!deferred-20170901.630!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

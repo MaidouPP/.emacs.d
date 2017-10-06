@@ -1,0 +1,97 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "slamBase.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("slamBase.h" include nil nil [324 345])
+            ("image2PointCloud" function
+               (:arguments 
+                  ( ("rgb" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [381 394])
+                    ("depth" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [395 410])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("CAMERA_INTRINSIC_PARAMETERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [411 448]))                  
+                :type ("PointCloud::Ptr" type (:type "class") nil nil))
+                nil [347 1402])
+            ("point2dTo3d" function
+               (:arguments 
+                  ( ("point" variable
+                       (:reference 1
+                        :type ("cv::Point3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1429 1448])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("CAMERA_INTRINSIC_PARAMETERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1449 1486]))                  
+                :type ("cv::Point3f" type (:type "class") nil nil))
+                nil [1404 1679])
+            ("computeKeyPointsAndDesp" function
+               (:arguments 
+                  ( ("frame" variable
+                       (:reference 1
+                        :type ("FRAME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1752 1765])
+                    ("detector" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1766 1782])
+                    ("descriptor" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1783 1802]))                  
+                :type "void")
+                nil [1722 2343])
+            ("estimateMotion" function
+               (:arguments 
+                  ( ("frame1" variable
+                       (:reference 1
+                        :type ("FRAME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2434 2448])
+                    ("frame2" variable
+                       (:reference 1
+                        :type ("FRAME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2449 2463])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("CAMERA_INTRINSIC_PARAMETERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2464 2501]))                  
+                :type ("RESULT_OF_PNP" type (:type "class") nil nil))
+                nil [2404 4563])
+            ("cvMat2Eigen" function
+               (:arguments 
+                  ( ("rvec" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4612 4626])
+                    ("tvec" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4627 4642]))                  
+                :type ("Eigen::Isometry3d" type (:type "class") nil nil))
+                nil [4581 5098])
+            ("joinPointCloud" function
+               (:arguments 
+                  ( ("original" variable (:type ("PointCloud::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5193 5218])
+                    ("newFrame" variable
+                       (:reference 1
+                        :type ("FRAME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5219 5235])
+                    ("T" variable (:type ("Eigen::Isometry3d" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5236 5256])
+                    ("camera" variable
+                       (:reference 1
+                        :type ("CAMERA_INTRINSIC_PARAMETERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5257 5294]))                  
+                :type ("PointCloud::Ptr" type (:type "class") nil nil))
+                nil [5161 5878]))          
+      :file "slamBase.cpp"
+      :pointmax 5879
+      :fsize 6396
+      :lastmodtime '(22505 19224 0 0)
+      :unmatched-syntax nil))
+  :file "!home!shixin!vision_code!gx_slam!rgbd-slam-tutorial-gx!part VI!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

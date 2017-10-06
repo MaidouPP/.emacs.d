@@ -1,0 +1,82 @@
+;; Object Utility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Utility/"
+  :tables
+  (list
+    (semanticdb-table "utilities.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("copy" include nil nil [20 31])
+            ("Card" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [77 114])
+                            ("self" variable nil (reparse-symbol indented_block_body) [123 195]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62 66]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [49 196])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [212 216])
+                            ("other" variable nil (reparse-symbol function_parameters) [218 223]))                          )
+                        (reparse-symbol indented_block_body) [201 300]))                  
+                :type "class")
+                nil [33 300])
+            ("State" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [383 411])
+                            ("self" variable nil (reparse-symbol indented_block_body) [420 440])
+                            ("self" variable nil (reparse-symbol indented_block_body) [477 503])
+                            ("self" variable nil (reparse-symbol indented_block_body) [512 535])
+                            ("self" variable nil (reparse-symbol indented_block_body) [573 591])
+                            ("self" variable nil (reparse-symbol indented_block_body) [600 612]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [331 335])
+                            ("dealer" variable nil (reparse-symbol function_parameters) [337 343])
+                            ("playerSum" variable nil (reparse-symbol function_parameters) [345 354])
+                            ("isTerminal" variable nil (reparse-symbol function_parameters) [356 366]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [318 637])
+                    ("copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [651 655]))                          )
+                        (reparse-symbol indented_block_body) [642 725]))                  
+                :type "class")
+                nil [301 725])
+            ("Action" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [870 889]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [847 851])
+                            ("action" variable nil (reparse-symbol function_parameters) [853 859]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [834 890]))                  
+                :type "class")
+                nil [726 890])
+            ("dealer_score" function (:arguments 
+              ( ("state" variable nil (reparse-symbol function_parameters) [908 913]))              ) nil [891 1082])
+            ("step" function (:arguments 
+              ( ("state" variable nil (reparse-symbol function_parameters) [1092 1097])
+                ("action" variable nil (reparse-symbol function_parameters) [1099 1105]))              ) nil [1083 1654])
+            ("calculate_reward" function (:arguments 
+              ( ("state" variable nil (reparse-symbol function_parameters) [1676 1681]))              ) nil [1655 2107]))          
+      :file "utilities.py"
+      :pointmax 2107
+      :fsize 2106
+      :lastmodtime '(22985 55696 950712 449000)
+      :unmatched-syntax '((NAME 1279 . 1287) (IF 1312 . 1314) (ELSE 1328 . 1332) (NAME 989 . 992) (IF 1007 . 1009) (ELSE 1023 . 1027) (NAME 1279 . 1287) (IF 1312 . 1314) (ELSE 1328 . 1332) (NAME 989 . 992) (IF 1007 . 1009) (ELSE 1023 . 1027))))
+  :file "!home!shixin!course!rl!david!easy21!Utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

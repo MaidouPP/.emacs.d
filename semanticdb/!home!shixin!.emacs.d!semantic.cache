@@ -9,7 +9,43 @@
       :file "ede-projects.el"
       :pointmax 86
       :fsize 85
-      :lastmodtime '(22920 34193 866915 327000)
+      :lastmodtime '(22998 52706 310603 573000)
+      :unmatched-syntax nil)
+    (semanticdb-table "init.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("package" include nil nil [1 19])
+            ("add-to-list" code nil nil [20 104])
+            ("add-to-list" code nil nil [106 150])
+            ("package-initialize" code nil nil [152 172])
+            ("global-linum-mode" code nil nil [174 195])
+            ("load-theme" code nil nil [196 220])
+            ("when" code nil nil [222 290])
+            ("unless" code nil nil [292 368])
+            ("use-package" include nil nil [370 392])
+            ("setq" code nil nil [393 427])
+            ("setup-general" include nil nil [429 453])
+            ("if" code nil nil [454 574])
+            ("setup-cedet" include nil nil [601 623])
+            ("setup-editing" include nil nil [624 648])
+            ("setup-srefac" include nil nil [649 672])
+            ("setup-python" include nil nil [673 696])
+            ("function-args" include nil nil [715 739])
+            ("add-to-list" code nil nil [740 794])
+            ("fa-config-default" code nil nil [795 814])
+            ("define-key" code nil nil [815 865])
+            ("define-key" code nil nil [866 918])
+            ("custom-set-variables" code nil nil [920 1369])
+            ("custom-set-faces" code nil nil [1370 1609])
+            ("setq" code nil nil [1626 1648])
+            ("setq" code nil nil [1649 1672])
+            ("setq" code nil nil [1673 1698])
+            ("add-hook" code nil nil [1699 1743])
+            ("add-hook" code nil nil [1771 1815]))          
+      :file "init.el"
+      :pointmax 1865
+      :fsize 1864
+      :lastmodtime '(22997 57766 493247 858000)
       :unmatched-syntax nil))
   :file "!home!shixin!.emacs.d!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,0 +1,16 @@
+;; Object find-file-in-project-20170906.2011/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "find-file-in-project-20170906.2011/"
+  :tables
+  (list
+    (semanticdb-table "find-file-in-project-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "find-file-in-project-autoloads.el"
+      :pointmax 313
+      :fsize 7967
+      :lastmodtime '(22997 57074 841233 143000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!find-file-in-project-20170906.2011!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

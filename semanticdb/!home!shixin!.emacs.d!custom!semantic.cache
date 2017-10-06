@@ -1,0 +1,174 @@
+;; Object custom/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "custom/"
+  :tables
+  (list
+    (semanticdb-table "setup-python.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("elpy" include nil nil [1 16])
+            ("elpy-enable" code nil nil [17 30])
+            ("auto-complete" include nil nil [117 141])
+            ("when" code nil nil [142 217])
+            ("exec-path-from-shell-copy-env" code nil nil [218 262])
+            ("add-hook" code nil nil [264 304])
+            ("setq" code nil nil [305 329])
+            ("setq" code nil nil [362 391])
+            ("global-set-key" code nil nil [643 693])
+            ("global-set-key" code nil nil [694 755])
+            ("setup-python" package nil nil [757 780]))          
+      :file "setup-python.el"
+      :pointmax 781
+      :fsize 780
+      :lastmodtime '(22998 52416 114596 384000)
+      :unmatched-syntax nil)
+    (semanticdb-table "setup-general.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("menu-bar-mode" code nil nil [1 19])
+            ("tool-bar-mode" code nil nil [20 38])
+            ("setq" code nil nil [40 74])
+            ("setq" code nil nil [75 107])
+            ("defalias" code nil nil [109 142])
+            ("add-hook" code nil nil [201 309])
+            ("setq-default" code nil nil [345 380])
+            ("setq-default" code nil nil [441 467])
+            ("global-set-key" code nil nil [484 704])
+            ("setq" code nil nil [719 878])
+            ("use-package" code nil nil [891 992])
+            ("company" include nil nil [1131 1149])
+            ("company-c-headers" include nil nil [1150 1178])
+            ("add-hook" code nil nil [1179 1227])
+            ("add-to-list" code nil nil [1228 1278])
+            ("add-to-list" code nil nil [1279 1347])
+            ("add-to-list" code nil nil [1348 1418])
+            ("use-package" code nil nil [1444 1540])
+            ("use-package" code nil nil [1563 1686])
+            ("global-set-key" code nil nil [1791 1838])
+            ("windmove-default-keybindings" code nil nil [1839 1869])
+            ("sr-speedbar" include nil nil [1890 1912])
+            ("setq" code nil nil [1913 1946])
+            ("setq" code nil nil [1947 1974])
+            ("setq" code nil nil [1975 2015])
+            ("global-set-key" code nil nil [2016 2111])
+            ("show-paren-mode" code nil nil [2137 2156])
+            ("global-set-key" code nil nil [2158 2190])
+            ("global-set-key" code nil nil [2207 2260])
+            ("global-set-key" code nil nil [2276 2331])
+            ("global-set-key" code nil nil [2345 2385])
+            ("global-set-key" code nil nil [2388 2430])
+            ("global-set-key" code nil nil [2433 2469])
+            ("global-set-key" code nil nil [2472 2512])
+            ("global-set-key" code nil nil [2550 2741])
+            ("put" code nil nil [2742 2776])
+            ("smartparens" include nil nil [2802 2824])
+            ("show-smartparens-global-mode" code nil nil [2825 2858])
+            ("smartparens-global-mode" code nil nil [2859 2886])
+            ("sp-with-modes" code nil nil [2965 3185])
+            ("global-set-key" code nil nil [3237 3296])
+            ("my-comment-or-uncomment-region" function (:arguments ("beg" "end" "arg")) nil [3300 3620])
+            ("global-set-key" code nil nil [3621 3705])
+            ("load" code nil nil [3718 3744])
+            ("load" code nil nil [3745 3772])
+            ("cdlatex" include nil nil [3773 3791])
+            ("recentf-mode" code nil nil [3793 3809])
+            ("setq" code nil nil [3810 3842])
+            ("global-set-key" code nil nil [3843 3892])
+            ("setup-general" package nil nil [3894 3918]))          
+      :file "setup-general.el"
+      :pointmax 3919
+      :fsize 3954
+      :lastmodtime '(22998 51025 922561 947000)
+      :unmatched-syntax nil)
+    (semanticdb-table "setup-cedet.el"
+      :file "setup-cedet.el"
+      :fsize 885
+      :lastmodtime '(22920 8452 801561 856000))
+    (semanticdb-table "setup-editing.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [37 374])
+            ("add-hook" code nil nil [376 457])
+            ("set-terminal-coding-system" code nil nil [459 494])
+            ("set-keyboard-coding-system" code nil nil [495 530])
+            ("set-language-environment" code nil nil [531 565])
+            ("prefer-coding-system" code nil nil [566 595])
+            ("setq-default" code nil nil [597 632])
+            ("delete-selection-mode" code nil nil [633 656])
+            ("global-set-key" code nil nil [657 705])
+            ("setq" code nil nil [736 875])
+            ("add-hook" code nil nil [909 1577])
+            ("use-package" code nil nil [1652 1724])
+            ("use-package" code nil nil [1787 1846])
+            ("use-package" code nil nil [1924 2011])
+            ("use-package" code nil nil [2044 2133])
+            ("use-package" code nil nil [2159 2248])
+            ("use-package" code nil nil [2272 2435])
+            ("global-set-key" code nil nil [2464 2508])
+            ("use-package" code nil nil [2576 2734])
+            ("use-package" code nil nil [2754 2850])
+            ("prelude-move-beginning-of-line" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2876 3598])
+            ("global-set-key" code nil nil [3600 3660])
+            ("kill-ring-save" function (:arguments ("before" "slick-copy" "activate" "compile")) nil [3662 3987])
+            ("kill-region" function (:arguments ("before" "slick-cut" "activate" "compile")) nil [3989 4283])
+            ("kill-line" function (:arguments ("before" "check-position" "activate")) nil [4384 4779])
+            ("yank-indent-modes" variable (:default-value (quote (LaTeX-mode TeX-mode))) nil [4876 5067])
+            ("yank-indent-blacklisted-modes" variable (:default-value (quote (python-mode slim-mode haml-mode))) nil [5069 5194])
+            ("yank-advised-indent-threshold" variable (:default-value 1000) nil [5196 5316])
+            ("yank-advised-indent-function" function (:arguments ("beg" "end")) nil [5318 5511])
+            ("yank" function (:arguments ("after" "yank-indent" "activate")) nil [5513 5968])
+            ("yank-pop" function (:arguments ("after" "yank-pop-indent" "activate")) nil [5970 6438])
+            ("indent-buffer" function (:user-visible-flag t) nil [6459 6582])
+            ("prelude-indent-sensitive-modes" variable (:default-value (quote (coffee-mode python-mode slim-mode haml-mode yaml-mode))) nil [6606 6771])
+            ("indent-region-or-buffer" function (:user-visible-flag t) nil [6773 7232])
+            ("global-set-key" code nil nil [7234 7289])
+            ("prelude-get-positions-of-line-or-region" function nil nil [7365 7727])
+            ("prelude-smart-open-line" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [7747 8091])
+            ("prelude-smart-open-line-above" function (:user-visible-flag t) nil [8093 8371])
+            ("global-set-key" code nil nil [8373 8426])
+            ("global-set-key" code nil nil [8427 8466])
+            ("setup-editing" package nil nil [8468 8492]))          
+      :file "setup-editing.el"
+      :pointmax 8493
+      :fsize 8492
+      :lastmodtime '(22886 6182 780209 538000)
+      :unmatched-syntax nil)
+    (semanticdb-table "setup-srefac.el"
+      :file "setup-srefac.el"
+      :fsize 556
+      :lastmodtime '(22898 2972 599801 815000))
+    (semanticdb-table "setup-ggtags.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("ggtags" include nil nil [1 18])
+            ("ggtags-mode" code nil nil [20 35])
+            ("add-hook" code nil nil [36 193])
+            ("dolist" code nil nil [195 858])
+            ("setup-ggtags" package nil nil [860 883]))          
+      :file "setup-ggtags.el"
+      :pointmax 884
+      :fsize 883
+      :lastmodtime '(22887 9799 43814 828000)
+      :unmatched-syntax nil)
+    (semanticdb-table "setup-c.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("use-package" code nil nil [22 114])
+            ("add-hook" code nil nil [157 202])
+            ("setq" code nil nil [975 997])
+            ("use-package" code nil nil [1031 1168])
+            ("setup-c" package nil nil [1170 1188]))          
+      :file "setup-c.el"
+      :pointmax 1189
+      :fsize 1236
+      :lastmodtime '(22886 6182 780209 538000)
+      :unmatched-syntax '((string 998 . 1005))))
+  :file "!home!shixin!.emacs.d!custom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object jedi-core-20170121.610/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jedi-core-20170121.610/"
+  :tables
+  (list
+    (semanticdb-table "jedi-core-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "jedi-core-autoloads.el"
+      :pointmax 291
+      :fsize 3909
+      :lastmodtime '(22998 26426 13356 725000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!jedi-core-20170121.610!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,315 @@
+;; Object pa1-hah114-lshixin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pa1-hah114-lshixin/"
+  :tables
+  (list
+    (semanticdb-table "dgemm-blocked.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dgemm_desc" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"Simple blocked dgemm.\""
+                :type "char")
+                nil [254 303])
+            ("BLOCK_SIZE" variable (:constant-flag t) nil [338 348])
+            ("min" variable (:constant-flag t) nil [394 397])
+            ("do_block" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lda" variable (:type "int") (reparse-symbol arg-sub-list) [584 592])
+                    ("M" variable (:type "int") (reparse-symbol arg-sub-list) [593 599])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [600 606])
+                    ("K" variable (:type "int") (reparse-symbol arg-sub-list) [607 613])
+                    ("A" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [614 624])
+                    ("B" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [625 635])
+                    ("C" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [636 646]))                  
+                :type "void")
+                nil [562 999])
+            ("square_dgemm" function
+               (:arguments 
+                  ( ("lda" variable (:type "int") (reparse-symbol arg-sub-list) [1207 1215])
+                    ("A" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1216 1226])
+                    ("B" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1227 1237])
+                    ("C" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1238 1248]))                  
+                :type "void")
+                nil [1188 1996]))          
+      :file "dgemm-blocked.c"
+      :pointmax 1997
+      :fsize 1996
+      :lastmodtime '(22996 27242 411246 914000)
+      :unmatched-syntax nil)
+    (semanticdb-table "dgemm-naive.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("dgemm_desc" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"Naive, three-loop dgemm.\""
+                :type "char")
+                nil [123 175])
+            ("square_dgemm" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [385 391])
+                    ("A" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [392 402])
+                    ("B" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [403 413])
+                    ("C" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [414 424]))                  
+                :type "void")
+                nil [366 937]))          
+      :file "dgemm-naive.c"
+      :pointmax 938
+      :fsize 937
+      :lastmodtime '(22996 26503 395231 190000)
+      :unmatched-syntax nil)
+    (semanticdb-table "benchmark.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [244 263])
+            ("stdio.h" include (:system-flag t) nil [319 337])
+            ("string.h" include (:system-flag t) nil [354 373])
+            ("float.h" include (:system-flag t) nil [390 408])
+            ("math.h" include (:system-flag t) nil [430 447])
+            ("cblas.h" include nil nil [502 520])
+            ("cmdLine" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [542 551])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [552 565])
+                    ("n" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [566 573])
+                    ("noCheck" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [574 587]))                  
+                :type "void")
+                nil [529 588])
+            ("reference_dgemm" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [744 750])
+                    ("Alpha" variable (:type "double") (reparse-symbol arg-sub-list) [751 764])
+                    ("A" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [765 775])
+                    ("B" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [776 786])
+                    ("C" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [787 797]))                  
+                :type "void")
+                nil [722 1136])
+            ("dgemm_desc" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [1196 1226])
+            ("square_dgemm" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1253 1257])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1258 1266])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1267 1275])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1276 1284]))                  
+                :type "void")
+                nil [1227 1285])
+            ("wall_time" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "double")
+                nil [1287 1313])
+            ("Fail" function
+               (:arguments 
+                  ( ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1327 1347]))                  
+                :type "void")
+                nil [1316 1394])
+            ("fill" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1407 1417])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1418 1424]))                  
+                :type "void")
+                nil [1396 1802])
+            ("absolute_value" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1825 1835])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1836 1842]))                  
+                :type "void")
+                nil [1804 1900])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1943 1952])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1953 1965]))                  
+                :type "int")
+                nil [1933 7562]))          
+      :file "benchmark.c"
+      :pointmax 7563
+      :fsize 7562
+      :lastmodtime '(22996 26503 395231 190000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("HOST" variable (:default-value ("$(shell hostname)")) nil [193 218])
+            ("BANG" variable (:default-value ("$(shell hostname | grep ccom-bang | wc -c)")) nil [218 268])
+            ("BANG-COMPUTE" variable (:default-value ("$(shell hostname | grep compute | wc -c)")) nil [268 324])
+            ("STAMPEDE" variable (:default-value ("$(shell hostname | grep stampede | wc -c)")) nil [324 377])
+            ("AMAZON" variable (:default-value ("$(shell hostname | grep 'ip-' | wc -c)")) nil [377 425])
+            ("multi" variable (:default-value ("1")) nil [449 460])
+            ("NO_BLAS" variable (:default-value ("0")) nil [460 472])
+            ("$(PUB)/Arch/arch.intel-mkl" include nil nil [514 549])
+            ("atlas" variable (:default-value ("1")) nil [573 584])
+            ("multi" variable (:default-value ("0")) nil [584 595])
+            ("NO_BLAS" variable (:default-value ("1")) nil [595 607])
+            ("$(PUB)/Arch/arch.gnu_c99.generic" include nil nil [607 648])
+            ("atlas" variable (:default-value ("1")) nil [680 691])
+            ("multi" variable (:default-value ("0")) nil [691 702])
+            ("NO_BLAS" variable (:default-value ("1")) nil [702 714])
+            ("$(PUB)/Arch/arch.gnu_c99.generic" include nil nil [714 755])
+            ("atlas" variable (:default-value ("1")) nil [781 792])
+            ("multi" variable (:default-value ("0")) nil [792 803])
+            ("NO_BLAS" variable (:default-value ("1")) nil [803 815])
+            ("$(PUB)/Arch/arch.gnu_c99.generic" include nil nil [815 856])
+            ("WARNINGS" variable (:default-value ("-Wall" "-pedantic")) nil [881 909])
+            ("OPTIMIZATION" variable (:default-value ("$(MY_OPT)")) nil [1419 1444])
+            ("targets" variable (:default-value ("benchmark-naive" "benchmark-blocked" "benchmark-blas")) nil [1445 1504])
+            ("objects" variable (:default-value ("benchmark.o" "dgemm-naive.o" "dgemm-blocked.o" "dgemm-blas.o")) nil [1504 1571])
+            ("UTIL" variable (:default-value ("wall_time.o" "cmdLine.o")) nil [1571 1602])
+            (".PHONY" function (:arguments ("default")) nil [1603 1620])
+            ("default" function (:arguments ("all")) nil [1620 1634])
+            (".PHONY" function (:arguments ("all")) nil [1635 1648])
+            ("all" function (:arguments ("clean" "$(targets)")) nil [1648 1671])
+            ("benchmark-naive" function (:arguments ("benchmark.o" "dgemm-naive.o" "$(UTIL)")) nil [1672 1751])
+            ("benchmark-blocked" function (:arguments ("benchmark.o" "dgemm-blocked.o" "$(UTIL)")) nil [1751 1833])
+            ("benchmark-blas" function (:arguments ("benchmark.o" "dgemm-blas.o" "$(UTIL)")) nil [1833 1909])
+            ("%.o" function (:arguments ("%.c")) nil [1910 1943])
+            (".PHONY" function (:arguments ("clean")) nil [1945 1960])
+            ("clean" function nil nil [1960 2009]))          
+      :file "Makefile"
+      :pointmax 2009
+      :fsize 2008
+      :lastmodtime '(22996 26503 395231 190000)
+      :unmatched-syntax '((shell-command 1968 . 2008) (bol 1967 . 1967) (symbol 1402 . 1411) (punctuation 1400 . 1401) (punctuation 1399 . 1400) (symbol 1392 . 1398) (bol 1388 . 1388) (symbol 1378 . 1387) (punctuation 1376 . 1377) (punctuation 1375 . 1376) (symbol 1369 . 1374) (punctuation 1368 . 1369) (punctuation 1367 . 1368) (symbol 1366 . 1367) (bol 1362 . 1362) (symbol 1237 . 1249) (punctuation 1235 . 1236) (punctuation 1234 . 1235) (symbol 1227 . 1233) (bol 1223 . 1223) (symbol 1210 . 1222) (punctuation 1208 . 1209) (punctuation 1207 . 1208) (symbol 1201 . 1206) (punctuation 1200 . 1201) (punctuation 1199 . 1200) (symbol 1198 . 1199) (bol 1194 . 1194) (symbol 1061 . 1067) (punctuation 1059 . 1060) (punctuation 1058 . 1059) (symbol 1051 . 1057) (bol 1047 . 1047) (symbol 1040 . 1046) (punctuation 1038 . 1039) (punctuation 1037 . 1038) (symbol 1031 . 1036) (punctuation 1030 . 1031) (punctuation 1029 . 1030) (symbol 1028 . 1029) (bol 1024 . 1024)))
+    (semanticdb-table "cmdLine.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [151 170])
+            ("stdio.h" include (:system-flag t) nil [227 245])
+            ("string.h" include (:system-flag t) nil [262 281])
+            ("getopt.h" include (:system-flag t) nil [297 316])
+            ("cmdLine" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [331 340])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [341 354])
+                    ("n" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [355 362])
+                    ("noCheck" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [363 376]))                  
+                :type "void")
+                nil [318 1194]))          
+      :file "cmdLine.c"
+      :pointmax 1195
+      :fsize 1194
+      :lastmodtime '(22996 26503 395231 190000)
+      :unmatched-syntax nil)
+    (semanticdb-table "dgemm-blas.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("cblas.h" include nil nil [179 197])
+            ("dgemm_desc" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"Reference dgemm.\""
+                :type "char")
+                nil [206 250])
+            ("square_dgemm" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [1059 1065])
+                    ("A" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1066 1076])
+                    ("B" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1077 1087])
+                    ("C" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1088 1098]))                  
+                :type "void")
+                nil [1040 1489]))          
+      :file "dgemm-blas.c"
+      :pointmax 1490
+      :fsize 1489
+      :lastmodtime '(22996 26503 395231 190000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!ucsd_course!cse260!hw!pa1-hah114-lshixin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object highlight-indentation-20170502.43/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "highlight-indentation-20170502.43/"
+  :tables
+  (list
+    (semanticdb-table "highlight-indentation-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "highlight-indentation-autoloads.el"
+      :pointmax 315
+      :fsize 1099
+      :lastmodtime '(22997 57074 409233 133000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!highlight-indentation-20170502.43!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object pyvenv-20170826.812/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pyvenv-20170826.812/"
+  :tables
+  (list
+    (semanticdb-table "pyvenv-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "pyvenv-autoloads.el"
+      :pointmax 285
+      :fsize 2026
+      :lastmodtime '(22997 57073 953233 124000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!pyvenv-20170826.812!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

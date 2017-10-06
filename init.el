@@ -28,6 +28,7 @@
 (require 'setup-cedet)
 (require 'setup-editing)
 (require 'setup-srefac)
+(require 'setup-python)
 
 ;; function-args
 (require 'function-args)
@@ -50,3 +51,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+ 
+ ;; tex-mode
+ (setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq TeX-save-query nil)
+(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
+;(setq TeX-PDF-mode t)

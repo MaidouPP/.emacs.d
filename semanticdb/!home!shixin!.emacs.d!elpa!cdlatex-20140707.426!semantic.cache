@@ -1,0 +1,16 @@
+;; Object cdlatex-20140707.426/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cdlatex-20140707.426/"
+  :tables
+  (list
+    (semanticdb-table "cdlatex-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "cdlatex-autoloads.el"
+      :pointmax 287
+      :fsize 2658
+      :lastmodtime '(22995 10061 406719 360000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!cdlatex-20140707.426!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

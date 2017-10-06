@@ -68,7 +68,7 @@
 ;; set sr-speedbar
 (require 'sr-speedbar)
 (setq sr-speedbar-right-side nil)
-(setq sr-speedbar-width 15)
+(setq sr-speedbar-width 25)
 (setq sr-speedbar-skip-other-window-p t)
 (global-set-key (kbd "<f4>") (lambda()
           (interactive)
@@ -119,5 +119,14 @@
   (comment-or-uncomment-region beg end arg)  
   )
 (global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region) 
+
+;; auctex
+(load "auctex.el" nil t t)
+(load "preview.el" nil t t)
+(require 'cdlatex)
+
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 (provide 'setup-general)

@@ -1,0 +1,16 @@
+;; Object exec-path-from-shell-20170508.4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "exec-path-from-shell-20170508.4/"
+  :tables
+  (list
+    (semanticdb-table "exec-path-from-shell-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "exec-path-from-shell-autoloads.el"
+      :pointmax 313
+      :fsize 1413
+      :lastmodtime '(22998 43935 549311 633000)
+      :unmatched-syntax nil))
+  :file "!home!shixin!.emacs.d!elpa!exec-path-from-shell-20170508.4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
