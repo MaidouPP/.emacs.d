@@ -32,21 +32,21 @@
  gdb-show-main t
  )
 
-;; company
-(use-package company
-  :init
-  (global-company-mode 1)
-  (delete 'company-semantic company-backends))
-;; (define-key c-mode-map  [(control tab)] 'company-complete)
-;; (define-key c++-mode-map  [(control tab)] 'company-complete)
+;; ;; company
+;; (use-package company
+;;   :init
+;;   (global-company-mode 1)
+;;   (delete 'company-semantic company-backends))
+;; ;; (define-key c-mode-map  [(control tab)] 'company-complete)
+;; ;; (define-key c++-mode-map  [(control tab)] 'company-complete)
 
-;; company
-(require 'company)
-(require 'company-c-headers)
-(add-hook 'after-init-hook 'global-company-mode)
-(add-to-list 'company-backends 'company-c-headers)
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
+;; ;; company
+;; (require 'company)
+;; (require 'company-c-headers)
+;; (add-hook 'after-init-hook 'global-company-mode)
+;; (add-to-list 'company-backends 'company-c-headers)
+;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
+;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
 
 ;; Package: projejctile
 (use-package projectile
@@ -101,12 +101,12 @@
 (show-smartparens-global-mode +1)
 (smartparens-global-mode 1)
 
-;; when you press RET, the curly braces automatically
-;; add another newline
-(sp-with-modes '(c-mode c++-mode)
-  (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
-  (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
-                                            ("* ||\n[i]" "RET"))))
+;; ;; when you press RET, the curly braces automatically
+;; ;; add another newline
+;; (sp-with-modes '(c-mode c++-mode)
+;;   (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
+;;   (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
+;;                                             ("* ||\n[i]" "RET"))))
 
 ;; comment                                       
 (global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)  
@@ -128,5 +128,12 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;;; 设置备份策略
+(setq make-backup-files t)
+(setq kept-old-versions 2)
+(setq kept-new-versions 2)
+(setq delete-old-versions t)
+(setq backup-directory-alist '(("" . "~/.emacsbackup")))
 
 (provide 'setup-general)

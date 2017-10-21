@@ -21,7 +21,12 @@
 (add-hook 'c-mode-common-hook 'shixin/cedet-hook)
 (add-hook 'c-mode-hook 'shixin/cedet-hook)
 (add-hook 'c++-mode-hook 'shixin/cedet-hook)
-(add-hook 'python-mode-hook 'semantic-mode)
+;; (add-hook 'python-mode-hook 'semantic-mode)
+(defun my-inhibit-semantic-p ()
+  (equal major-mode 'python-mode))
+
+(with-eval-after-load 'semantic
+  (add-to-list 'semantic-inhibit-functions #'my-inhibit-semantic-p))
 
 ;; Enable EDE only in C/C++
 (require 'ede)

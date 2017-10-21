@@ -24,4 +24,21 @@
   (define-key c-mode-map  [(tab)] 'company-complete)
   (define-key c++-mode-map  [(tab)] 'company-complete))
 
+;; company
+;; (use-package company
+;;   :init
+;;   (global-company-mode 1)
+;;   (delete 'company-semantic company-backends))
+;; (define-key c-mode-map  [(control tab)] 'company-complete)
+;; (define-key c++-mode-map  [(control tab)] 'company-complete)
+
+;; company
+(require 'company)
+(require 'company-c-headers)
+(add-hook 'after-init-hook 'global-company-mode)
+(add-to-list 'company-backends 'company-c-headers)
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
+
+
 (provide 'setup-c)

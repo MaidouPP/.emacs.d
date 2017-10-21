@@ -5,11 +5,12 @@
   (list
     (semanticdb-table "ede-projects.el"
       :major-mode 'emacs-lisp-mode
-      :tags nil
+      :tags 
+        '( ("anonymous" code nil nil [82 85]))          
       :file "ede-projects.el"
       :pointmax 86
       :fsize 85
-      :lastmodtime '(22998 52706 310603 573000)
+      :lastmodtime '(23015 49009 177630 315000)
       :unmatched-syntax nil)
     (semanticdb-table "init.el"
       :major-mode 'emacs-lisp-mode
@@ -46,6 +47,15 @@
       :pointmax 1865
       :fsize 1864
       :lastmodtime '(22997 57766 493247 858000)
+      :unmatched-syntax nil)
+    (semanticdb-table "srecode-map.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("srecode-map" code nil nil [50 1279]))          
+      :file "srecode-map.el"
+      :pointmax 1280
+      :fsize 1279
+      :lastmodtime '(22887 7766 879837 747000)
       :unmatched-syntax nil))
   :file "!home!shixin!.emacs.d!semantic.cache"
   :semantic-tag-version "2.0"
