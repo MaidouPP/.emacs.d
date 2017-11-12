@@ -1,1 +1,1 @@
-/home/shixin/anaconda2/lib/python2.7/stat.py
+/usr/lib/python2.7/stat.py

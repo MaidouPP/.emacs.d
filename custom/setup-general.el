@@ -136,4 +136,19 @@
 (setq delete-old-versions t)
 (setq backup-directory-alist '(("" . "~/.emacsbackup")))
 
+;; Change between horizontal buffer and vertical buffer
+(defun window-split-toggle ()
+  "Toggle between horizontal and vertical split with two windows."
+  (interactive)
+  (if (> (length (window-list)) 2)
+      (error "Can't toggle with more than 2 windows!")
+    (let ((func (if (window-full-height-p)
+                    #'split-window-vertically
+                  #'split-window-horizontally)))
+      (delete-other-windows)
+      (funcall func)
+      (save-selected-window
+        (other-window 1)
+        (switch-to-buffer (other-buffer))))))
+
 (provide 'setup-general)

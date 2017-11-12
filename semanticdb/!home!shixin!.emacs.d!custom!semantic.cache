@@ -19,11 +19,12 @@
             ("setq" code nil nil [859 910])
             ("setq" code nil nil [962 990])
             ("setq" code nil nil [1045 1190])
-            ("setup-python" package nil nil [1192 1215]))          
+            ("setq" code nil nil [1192 1238])
+            ("setup-python" package nil nil [1301 1324]))          
       :file "setup-python.el"
-      :pointmax 1216
-      :fsize 1215
-      :lastmodtime '(23000 33509 827557 93000)
+      :pointmax 1325
+      :fsize 1324
+      :lastmodtime '(23047 38832 492445 543000)
       :unmatched-syntax nil)
     (semanticdb-table "setup-general.el"
       :major-mode 'emacs-lisp-mode
@@ -74,11 +75,12 @@
             ("setq" code nil nil [4019 4045])
             ("setq" code nil nil [4046 4074])
             ("setq" code nil nil [4075 4131])
-            ("setup-general" package nil nil [4133 4157]))          
+            ("window-split-toggle" function (:user-visible-flag t) nil [4189 4678])
+            ("setup-general" package nil nil [4680 4704]))          
       :file "setup-general.el"
-      :pointmax 4158
-      :fsize 4205
-      :lastmodtime '(23000 34421 343524 148000)
+      :pointmax 4705
+      :fsize 4752
+      :lastmodtime '(23028 54624 643089 4000)
       :unmatched-syntax nil)
     (semanticdb-table "setup-cedet.el"
       :major-mode 'emacs-lisp-mode
@@ -104,8 +106,8 @@
             ("setup-cedet" package nil nil [866 888]))          
       :file "setup-cedet.el"
       :pointmax 889
-      :fsize 888
-      :lastmodtime '(23000 33065 555573 150000)
+      :fsize 1057
+      :lastmodtime '(23000 34693 591514 309000)
       :unmatched-syntax nil)
     (semanticdb-table "setup-editing.el"
       :major-mode 'emacs-lisp-mode
@@ -197,6 +199,16 @@
       :pointmax 1742
       :fsize 1789
       :lastmodtime '(23000 33829 631545 534000)
+      :unmatched-syntax nil)
+    (semanticdb-table "setup-helm.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("use-package" code nil nil [1 6264])
+            ("setup-helm" package nil nil [6266 6287]))          
+      :file "setup-helm.el"
+      :pointmax 6288
+      :fsize 6287
+      :lastmodtime '(22886 6182 780209 538000)
       :unmatched-syntax nil))
   :file "!home!shixin!.emacs.d!custom!semantic.cache"
   :semantic-tag-version "2.0"

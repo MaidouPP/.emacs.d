@@ -1,1 +1,1 @@
-/home/shixin/anaconda2/lib/python2.7/os.py
+/usr/lib/python2.7/os.py

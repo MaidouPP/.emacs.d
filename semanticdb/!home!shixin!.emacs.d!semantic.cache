@@ -10,7 +10,7 @@
       :file "ede-projects.el"
       :pointmax 86
       :fsize 85
-      :lastmodtime '(23015 49009 177630 315000)
+      :lastmodtime '(23048 9937 200305 770000)
       :unmatched-syntax nil)
     (semanticdb-table "init.el"
       :major-mode 'emacs-lisp-mode
@@ -42,12 +42,15 @@
             ("setq" code nil nil [1649 1672])
             ("setq" code nil nil [1673 1698])
             ("add-hook" code nil nil [1699 1743])
-            ("add-hook" code nil nil [1771 1815]))          
+            ("add-hook" code nil nil [1771 1815])
+            ("put" code nil nil [1865 1901])
+            ("setq" code nil nil [1957 2030])
+            ("setq" code nil nil [2031 2112]))          
       :file "init.el"
-      :pointmax 1865
-      :fsize 1864
-      :lastmodtime '(22997 57766 493247 858000)
-      :unmatched-syntax nil)
+      :pointmax 2113
+      :fsize 2112
+      :lastmodtime '(23039 17949 979831 220000)
+      :unmatched-syntax '((number 1911 . 1912) (number 1909 . 1910) (number 1907 . 1908) (number 1905 . 1906) (number 1903 . 1904)))
     (semanticdb-table "srecode-map.el"
       :major-mode 'emacs-lisp-mode
       :tags 

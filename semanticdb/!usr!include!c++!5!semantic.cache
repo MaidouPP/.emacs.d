@@ -8597,7 +8597,2454 @@
         '(("_GLIBCXX_CERRNO" . ((number "1" 1634 . 1635)))
           ("errno" . ((symbol "errno" 1722 . 1727)))
           )
-))
+)
+    (semanticdb-table "atomic"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_ATOMIC" variable (:constant-flag t) nil [1321 1336])
+            ("bits/atomic_base.h" include (:system-flag t) nil [1433 1462])
+            ("_GLIBCXX_VISIBILITY" function (:type ("std" type (:type "class") nil nil)) nil [1474 37497]))          
+      :file "atomic"
+      :pointmax 37555
+      :fsize 37554
+      :lastmodtime '(22476 48724 0 0)
+      :unmatched-syntax '((DEFAULT 1498 . 1505) (NAMESPACE 1464 . 1473) (symbol 1352 . 1365) (symbol 1348 . 1351) (symbol 1341 . 1347) (punctuation 1340 . 1341))
+      :lexical-table 
+        '(("_GLIBCXX_ATOMIC" . ((number "1" 1337 . 1338)))
+          )
+)
+    (semanticdb-table "set"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_SET" variable (:constant-flag t) nil [2267 2279])
+            ("bits/stl_tree.h" include (:system-flag t) nil [2310 2336])
+            ("bits/stl_set.h" include (:system-flag t) nil [2337 2362])
+            ("bits/stl_multiset.h" include (:system-flag t) nil [2363 2393])
+            ("bits/range_access.h" include (:system-flag t) nil [2394 2424]))          
+      :file "set"
+      :pointmax 2560
+      :fsize 2559
+      :lastmodtime '(22476 48724 0 0)
+      :unmatched-syntax '((symbol 2295 . 2308) (symbol 2291 . 2294) (symbol 2284 . 2290) (punctuation 2283 . 2284))
+      :lexical-table 
+        '(("_GLIBCXX_SET" . ((number "1" 2280 . 2281)))
+          )
+)
+    (semanticdb-table "limits"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_NUMERIC_LIMITS" variable (:constant-flag t) nil [1367 1390])
+            ("bits/c++config.h" include (:system-flag t) nil [1421 1448])
+            ("__glibcxx_integral_traps" variable (:constant-flag t) nil [2842 2866])
+            ("__glibcxx_float_has_denorm_loss" variable (:constant-flag t) nil [3022 3053])
+            ("__glibcxx_float_traps" variable (:constant-flag t) nil [3107 3128])
+            ("__glibcxx_float_tinyness_before" variable (:constant-flag t) nil [3192 3223])
+            ("__glibcxx_double_has_denorm_loss" variable (:constant-flag t) nil [3379 3411])
+            ("__glibcxx_double_traps" variable (:constant-flag t) nil [3466 3488])
+            ("__glibcxx_double_tinyness_before" variable (:constant-flag t) nil [3553 3585])
+            ("__glibcxx_long_double_has_denorm_loss" variable (:constant-flag t) nil [3751 3788])
+            ("__glibcxx_long_double_traps" variable (:constant-flag t) nil [3848 3875])
+            ("__glibcxx_long_double_tinyness_before" variable (:constant-flag t) nil [3945 3982])
+            ("__glibcxx_signed_b" variable (:constant-flag t) nil [4068 4086])
+            ("__glibcxx_min_b" variable (:constant-flag t) nil [4115 4130])
+            ("__glibcxx_max_b" variable (:constant-flag t) nil [4216 4231])
+            ("__glibcxx_digits_b" variable (:constant-flag t) nil [4362 4380])
+            ("__glibcxx_digits10_b" variable (:constant-flag t) nil [4505 4525])
+            ("__glibcxx_signed" variable (:constant-flag t) nil [4586 4602])
+            ("__glibcxx_min" variable (:constant-flag t) nil [4667 4680])
+            ("__glibcxx_max" variable (:constant-flag t) nil [4742 4755])
+            ("__glibcxx_digits" variable (:constant-flag t) nil [4817 4833])
+            ("__glibcxx_digits10" variable (:constant-flag t) nil [4898 4916])
+            ("__glibcxx_max_digits10" variable (:constant-flag t) nil [4984 5006])
+            ("std" type
+               (:members 
+                  ( ("float_round_style" type
+                       (:members 
+                          ( ("round_indeterminate" variable
+                               (:constant-flag t
+                                :default-value (5316 5318)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5288 5318])
+                            ("round_toward_zero" variable
+                               (:constant-flag t
+                                :default-value (5373 5374)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5345 5374])
+                            ("round_to_nearest" variable
+                               (:constant-flag t
+                                :default-value (5425 5426)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5397 5426])
+                            ("round_toward_infinity" variable
+                               (:constant-flag t
+                                :default-value (5504 5505)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5476 5505])
+                            ("round_toward_neg_infinity" variable
+                               (:constant-flag t
+                                :default-value (5560 5561)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5532 5561]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [5257 5597])
+                    ("float_denorm_style" type
+                       (:members 
+                          ( ("denorm_indeterminate" variable
+                               (:constant-flag t
+                                :default-value (5971 5973)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5948 5973])
+                            ("denorm_absent" variable
+                               (:constant-flag t
+                                :default-value (6055 6056)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6032 6056])
+                            ("denorm_present" variable
+                               (:constant-flag t
+                                :default-value (6130 6131)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6107 6131]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [5837 6136])
+                    ("__numeric_limits_base" type
+                       (:members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6634 6692])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [6910 6955])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [7041 7088])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7325 7378])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7425 7479])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7696 7748])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [7900 7944])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [8102 8153])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [8289 8342])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [8511 8562])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [8708 8761])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8840 8896])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8995 9052])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9139 9200])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9268 9344])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9460 9519])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9670 9723])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9896 9950])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10382 10435])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10500 10549])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10628 10687])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10846 10937]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6479 10942])
+                    ("numeric_limits" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("__numeric_limits_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [11382 13180])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13753 13810])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14103 14148])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14155 14202])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14288 14341])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14348 14401])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14408 14459])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14466 14510])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14712 14763])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14770 14823])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14830 14881])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [14888 14941])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [14949 15005])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15012 15069])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15076 15137])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15144 15228])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15235 15294])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15694 15747])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15754 15807])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15814 15867])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16038 16106])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16113 16172])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16179 16267]))                          
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [13698 16274])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16376 16433])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (char)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [16757 16824])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (char)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [16831 16902])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_signed (char)"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16988 17059])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17066 17119])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17126 17177])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [17184 17228])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [17422 17473])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [17480 17533])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [17540 17591])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [17598 17651])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17659 17715])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17722 17779])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17786 17847])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17854 17938])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17945 18004])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18422 18475])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18482 18535])
+                            ("is_signed" variable (:type "int") (reparse-symbol classsubparts) [18590 18600])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18608 18676])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18683 18742])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18749 18837]))                          
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [16321 18844])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18960 19017])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (signed char)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [19355 19429])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (signed char)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [19436 19522])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19608 19660])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19667 19720])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19727 19778])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [19785 19829])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [20037 20088])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [20095 20148])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [20155 20206])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [20213 20266])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20274 20330])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20337 20394])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20401 20462])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20469 20553])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20560 20619])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21147 21200])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21207 21260])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21267 21320])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21328 21396])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21403 21462])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21469 21557]))                          
+                        :template-specifier 
+                          ( ("signed char" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [18898 21564])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21684 21741])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (unsigned char)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22077 22161])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (unsigned char)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22168 22256])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22342 22395])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22402 22455])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22462 22513])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22520 22564])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22776 22827])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22834 22887])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22894 22945])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [22952 23005])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23013 23069])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23076 23133])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23140 23201])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23208 23292])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23299 23358])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23914 23967])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23974 24027])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [24034 24086])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [24094 24162])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [24169 24228])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24235 24323]))                          
+                        :template-specifier 
+                          ( ("unsigned char" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [21620 24330])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [24438 24495])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (wchar_t)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [24835 24905])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (wchar_t)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [24912 24994])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_signed (wchar_t)"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25080 25154])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25161 25214])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25221 25272])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [25279 25323])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [25523 25574])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [25581 25634])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [25641 25692])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [25699 25752])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25760 25816])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25823 25880])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25887 25948])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25955 26039])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26046 26105])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26533 26586])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26593 26646])
+                            ("is_signed" variable (:type "int") (reparse-symbol classsubparts) [26701 26711])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26719 26787])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26794 26853])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26860 26948]))                          
+                        :template-specifier 
+                          ( ("wchar_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [24380 26955])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31277 31334])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (short)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [31652 31720])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (short)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [31727 31799])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31885 31937])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31944 31997])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32004 32055])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [32062 32106])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [32302 32353])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [32360 32413])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [32420 32471])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [32478 32531])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32539 32595])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32602 32659])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32666 32727])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32734 32818])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32825 32884])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33296 33349])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33356 33409])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33416 33469])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33477 33545])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33552 33611])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [33618 33706]))                          
+                        :template-specifier 
+                          ( ("short" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [31221 33713])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33835 33892])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (unsigned short)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [34230 34315])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (unsigned short)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [34322 34411])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34497 34550])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34557 34610])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34617 34668])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [34675 34719])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [34933 34984])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [34991 35044])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [35051 35102])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [35109 35162])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35170 35226])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35233 35290])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35297 35358])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35365 35449])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35456 35515])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36079 36132])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36139 36192])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36199 36251])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36259 36327])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36334 36393])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [36400 36488]))                          
+                        :template-specifier 
+                          ( ("unsigned short" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [33770 36495])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36595 36652])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (int)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [36962 37028])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (int)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [37035 37105])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37191 37243])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37250 37303])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37310 37361])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [37368 37412])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [37604 37655])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [37662 37715])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [37722 37773])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [37780 37833])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37841 37897])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37904 37961])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37968 38029])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [38036 38120])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38127 38186])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38638 38691])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38698 38751])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38758 38811])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38819 38887])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38894 38953])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [38960 39048]))                          
+                        :template-specifier 
+                          ( ("int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [36541 39055])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [39173 39230])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (unsigned int)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [39561 39644])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (unsigned int)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [39651 39738])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [39824 39877])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [39884 39937])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [39944 39995])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [40002 40046])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [40256 40307])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [40314 40367])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [40374 40425])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [40432 40485])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [40493 40549])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [40556 40613])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [40620 40681])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [40688 40772])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [40779 40838])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [41380 41433])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [41440 41493])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [41500 41552])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [41560 41628])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [41635 41694])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [41701 41789]))                          
+                        :template-specifier 
+                          ( ("unsigned int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [39110 41796])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [41898 41955])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [42269 42336])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [42343 42414])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [42500 42552])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [42559 42612])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [42619 42670])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [42677 42721])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [42915 42966])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [42973 43026])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [43033 43084])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [43091 43144])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [43152 43208])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [43215 43272])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [43279 43340])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [43347 43431])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [43438 43497])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [43957 44010])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [44017 44070])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [44077 44130])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [44138 44206])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [44213 44272])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [44279 44367]))                          
+                        :template-specifier 
+                          ( ("long" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [41843 44374])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [44494 44551])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (unsigned long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [44887 44971])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (unsigned long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [44978 45066])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [45152 45205])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [45212 45265])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [45272 45323])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [45330 45374])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [45586 45637])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [45644 45697])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [45704 45755])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [45762 45815])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [45823 45879])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [45886 45943])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [45950 46011])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [46018 46102])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46109 46168])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46724 46777])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46784 46837])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46844 46896])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46904 46972])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46979 47038])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [47045 47133]))                          
+                        :template-specifier 
+                          ( ("unsigned long" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [44430 47140])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [47252 47309])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (long long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [47649 47729])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (long long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [47736 47820])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [47906 47958])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [47965 48018])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [48025 48076])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [48083 48127])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [48331 48382])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [48389 48442])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [48449 48500])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [48507 48560])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [48568 48624])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [48631 48688])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [48695 48756])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [48763 48847])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [48854 48913])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [49419 49472])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [49479 49532])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [49539 49592])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [49600 49668])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [49675 49734])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [49741 49829]))                          
+                        :template-specifier 
+                          ( ("long long" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [47192 49836])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [49966 50023])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits (unsigned long long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [50380 50469])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_digits10 (unsigned long long)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [50476 50569])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [50655 50708])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [50715 50768])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [50775 50826])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [50833 50877])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [51099 51150])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [51157 51210])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [51217 51268])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [51275 51328])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [51336 51392])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [51399 51456])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [51463 51524])
+                            ("has_denorm" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "denorm_absent"
+                                :type ("float_denorm_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [51531 51615])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [51622 51681])
+                            ("is_iec559" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [52277 52330])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [52337 52390])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [52397 52449])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_integral_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [52457 52525])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [52532 52591])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_toward_zero"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [52598 52686]))                          
+                        :template-specifier 
+                          ( ("unsigned long long" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [49897 52693])
+                    ("__INT_N" variable (:constant-flag t) (reparse-symbol namespacesubparts) [52734 52741])
+                    ("__INT_N_201103" variable (:constant-flag t) (reparse-symbol namespacesubparts) [59124 59138])
+                    ("__INT_N_U201103" variable (:constant-flag t) (reparse-symbol namespacesubparts) [59153 59168])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [60094 60151])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_MANT_DIG__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [60469 60529])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_DIG__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [60536 60593])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [60721 60773])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [60780 60834])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [60841 60893])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_RADIX__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [60900 60956])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_MIN_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [61169 61234])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_MIN_10_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [61241 61311])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_MAX_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [61318 61383])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_MAX_10_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [61390 61460])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_HAS_INFINITY__"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [61468 61539])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_HAS_QUIET_NAN__"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [61546 61619])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "has_quiet_NaN"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [61626 61695])
+                            ("denorm_absent" variable (:type "int") (reparse-symbol classsubparts) [61809 61823])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_float_has_denorm_loss"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [61830 61923])
+                            ("denorm_present" variable (:type "int") (reparse-symbol classsubparts) [62478 62493])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [62500 62553])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [62560 62613])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_float_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [62621 62686])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_float_tinyness_before"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [62693 62786])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_to_nearest"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [62793 62880]))                          
+                        :template-specifier 
+                          ( ("float" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [60038 62887])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [63101 63158])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_MANT_DIG__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [63479 63539])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_DIG__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [63546 63603])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [63731 63783])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [63790 63844])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [63851 63903])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_RADIX__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [63910 63966])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_MIN_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [64180 64245])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_MIN_10_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [64252 64322])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_MAX_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [64329 64394])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_MAX_10_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [64401 64471])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_HAS_INFINITY__"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [64479 64550])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__DBL_HAS_QUIET_NAN__"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [64557 64630])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "has_quiet_NaN"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [64637 64706])
+                            ("denorm_absent" variable (:type "int") (reparse-symbol classsubparts) [64820 64834])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_double_has_denorm_loss"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [64841 64936])
+                            ("denorm_present" variable (:type "int") (reparse-symbol classsubparts) [65492 65507])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [65514 65567])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [65574 65627])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_double_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [65635 65701])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_double_tinyness_before"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [65708 65802])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_to_nearest"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [65809 65896]))                          
+                        :template-specifier 
+                          ( ("double" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [63044 65903])
+                    ("numeric_limits" type
+                       (:type "struct"
+                        :members 
+                          ( ("is_specialized" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [66130 66187])
+                            ("digits" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_MANT_DIG__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [66526 66587])
+                            ("digits10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_DIG__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [66594 66652])
+                            ("is_signed" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [66794 66846])
+                            ("is_integer" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [66853 66907])
+                            ("is_exact" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [66914 66966])
+                            ("radix" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__FLT_RADIX__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [66973 67029])
+                            ("min_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_MIN_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [67255 67321])
+                            ("min_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_MIN_10_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [67328 67399])
+                            ("max_exponent" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_MAX_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [67406 67472])
+                            ("max_exponent10" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_MAX_10_EXP__"
+                                :type "int")
+                                (reparse-symbol classsubparts) [67479 67550])
+                            ("has_infinity" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_HAS_INFINITY__"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [67558 67630])
+                            ("has_quiet_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__LDBL_HAS_QUIET_NAN__"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [67637 67711])
+                            ("has_signaling_NaN" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "has_quiet_NaN"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [67718 67787])
+                            ("denorm_absent" variable (:type "int") (reparse-symbol classsubparts) [67902 67916])
+                            ("has_denorm_loss" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_long_double_has_denorm_loss"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [67923 68015])
+                            ("denorm_present" variable (:type "int") (reparse-symbol classsubparts) [68595 68610])
+                            ("is_bounded" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [68617 68670])
+                            ("is_modulo" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [68677 68730])
+                            ("traps" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_long_double_traps"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [68738 68809])
+                            ("tinyness_before" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "__glibcxx_long_double_tinyness_before"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [68816 68914])
+                            ("round_style" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "round_to_nearest"
+                                :type ("float_round_style" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [68921 69013]))                          
+                        :template-specifier 
+                          ( ("long double" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [66068 69020]))                  
+                :type "namespace")
+                nil [5039 69180]))          
+      :file "limits"
+      :pointmax 69376
+      :fsize 69375
+      :lastmodtime '(22476 48724 0 0)
+      :unmatched-syntax '((symbol 69170 . 69178) (punctuation 68593 . 68594) (punctuation 68592 . 68593) (symbol 68581 . 68591) (punctuation 68579 . 68580) (punctuation 68578 . 68579) (symbol 68564 . 68577) (punctuation 68562 . 68563) (punctuation 68561 . 68562) (symbol 68548 . 68560) (punctuation 68546 . 68547) (symbol 68535 . 68544) (BOOL 68530 . 68534) (CONST "const" 68507 . 68529) (STATIC 68500 . 68506) (semantic-list 68461 . 68492) (semantic-list "()" 68439 . 68460) (THROW "throw" 68439 . 68460) (semantic-list 68436 . 68438) (symbol 68426 . 68436) (DOUBLE 68412 . 68418) (LONG 68407 . 68411) (STATIC 68381 . 68387) (semantic-list 68342 . 68373) (semantic-list "()" 68320 . 68341) (THROW "throw" 68320 . 68341) (semantic-list 68317 . 68319) (symbol 68304 . 68317) (DOUBLE 68290 . 68296) (LONG 68285 . 68289) (STATIC 68259 . 68265) (semantic-list 68221 . 68251) (semantic-list "()" 68199 . 68220) (THROW "throw" 68199 . 68220) (semantic-list 68196 . 68198) (symbol 68187 . 68196) (DOUBLE 68173 . 68179) (LONG 68168 . 68172) (STATIC 68142 . 68148) (semantic-list 68101 . 68134) (semantic-list "()" 68079 . 68100) (THROW "throw" 68079 . 68100) (semantic-list 68076 . 68078) (symbol 68068 . 68076) (DOUBLE 68054 . 68060) (LONG 68049 . 68053) (STATIC 68023 . 68029) (punctuation 67900 . 67901) (symbol 67885 . 67899) (punctuation 67883 . 67884) (semantic-list 67861 . 67882) (BOOL 67857 . 67861) (punctuation 67855 . 67856) (symbol 67843 . 67853) (symbol 67824 . 67842) (CONST "const" 67801 . 67823) (STATIC 67794 . 67800) (semantic-list 67231 . 67247) (semantic-list "()" 67209 . 67230) (THROW "throw" 67209 . 67230) (semantic-list 67206 . 67208) (symbol 67195 . 67206) (DOUBLE 67181 . 67187) (LONG 67176 . 67180) (STATIC 67150 . 67156) (semantic-list 67114 . 67142) (semantic-list "()" 67092 . 67113) (THROW "throw" 67092 . 67113) (semantic-list 67089 . 67091) (symbol 67082 . 67089) (DOUBLE 67068 . 67074) (LONG 67063 . 67067) (STATIC 67037 . 67043) (semantic-list 66373 . 66397) (semantic-list "()" 66351 . 66372) (THROW "throw" 66351 . 66372) (semantic-list 66348 . 66350) (symbol 66345 . 66348) (DOUBLE 66331 . 66337) (LONG 66326 . 66330) (STATIC 66300 . 66306) (semantic-list 66268 . 66292) (semantic-list "()" 66246 . 66267) (THROW "throw" 66246 . 66267) (semantic-list 66243 . 66245) (symbol 66240 . 66243) (DOUBLE 66226 . 66232) (LONG 66221 . 66225) (STATIC 66195 . 66201) (punctuation 65490 . 65491) (punctuation 65489 . 65490) (symbol 65478 . 65488) (punctuation 65476 . 65477) (punctuation 65475 . 65476) (symbol 65461 . 65474) (punctuation 65459 . 65460) (punctuation 65458 . 65459) (symbol 65445 . 65457) (punctuation 65443 . 65444) (symbol 65432 . 65441) (BOOL 65427 . 65431) (CONST "const" 65404 . 65426) (STATIC 65397 . 65403) (semantic-list 65359 . 65389) (semantic-list "()" 65337 . 65358) (THROW "throw" 65337 . 65358) (semantic-list 65334 . 65336) (symbol 65324 . 65334) (DOUBLE 65310 . 65316) (STATIC 65284 . 65290) (semantic-list 65246 . 65276) (semantic-list "()" 65224 . 65245) (THROW "throw" 65224 . 65245) (semantic-list 65221 . 65223) (symbol 65208 . 65221) (DOUBLE 65194 . 65200) (STATIC 65168 . 65174) (semantic-list 65131 . 65160) (semantic-list "()" 65109 . 65130) (THROW "throw" 65109 . 65130) (semantic-list 65106 . 65108) (symbol 65097 . 65106) (DOUBLE 65083 . 65089) (STATIC 65057 . 65063) (semantic-list 65017 . 65049) (semantic-list "()" 64995 . 65016) (THROW "throw" 64995 . 65016) (semantic-list 64992 . 64994) (symbol 64984 . 64992) (DOUBLE 64970 . 64976) (STATIC 64944 . 64950) (punctuation 64818 . 64819) (symbol 64803 . 64817) (punctuation 64801 . 64802) (semantic-list 64780 . 64800) (BOOL 64776 . 64780) (punctuation 64774 . 64775) (symbol 64762 . 64772) (symbol 64743 . 64761) (CONST "const" 64720 . 64742) (STATIC 64713 . 64719) (semantic-list 64157 . 64172) (semantic-list "()" 64135 . 64156) (THROW "throw" 64135 . 64156) (semantic-list 64132 . 64134) (symbol 64121 . 64132) (DOUBLE 64107 . 64113) (STATIC 64081 . 64087) (semantic-list 64046 . 64073) (semantic-list "()" 64024 . 64045) (THROW "throw" 64024 . 64045) (semantic-list 64021 . 64023) (symbol 64014 . 64021) (DOUBLE 64000 . 64006) (STATIC 63974 . 63980) (semantic-list 63333 . 63356) (semantic-list "()" 63311 . 63332) (THROW "throw" 63311 . 63332) (semantic-list 63308 . 63310) (symbol 63305 . 63308) (DOUBLE 63291 . 63297) (STATIC 63265 . 63271) (semantic-list 63234 . 63257) (semantic-list "()" 63212 . 63233) (THROW "throw" 63212 . 63233) (semantic-list 63209 . 63211) (symbol 63206 . 63209) (DOUBLE 63192 . 63198) (STATIC 63166 . 63172) (punctuation 62476 . 62477) (punctuation 62475 . 62476) (symbol 62464 . 62474) (punctuation 62462 . 62463) (punctuation 62461 . 62462) (symbol 62447 . 62460) (punctuation 62445 . 62446) (punctuation 62444 . 62445) (symbol 62431 . 62443) (punctuation 62429 . 62430) (symbol 62418 . 62427) (BOOL 62413 . 62417) (CONST "const" 62390 . 62412) (STATIC 62383 . 62389) (semantic-list 62345 . 62375) (semantic-list "()" 62323 . 62344) (THROW "throw" 62323 . 62344) (semantic-list 62320 . 62322) (symbol 62310 . 62320) (FLOAT 62297 . 62302) (STATIC 62271 . 62277) (semantic-list 62232 . 62263) (semantic-list "()" 62210 . 62231) (THROW "throw" 62210 . 62231) (semantic-list 62207 . 62209) (symbol 62194 . 62207) (FLOAT 62181 . 62186) (STATIC 62155 . 62161) (semantic-list 62117 . 62147) (semantic-list "()" 62095 . 62116) (THROW "throw" 62095 . 62116) (semantic-list 62092 . 62094) (symbol 62083 . 62092) (FLOAT 62070 . 62075) (STATIC 62044 . 62050) (semantic-list 62003 . 62036) (semantic-list "()" 61981 . 62002) (THROW "throw" 61981 . 62002) (semantic-list 61978 . 61980) (symbol 61970 . 61978) (FLOAT 61957 . 61962) (STATIC 61931 . 61937) (punctuation 61807 . 61808) (symbol 61792 . 61806) (punctuation 61790 . 61791) (semantic-list 61769 . 61789) (BOOL 61765 . 61769) (punctuation 61763 . 61764) (symbol 61751 . 61761) (symbol 61732 . 61750) (CONST "const" 61709 . 61731) (STATIC 61702 . 61708) (semantic-list 61145 . 61161) (semantic-list "()" 61123 . 61144) (THROW "throw" 61123 . 61144) (semantic-list 61120 . 61122) (symbol 61109 . 61120) (FLOAT 61096 . 61101) (STATIC 61070 . 61076) (semantic-list 61035 . 61062) (semantic-list "()" 61013 . 61034) (THROW "throw" 61013 . 61034) (semantic-list 61010 . 61012) (symbol 61003 . 61010) (FLOAT 60990 . 60995) (STATIC 60964 . 60970) (semantic-list 60324 . 60347) (semantic-list "()" 60302 . 60323) (THROW "throw" 60302 . 60323) (semantic-list 60299 . 60301) (symbol 60296 . 60299) (FLOAT 60283 . 60288) (STATIC 60257 . 60263) (semantic-list 60226 . 60249) (semantic-list "()" 60204 . 60225) (THROW "throw" 60204 . 60225) (semantic-list 60201 . 60203) (symbol 60198 . 60201) (FLOAT 60185 . 60190) (STATIC 60159 . 60165) (semantic-list 52223 . 52269) (semantic-list "()" 52195 . 52216) (THROW "throw" 52195 . 52216) (semantic-list 52192 . 52194) (symbol 52182 . 52192) (LONG 52170 . 52174) (LONG 52165 . 52169) (UNSIGNED 52156 . 52164) (STATIC 52130 . 52136) (semantic-list 52076 . 52122) (semantic-list "()" 52048 . 52069) (THROW "throw" 52048 . 52069) (semantic-list 52045 . 52047) (symbol 52032 . 52045) (LONG 52020 . 52024) (LONG 52015 . 52019) (UNSIGNED 52006 . 52014) (STATIC 51980 . 51986) (semantic-list 51926 . 51972) (semantic-list "()" 51898 . 51919) (THROW "throw" 51898 . 51919) (semantic-list 51895 . 51897) (symbol 51886 . 51895) (LONG 51874 . 51878) (LONG 51869 . 51873) (UNSIGNED 51860 . 51868) (STATIC 51834 . 51840) (semantic-list 51780 . 51826) (semantic-list "()" 51752 . 51773) (THROW "throw" 51752 . 51773) (semantic-list 51749 . 51751) (symbol 51741 . 51749) (LONG 51729 . 51733) (LONG 51724 . 51728) (UNSIGNED 51715 . 51723) (STATIC 51689 . 51695) (semantic-list 51078 . 51091) (semantic-list "()" 51056 . 51077) (THROW "throw" 51056 . 51077) (semantic-list 51053 . 51055) (symbol 51042 . 51053) (LONG 51030 . 51034) (LONG 51025 . 51029) (UNSIGNED 51016 . 51024) (STATIC 50990 . 50996) (semantic-list 50969 . 50982) (semantic-list "()" 50947 . 50968) (THROW "throw" 50947 . 50968) (semantic-list 50944 . 50946) (symbol 50937 . 50944) (LONG 50925 . 50929) (LONG 50920 . 50924) (UNSIGNED 50911 . 50919) (STATIC 50885 . 50891) (semantic-list 50212 . 50252) (semantic-list "()" 50190 . 50211) (THROW "throw" 50190 . 50211) (semantic-list 50187 . 50189) (symbol 50184 . 50187) (LONG 50172 . 50176) (LONG 50167 . 50171) (UNSIGNED 50158 . 50166) (STATIC 50132 . 50138) (semantic-list 50111 . 50124) (semantic-list "()" 50089 . 50110) (THROW "throw" 50089 . 50110) (semantic-list 50086 . 50088) (symbol 50083 . 50086) (LONG 50071 . 50075) (LONG 50066 . 50070) (UNSIGNED 50057 . 50065) (STATIC 50031 . 50037) (semantic-list 49374 . 49411) (semantic-list "()" 49352 . 49373) (THROW "throw" 49352 . 49373) (semantic-list 49349 . 49351) (symbol 49339 . 49349) (LONG 49327 . 49331) (LONG 49322 . 49326) (STATIC 49296 . 49302) (semantic-list 49251 . 49288) (semantic-list "()" 49223 . 49244) (THROW "throw" 49223 . 49244) (semantic-list 49220 . 49222) (symbol 49207 . 49220) (LONG 49195 . 49199) (LONG 49190 . 49194) (STATIC 49164 . 49170) (semantic-list 49119 . 49156) (semantic-list "()" 49097 . 49118) (THROW "throw" 49097 . 49118) (semantic-list 49094 . 49096) (symbol 49085 . 49094) (LONG 49073 . 49077) (LONG 49068 . 49072) (STATIC 49042 . 49048) (semantic-list 48997 . 49034) (semantic-list "()" 48975 . 48996) (THROW "throw" 48975 . 48996) (semantic-list 48972 . 48974) (symbol 48964 . 48972) (LONG 48952 . 48956) (LONG 48947 . 48951) (STATIC 48921 . 48927) (semantic-list 48310 . 48323) (semantic-list "()" 48288 . 48309) (THROW "throw" 48288 . 48309) (semantic-list 48285 . 48287) (symbol 48274 . 48285) (LONG 48262 . 48266) (LONG 48257 . 48261) (STATIC 48231 . 48237) (semantic-list 48210 . 48223) (semantic-list "()" 48188 . 48209) (THROW "throw" 48188 . 48209) (semantic-list 48185 . 48187) (symbol 48178 . 48185) (LONG 48166 . 48170) (LONG 48161 . 48165) (STATIC 48135 . 48141) (semantic-list 47501 . 47530) (semantic-list "()" 47479 . 47500) (THROW "throw" 47479 . 47500) (semantic-list 47476 . 47478) (symbol 47473 . 47476) (LONG 47461 . 47465) (LONG 47456 . 47460) (STATIC 47430 . 47436) (semantic-list 47388 . 47422) (semantic-list "()" 47366 . 47387) (THROW "throw" 47366 . 47387) (semantic-list 47363 . 47365) (symbol 47360 . 47363) (LONG 47348 . 47352) (LONG 47343 . 47347) (STATIC 47317 . 47323) (semantic-list 46675 . 46716) (semantic-list "()" 46647 . 46668) (THROW "throw" 46647 . 46668) (semantic-list 46644 . 46646) (symbol 46634 . 46644) (LONG 46622 . 46626) (UNSIGNED 46613 . 46621) (STATIC 46587 . 46593) (semantic-list 46538 . 46579) (semantic-list "()" 46510 . 46531) (THROW "throw" 46510 . 46531) (semantic-list 46507 . 46509) (symbol 46494 . 46507) (LONG 46482 . 46486) (UNSIGNED 46473 . 46481) (STATIC 46447 . 46453) (semantic-list 46398 . 46439) (semantic-list "()" 46370 . 46391) (THROW "throw" 46370 . 46391) (semantic-list 46367 . 46369) (symbol 46358 . 46367) (LONG 46346 . 46350) (UNSIGNED 46337 . 46345) (STATIC 46311 . 46317) (semantic-list 46262 . 46303) (semantic-list "()" 46234 . 46255) (THROW "throw" 46234 . 46255) (semantic-list 46231 . 46233) (symbol 46223 . 46231) (LONG 46211 . 46215) (UNSIGNED 46202 . 46210) (STATIC 46176 . 46182) (semantic-list 45565 . 45578) (semantic-list "()" 45543 . 45564) (THROW "throw" 45543 . 45564) (semantic-list 45540 . 45542) (symbol 45529 . 45540) (LONG 45517 . 45521) (UNSIGNED 45508 . 45516) (STATIC 45482 . 45488) (semantic-list 45461 . 45474) (semantic-list "()" 45439 . 45460) (THROW "throw" 45439 . 45460) (semantic-list 45436 . 45438) (symbol 45429 . 45436) (LONG 45417 . 45421) (UNSIGNED 45408 . 45416) (STATIC 45382 . 45388) (semantic-list 44730 . 44764) (semantic-list "()" 44708 . 44729) (THROW "throw" 44708 . 44729) (semantic-list 44705 . 44707) (symbol 44702 . 44705) (LONG 44690 . 44694) (UNSIGNED 44681 . 44689) (STATIC 44655 . 44661) (semantic-list 44634 . 44647) (semantic-list "()" 44612 . 44633) (THROW "throw" 44612 . 44633) (semantic-list 44609 . 44611) (symbol 44606 . 44609) (LONG 44594 . 44598) (UNSIGNED 44585 . 44593) (STATIC 44559 . 44565) (semantic-list 43917 . 43949) (semantic-list "()" 43895 . 43916) (THROW "throw" 43895 . 43916) (semantic-list 43892 . 43894) (symbol 43882 . 43892) (LONG 43870 . 43874) (STATIC 43844 . 43850) (semantic-list 43804 . 43836) (semantic-list "()" 43782 . 43803) (THROW "throw" 43782 . 43803) (semantic-list 43779 . 43781) (symbol 43766 . 43779) (LONG 43754 . 43758) (STATIC 43728 . 43734) (semantic-list 43688 . 43720) (semantic-list "()" 43666 . 43687) (THROW "throw" 43666 . 43687) (semantic-list 43663 . 43665) (symbol 43654 . 43663) (LONG 43642 . 43646) (STATIC 43616 . 43622) (semantic-list 43576 . 43608) (semantic-list "()" 43554 . 43575) (THROW "throw" 43554 . 43575) (semantic-list 43551 . 43553) (symbol 43543 . 43551) (LONG 43531 . 43535) (STATIC 43505 . 43511) (semantic-list 42894 . 42907) (semantic-list "()" 42872 . 42893) (THROW "throw" 42872 . 42893) (semantic-list 42869 . 42871) (symbol 42858 . 42869) (LONG 42846 . 42850) (STATIC 42820 . 42826) (semantic-list 42799 . 42812) (semantic-list "()" 42777 . 42798) (THROW "throw" 42777 . 42798) (semantic-list 42774 . 42776) (symbol 42767 . 42774) (LONG 42755 . 42759) (STATIC 42729 . 42735) (semantic-list 42131 . 42155) (semantic-list "()" 42109 . 42130) (THROW "throw" 42109 . 42130) (semantic-list 42106 . 42108) (symbol 42103 . 42106) (LONG 42091 . 42095) (STATIC 42065 . 42071) (semantic-list 42028 . 42057) (semantic-list "()" 42006 . 42027) (THROW "throw" 42006 . 42027) (semantic-list 42003 . 42005) (symbol 42000 . 42003) (LONG 41989 . 41993) (STATIC 41963 . 41969) (semantic-list 41332 . 41372) (semantic-list "()" 41304 . 41325) (THROW "throw" 41304 . 41325) (semantic-list 41301 . 41303) (symbol 41291 . 41301) (INT 41280 . 41283) (UNSIGNED 41271 . 41279) (STATIC 41245 . 41251) (semantic-list 41197 . 41237) (semantic-list "()" 41169 . 41190) (THROW "throw" 41169 . 41190) (semantic-list 41166 . 41168) (symbol 41153 . 41166) (INT 41142 . 41145) (UNSIGNED 41133 . 41141) (STATIC 41107 . 41113) (semantic-list 41059 . 41099) (semantic-list "()" 41031 . 41052) (THROW "throw" 41031 . 41052) (semantic-list 41028 . 41030) (symbol 41019 . 41028) (INT 41008 . 41011) (UNSIGNED 40999 . 41007) (STATIC 40973 . 40979) (semantic-list 40925 . 40965) (semantic-list "()" 40903 . 40924) (THROW "throw" 40903 . 40924) (semantic-list 40900 . 40902) (symbol 40892 . 40900) (INT 40881 . 40884) (UNSIGNED 40872 . 40880) (STATIC 40846 . 40852) (semantic-list 40235 . 40248) (semantic-list "()" 40213 . 40234) (THROW "throw" 40213 . 40234) (semantic-list 40210 . 40212) (symbol 40199 . 40210) (INT 40188 . 40191) (UNSIGNED 40179 . 40187) (STATIC 40153 . 40159) (semantic-list 40132 . 40145) (semantic-list "()" 40110 . 40131) (THROW "throw" 40110 . 40131) (semantic-list 40107 . 40109) (symbol 40100 . 40107) (INT 40089 . 40092) (UNSIGNED 40080 . 40088) (STATIC 40054 . 40060) (semantic-list 39407 . 39439) (semantic-list "()" 39385 . 39406) (THROW "throw" 39385 . 39406) (semantic-list 39382 . 39384) (symbol 39379 . 39382) (INT 39368 . 39371) (UNSIGNED 39359 . 39367) (STATIC 39333 . 39339) (semantic-list 39312 . 39325) (semantic-list "()" 39290 . 39311) (THROW "throw" 39290 . 39311) (semantic-list 39287 . 39289) (symbol 39284 . 39287) (INT 39273 . 39276) (UNSIGNED 39264 . 39272) (STATIC 39238 . 39244) (semantic-list 38599 . 38630) (semantic-list "()" 38577 . 38598) (THROW "throw" 38577 . 38598) (semantic-list 38574 . 38576) (symbol 38564 . 38574) (INT 38553 . 38556) (STATIC 38527 . 38533) (semantic-list 38488 . 38519) (semantic-list "()" 38466 . 38487) (THROW "throw" 38466 . 38487) (semantic-list 38463 . 38465) (symbol 38450 . 38463) (INT 38439 . 38442) (STATIC 38413 . 38419) (semantic-list 38374 . 38405) (semantic-list "()" 38352 . 38373) (THROW "throw" 38352 . 38373) (semantic-list 38349 . 38351) (symbol 38340 . 38349) (INT 38329 . 38332) (STATIC 38303 . 38309) (semantic-list 38264 . 38295) (semantic-list "()" 38242 . 38263) (THROW "throw" 38242 . 38263) (semantic-list 38239 . 38241) (symbol 38231 . 38239) (INT 38220 . 38223) (STATIC 38194 . 38200) (semantic-list 37583 . 37596) (semantic-list "()" 37561 . 37582) (THROW "throw" 37561 . 37582) (semantic-list 37558 . 37560) (symbol 37547 . 37558) (INT 37536 . 37539) (STATIC 37510 . 37516) (semantic-list 37489 . 37502) (semantic-list "()" 37467 . 37488) (THROW "throw" 37467 . 37488) (semantic-list 37464 . 37466) (symbol 37457 . 37464) (INT 37446 . 37449) (STATIC 37420 . 37426) (semantic-list 36826 . 36849) (semantic-list "()" 36804 . 36825) (THROW "throw" 36804 . 36825) (semantic-list 36801 . 36803) (symbol 36798 . 36801) (INT 36787 . 36790) (STATIC 36761 . 36767) (semantic-list 36725 . 36753) (semantic-list "()" 36703 . 36724) (THROW "throw" 36703 . 36724) (semantic-list 36700 . 36702) (symbol 36697 . 36700) (INT 36686 . 36689) (STATIC 36660 . 36666) (semantic-list 36029 . 36071) (semantic-list "()" 36001 . 36022) (THROW "throw" 36001 . 36022) (semantic-list 35998 . 36000) (symbol 35988 . 35998) (SHORT 35975 . 35980) (UNSIGNED 35966 . 35974) (STATIC 35940 . 35946) (semantic-list 35890 . 35932) (semantic-list "()" 35862 . 35883) (THROW "throw" 35862 . 35883) (semantic-list 35859 . 35861) (symbol 35846 . 35859) (SHORT 35833 . 35838) (UNSIGNED 35824 . 35832) (STATIC 35798 . 35804) (semantic-list 35748 . 35790) (semantic-list "()" 35720 . 35741) (THROW "throw" 35720 . 35741) (semantic-list 35717 . 35719) (symbol 35708 . 35717) (SHORT 35695 . 35700) (UNSIGNED 35686 . 35694) (STATIC 35660 . 35666) (semantic-list 35610 . 35652) (semantic-list "()" 35582 . 35603) (THROW "throw" 35582 . 35603) (semantic-list 35579 . 35581) (symbol 35571 . 35579) (SHORT 35558 . 35563) (UNSIGNED 35549 . 35557) (STATIC 35523 . 35529) (semantic-list 34912 . 34925) (semantic-list "()" 34890 . 34911) (THROW "throw" 34890 . 34911) (semantic-list 34887 . 34889) (symbol 34876 . 34887) (SHORT 34863 . 34868) (UNSIGNED 34854 . 34862) (STATIC 34828 . 34834) (semantic-list 34807 . 34820) (semantic-list "()" 34785 . 34806) (THROW "throw" 34785 . 34806) (semantic-list 34782 . 34784) (symbol 34775 . 34782) (SHORT 34762 . 34767) (UNSIGNED 34753 . 34761) (STATIC 34727 . 34733) (semantic-list 34073 . 34106) (semantic-list "()" 34051 . 34072) (THROW "throw" 34051 . 34072) (semantic-list 34048 . 34050) (symbol 34045 . 34048) (SHORT 34032 . 34037) (UNSIGNED 34023 . 34031) (STATIC 33997 . 34003) (semantic-list 33976 . 33989) (semantic-list "()" 33954 . 33975) (THROW "throw" 33954 . 33975) (semantic-list 33951 . 33953) (symbol 33948 . 33951) (SHORT 33935 . 33940) (UNSIGNED 33926 . 33934) (STATIC 33900 . 33906) (semantic-list 33269 . 33288) (semantic-list "()" 33247 . 33268) (THROW "throw" 33247 . 33268) (semantic-list 33244 . 33246) (symbol 33234 . 33244) (SHORT 33221 . 33226) (STATIC 33195 . 33201) (semantic-list 33168 . 33187) (semantic-list "()" 33146 . 33167) (THROW "throw" 33146 . 33167) (semantic-list 33143 . 33145) (symbol 33130 . 33143) (SHORT 33117 . 33122) (STATIC 33091 . 33097) (semantic-list 33064 . 33083) (semantic-list "()" 33042 . 33063) (THROW "throw" 33042 . 33063) (semantic-list 33039 . 33041) (symbol 33030 . 33039) (SHORT 33017 . 33022) (STATIC 32991 . 32997) (semantic-list 32964 . 32983) (semantic-list "()" 32942 . 32963) (THROW "throw" 32942 . 32963) (semantic-list 32939 . 32941) (symbol 32931 . 32939) (SHORT 32918 . 32923) (STATIC 32892 . 32898) (semantic-list 32281 . 32294) (semantic-list "()" 32259 . 32280) (THROW "throw" 32259 . 32280) (semantic-list 32256 . 32258) (symbol 32245 . 32256) (SHORT 32232 . 32237) (STATIC 32206 . 32212) (semantic-list 32185 . 32198) (semantic-list "()" 32163 . 32184) (THROW "throw" 32163 . 32184) (semantic-list 32160 . 32162) (symbol 32153 . 32160) (SHORT 32140 . 32145) (STATIC 32114 . 32120) (semantic-list 31513 . 31537) (semantic-list "()" 31491 . 31512) (THROW "throw" 31491 . 31512) (semantic-list 31488 . 31490) (symbol 31485 . 31488) (SHORT 31472 . 31477) (STATIC 31446 . 31452) (semantic-list 31409 . 31438) (semantic-list "()" 31387 . 31408) (THROW "throw" 31387 . 31408) (semantic-list 31384 . 31386) (symbol 31381 . 31384) (SHORT 31368 . 31373) (STATIC 31342 . 31348) (punctuation 26700 . 26701) (punctuation 26698 . 26699) (symbol 26688 . 26697) (BOOL 26683 . 26687) (CONST "const" 26660 . 26682) (STATIC 26653 . 26659) (semantic-list 26504 . 26525) (semantic-list "()" 26482 . 26503) (THROW "throw" 26482 . 26503) (semantic-list 26479 . 26481) (symbol 26469 . 26479) (WCHAR 26454 . 26461) (STATIC 26428 . 26434) (semantic-list 26399 . 26420) (semantic-list "()" 26377 . 26398) (THROW "throw" 26377 . 26398) (semantic-list 26374 . 26376) (symbol 26361 . 26374) (WCHAR 26346 . 26353) (STATIC 26320 . 26326) (semantic-list 26291 . 26312) (semantic-list "()" 26269 . 26290) (THROW "throw" 26269 . 26290) (semantic-list 26266 . 26268) (symbol 26257 . 26266) (WCHAR 26242 . 26249) (STATIC 26216 . 26222) (semantic-list 26187 . 26208) (semantic-list "()" 26165 . 26186) (THROW "throw" 26165 . 26186) (semantic-list 26162 . 26164) (symbol 26154 . 26162) (WCHAR 26139 . 26146) (STATIC 26113 . 26119) (semantic-list 25502 . 25515) (semantic-list "()" 25480 . 25501) (THROW "throw" 25480 . 25501) (semantic-list 25477 . 25479) (symbol 25466 . 25477) (WCHAR 25451 . 25458) (STATIC 25425 . 25431) (semantic-list 25404 . 25417) (semantic-list "()" 25382 . 25403) (THROW "throw" 25382 . 25403) (semantic-list 25379 . 25381) (symbol 25372 . 25379) (WCHAR 25357 . 25364) (STATIC 25331 . 25337) (semantic-list 24684 . 24719) (semantic-list "()" 24662 . 24683) (THROW "throw" 24662 . 24683) (semantic-list 24659 . 24661) (symbol 24656 . 24659) (WCHAR 24641 . 24648) (STATIC 24615 . 24621) (semantic-list 24572 . 24607) (semantic-list "()" 24550 . 24571) (THROW "throw" 24550 . 24571) (semantic-list 24547 . 24549) (symbol 24544 . 24547) (WCHAR 24529 . 24536) (STATIC 24503 . 24509) (semantic-list 23865 . 23906) (semantic-list "()" 23837 . 23858) (THROW "throw" 23837 . 23858) (semantic-list 23834 . 23836) (symbol 23824 . 23834) (CHAR 23812 . 23816) (UNSIGNED 23803 . 23811) (STATIC 23777 . 23783) (semantic-list 23728 . 23769) (semantic-list "()" 23700 . 23721) (THROW "throw" 23700 . 23721) (semantic-list 23697 . 23699) (symbol 23684 . 23697) (CHAR 23672 . 23676) (UNSIGNED 23663 . 23671) (STATIC 23637 . 23643) (semantic-list 23588 . 23629) (semantic-list "()" 23560 . 23581) (THROW "throw" 23560 . 23581) (semantic-list 23557 . 23559) (symbol 23548 . 23557) (CHAR 23536 . 23540) (UNSIGNED 23527 . 23535) (STATIC 23501 . 23507) (semantic-list 23452 . 23493) (semantic-list "()" 23424 . 23445) (THROW "throw" 23424 . 23445) (semantic-list 23421 . 23423) (symbol 23413 . 23421) (CHAR 23401 . 23405) (UNSIGNED 23392 . 23400) (STATIC 23366 . 23372) (semantic-list 22755 . 22768) (semantic-list "()" 22733 . 22754) (THROW "throw" 22733 . 22754) (semantic-list 22730 . 22732) (symbol 22719 . 22730) (CHAR 22707 . 22711) (UNSIGNED 22698 . 22706) (STATIC 22672 . 22678) (semantic-list 22651 . 22664) (semantic-list "()" 22629 . 22650) (THROW "throw" 22629 . 22650) (semantic-list 22626 . 22628) (symbol 22619 . 22626) (CHAR 22607 . 22611) (UNSIGNED 22598 . 22606) (STATIC 22572 . 22578) (semantic-list 21920 . 21954) (semantic-list "()" 21898 . 21919) (THROW "throw" 21898 . 21919) (semantic-list 21895 . 21897) (symbol 21892 . 21895) (CHAR 21880 . 21884) (UNSIGNED 21871 . 21879) (STATIC 21845 . 21851) (semantic-list 21824 . 21837) (semantic-list "()" 21802 . 21823) (THROW "throw" 21802 . 21823) (semantic-list 21799 . 21801) (symbol 21796 . 21799) (CHAR 21784 . 21788) (UNSIGNED 21775 . 21783) (STATIC 21749 . 21755) (semantic-list 21100 . 21139) (semantic-list "()" 21072 . 21093) (THROW "throw" 21072 . 21093) (semantic-list 21069 . 21071) (symbol 21059 . 21069) (CHAR 21047 . 21051) (SIGNED 21040 . 21046) (STATIC 21014 . 21020) (semantic-list 20967 . 21006) (semantic-list "()" 20939 . 20960) (THROW "throw" 20939 . 20960) (semantic-list 20936 . 20938) (symbol 20923 . 20936) (CHAR 20911 . 20915) (SIGNED 20904 . 20910) (STATIC 20878 . 20884) (semantic-list 20831 . 20870) (semantic-list "()" 20809 . 20830) (THROW "throw" 20809 . 20830) (semantic-list 20806 . 20808) (symbol 20797 . 20806) (CHAR 20785 . 20789) (SIGNED 20778 . 20784) (STATIC 20752 . 20758) (semantic-list 20705 . 20744) (semantic-list "()" 20683 . 20704) (THROW "throw" 20683 . 20704) (semantic-list 20680 . 20682) (symbol 20672 . 20680) (CHAR 20660 . 20664) (SIGNED 20653 . 20659) (STATIC 20627 . 20633) (semantic-list 20016 . 20029) (semantic-list "()" 19994 . 20015) (THROW "throw" 19994 . 20015) (semantic-list 19991 . 19993) (symbol 19980 . 19991) (CHAR 19968 . 19972) (SIGNED 19961 . 19967) (STATIC 19935 . 19941) (semantic-list 19914 . 19927) (semantic-list "()" 19892 . 19913) (THROW "throw" 19892 . 19913) (semantic-list 19889 . 19891) (symbol 19882 . 19889) (CHAR 19870 . 19874) (SIGNED 19863 . 19869) (STATIC 19837 . 19843) (semantic-list 19209 . 19234) (semantic-list "()" 19187 . 19208) (THROW "throw" 19187 . 19208) (semantic-list 19184 . 19186) (symbol 19181 . 19184) (CHAR 19169 . 19173) (SIGNED 19162 . 19168) (STATIC 19136 . 19142) (semantic-list 19098 . 19128) (semantic-list "()" 19076 . 19097) (THROW "throw" 19076 . 19097) (semantic-list 19073 . 19075) (symbol 19070 . 19073) (CHAR 19058 . 19062) (SIGNED 19051 . 19057) (STATIC 19025 . 19031) (punctuation 18589 . 18590) (punctuation 18587 . 18588) (symbol 18577 . 18586) (BOOL 18572 . 18576) (CONST "const" 18549 . 18571) (STATIC 18542 . 18548) (semantic-list 18382 . 18414) (semantic-list "()" 18360 . 18381) (THROW "throw" 18360 . 18381) (semantic-list 18357 . 18359) (symbol 18347 . 18357) (CHAR 18335 . 18339) (STATIC 18309 . 18315) (semantic-list 18283 . 18301) (semantic-list "()" 18261 . 18282) (THROW "throw" 18261 . 18282) (semantic-list 18258 . 18260) (symbol 18245 . 18258) (CHAR 18233 . 18237) (STATIC 18207 . 18213) (semantic-list 18181 . 18199) (semantic-list "()" 18159 . 18180) (THROW "throw" 18159 . 18180) (semantic-list 18156 . 18158) (symbol 18147 . 18156) (CHAR 18135 . 18139) (STATIC 18109 . 18115) (semantic-list 18083 . 18101) (semantic-list "()" 18061 . 18082) (THROW "throw" 18061 . 18082) (semantic-list 18058 . 18060) (symbol 18050 . 18058) (CHAR 18045 . 18049) (STATIC 18012 . 18018) (semantic-list 17401 . 17414) (semantic-list "()" 17379 . 17400) (THROW "throw" 17379 . 17400) (semantic-list 17376 . 17378) (symbol 17365 . 17376) (CHAR 17353 . 17357) (STATIC 17327 . 17333) (semantic-list 17306 . 17319) (semantic-list "()" 17284 . 17305) (THROW "throw" 17284 . 17305) (semantic-list 17281 . 17283) (symbol 17274 . 17281) (CHAR 17262 . 17266) (STATIC 17236 . 17242) (semantic-list 16612 . 16643) (semantic-list "()" 16590 . 16611) (THROW "throw" 16590 . 16611) (semantic-list 16587 . 16589) (symbol 16584 . 16587) (CHAR 16572 . 16576) (STATIC 16546 . 16552) (semantic-list 16507 . 16538) (semantic-list "()" 16485 . 16506) (THROW "throw" 16485 . 16506) (semantic-list 16482 . 16484) (symbol 16479 . 16482) (CHAR 16467 . 16471) (STATIC 16441 . 16447) (semantic-list 15669 . 15686) (semantic-list "()" 15647 . 15668) (THROW "throw" 15647 . 15668) (semantic-list 15644 . 15646) (symbol 15634 . 15644) (BOOL 15622 . 15626) (STATIC 15596 . 15602) (semantic-list 15571 . 15588) (semantic-list "()" 15549 . 15570) (THROW "throw" 15549 . 15570) (semantic-list 15546 . 15548) (symbol 15533 . 15546) (BOOL 15521 . 15525) (STATIC 15495 . 15501) (semantic-list 15470 . 15487) (semantic-list "()" 15448 . 15469) (THROW "throw" 15448 . 15469) (semantic-list 15445 . 15447) (symbol 15436 . 15445) (BOOL 15424 . 15428) (STATIC 15398 . 15404) (semantic-list 15373 . 15390) (semantic-list "()" 15351 . 15372) (THROW "throw" 15351 . 15372) (semantic-list 15348 . 15350) (symbol 15340 . 15348) (BOOL 15328 . 15332) (STATIC 15302 . 15308) (semantic-list 14687 . 14704) (semantic-list "()" 14665 . 14686) (THROW "throw" 14665 . 14686) (semantic-list 14662 . 14664) (symbol 14651 . 14662) (BOOL 14639 . 14643) (STATIC 14613 . 14619) (semantic-list 14588 . 14605) (semantic-list "()" 14566 . 14587) (THROW "throw" 14566 . 14587) (semantic-list 14563 . 14565) (symbol 14556 . 14563) (BOOL 14544 . 14548) (STATIC 14518 . 14524) (semantic-list 13975 . 13991) (semantic-list "()" 13953 . 13974) (THROW "throw" 13953 . 13974) (semantic-list 13950 . 13952) (symbol 13947 . 13950) (BOOL 13935 . 13939) (STATIC 13909 . 13915) (semantic-list 13884 . 13901) (semantic-list "()" 13862 . 13883) (THROW "throw" 13862 . 13883) (semantic-list 13859 . 13861) (symbol 13856 . 13859) (BOOL 13844 . 13848) (STATIC 13818 . 13824) (semantic-list 13156 . 13173) (semantic-list "()" 13134 . 13155) (THROW "throw" 13134 . 13155) (semantic-list 13131 . 13133) (symbol 13121 . 13131) (symbol 13111 . 13114) (STATIC 13085 . 13091) (semantic-list 12911 . 12928) (semantic-list "()" 12889 . 12910) (THROW "throw" 12889 . 12910) (semantic-list 12886 . 12888) (symbol 12873 . 12886) (symbol 12863 . 12866) (STATIC 12837 . 12843) (semantic-list 12723 . 12740) (semantic-list "()" 12701 . 12722) (THROW "throw" 12701 . 12722) (semantic-list 12698 . 12700) (symbol 12689 . 12698) (symbol 12679 . 12682) (STATIC 12653 . 12659) (semantic-list 12547 . 12564) (semantic-list "()" 12525 . 12546) (THROW "throw" 12525 . 12546) (semantic-list 12522 . 12524) (symbol 12514 . 12522) (symbol 12504 . 12507) (STATIC 12478 . 12484) (semantic-list 12378 . 12395) (semantic-list "()" 12356 . 12377) (THROW "throw" 12356 . 12377) (semantic-list 12353 . 12355) (symbol 12342 . 12353) (symbol 12332 . 12335) (STATIC 12306 . 12312) (semantic-list 12215 . 12232) (semantic-list "()" 12193 . 12214) (THROW "throw" 12193 . 12214) (semantic-list 12190 . 12192) (symbol 12183 . 12190) (symbol 12173 . 12176) (STATIC 12147 . 12153) (semantic-list 11793 . 11810) (semantic-list "()" 11771 . 11792) (THROW "throw" 11771 . 11792) (semantic-list 11768 . 11770) (symbol 11765 . 11768) (symbol 11755 . 11758) (STATIC 11729 . 11735) (semantic-list 11664 . 11681) (semantic-list "()" 11642 . 11663) (THROW "throw" 11642 . 11663) (semantic-list 11639 . 11641) (symbol 11636 . 11639) (symbol 11626 . 11629) (STATIC 11600 . 11606) (symbol 1406 . 1419) (symbol 1402 . 1405) (symbol 1395 . 1401) (punctuation 1394 . 1395))
+      :lexical-table 
+        '(("__glibcxx_min_b" (spp-arg-list ("T" "B") 4130 . 4135) . ((semantic-list "(__glibcxx_signed_b (T,B) ? -__glibcxx_max_b (T,B) - 1 : (T)0)" 4144 . 4206)))
+          ("_GLIBCXX_NUMERIC_LIMITS" . ((number "1" 1391 . 1392)))
+          ("__glibcxx_integral_traps" . ((symbol "true" 2867 . 2871)))
+          ("__glibcxx_max_b" (spp-arg-list ("T" "B") 4231 . 4236) . ((semantic-list "(__glibcxx_signed_b (T,B) ?						\\
+   (((((T)1 << (__glibcxx_digits_b (T,B) - 1)) - 1) << 1) + 1) : ~(T)0)" 4246 . 4352)))
+          ("__glibcxx_digits_b" (spp-arg-list ("T" "B") 4380 . 4385) . ((semantic-list "(B - __glibcxx_signed_b (T,B))" 4393 . 4423)))
+          ("__glibcxx_signed_b" (spp-arg-list ("T" "B") 4086 . 4091) . ((semantic-list "((T)(-1) < 0)" 4092 . 4105)))
+          ("__glibcxx_digits10_b" (spp-arg-list ("T" "B") 4525 . 4530) . ((semantic-list "(__glibcxx_digits_b (T,B) * 643L / 2136)" 4536 . 4576)))
+          )
+)
+    (semanticdb-table "memory"
+      :file "memory"
+      :fsize 4303
+      :lastmodtime '(22476 48724 0 0)))
   :file "!usr!include!c++!5!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

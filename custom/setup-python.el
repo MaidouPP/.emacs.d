@@ -29,4 +29,8 @@
                 )
               auto-insert-alist))
 
+(setq company-global-modes '(not python-mode))
+
+;; (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+
 (provide 'setup-python)
