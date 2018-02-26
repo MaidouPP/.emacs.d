@@ -7,97 +7,87 @@
       :major-mode 'c-mode
       :tags 
         '( ("_FEATURES_H" variable (:constant-flag t) nil [818 829])
-            ("__KERNEL_STRICT_NAMES" variable (:constant-flag t) nil [5462 5483])
-            ("__GNUC_PREREQ" variable (:constant-flag t) nil [5812 5825])
-            ("_ISOC95_SOURCE" variable (:constant-flag t) nil [6081 6095])
-            ("_ISOC99_SOURCE" variable (:constant-flag t) nil [6131 6145])
-            ("_ISOC11_SOURCE" variable (:constant-flag t) nil [6181 6195])
-            ("_POSIX_SOURCE" variable (:constant-flag t) nil [6230 6243])
-            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [6280 6295])
-            ("_XOPEN_SOURCE" variable (:constant-flag t) nil [6336 6349])
-            ("_XOPEN_SOURCE_EXTENDED" variable (:constant-flag t) nil [6395 6417])
-            ("_LARGEFILE64_SOURCE" variable (:constant-flag t) nil [6458 6477])
-            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [6514 6529])
-            ("_BSD_SOURCE" variable (:constant-flag t) nil [6562 6573])
-            ("_SVID_SOURCE" variable (:constant-flag t) nil [6607 6619])
-            ("_ATFILE_SOURCE" variable (:constant-flag t) nil [6655 6669])
-            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [7098 7113])
-            ("_BSD_SOURCE" variable (:constant-flag t) nil [7146 7157])
-            ("_SVID_SOURCE" variable (:constant-flag t) nil [7191 7203])
-            ("_POSIX_SOURCE" variable (:constant-flag t) nil [8407 8420])
-            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [8457 8472])
-            ("__USE_POSIX" variable (:constant-flag t) nil [9080 9091])
-            ("__USE_POSIX2" variable (:constant-flag t) nil [9188 9200])
-            ("__USE_XOPEN" variable (:constant-flag t) nil [9674 9685])
-            ("__USE_XOPEN_EXTENDED" variable (:constant-flag t) nil [9730 9750])
-            ("__USE_UNIX98" variable (:constant-flag t) nil [9763 9775])
-            ("_LARGEFILE_SOURCE" variable (:constant-flag t) nil [9815 9832])
-            ("__USE_XOPEN2K8" variable (:constant-flag t) nil [9914 9928])
-            ("__USE_XOPEN2K8XSI" variable (:constant-flag t) nil [9943 9960])
-            ("__USE_XOPEN2K" variable (:constant-flag t) nil [9984 9997])
-            ("__USE_XOPEN2KXSI" variable (:constant-flag t) nil [10011 10027])
-            ("__USE_ISOC95" variable (:constant-flag t) nil [10064 10076])
-            ("__USE_ISOC99" variable (:constant-flag t) nil [10114 10126])
-            ("__USE_LARGEFILE" variable (:constant-flag t) nil [10271 10286])
-            ("__USE_LARGEFILE64" variable (:constant-flag t) nil [10333 10350])
-            ("__USE_MISC" variable (:constant-flag t) nil [10514 10524])
-            ("__USE_BSD" variable (:constant-flag t) nil [10563 10572])
-            ("__USE_SVID" variable (:constant-flag t) nil [10612 10622])
-            ("__USE_ATFILE" variable (:constant-flag t) nil [10664 10676])
-            ("__USE_GNU" variable (:constant-flag t) nil [10715 10724])
-            ("__USE_FORTIFY_LEVEL" variable (:constant-flag t) nil [11061 11080])
-            ("stdc-predef.h" include (:system-flag t) nil [11211 11235])
-            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [11668 11683])
-            ("__GLIBC__" variable (:constant-flag t) nil [11827 11836])
-            ("__GLIBC_MINOR__" variable (:constant-flag t) nil [11847 11862])
-            ("__GLIBC_PREREQ" variable (:constant-flag t) nil [11875 11889])
-            ("sys/cdefs.h" include (:system-flag t) nil [12089 12113])
-            ("gnu/stubs.h" include (:system-flag t) nil [12936 12958]))          
+            ("__KERNEL_STRICT_NAMES" variable (:constant-flag t) nil [5288 5309])
+            ("__GNUC_PREREQ" variable (:constant-flag t) nil [5638 5651])
+            ("_ISOC95_SOURCE" variable (:constant-flag t) nil [6498 6512])
+            ("_ISOC99_SOURCE" variable (:constant-flag t) nil [6548 6562])
+            ("_ISOC11_SOURCE" variable (:constant-flag t) nil [6598 6612])
+            ("_POSIX_SOURCE" variable (:constant-flag t) nil [6647 6660])
+            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [6697 6712])
+            ("_XOPEN_SOURCE" variable (:constant-flag t) nil [6753 6766])
+            ("_XOPEN_SOURCE_EXTENDED" variable (:constant-flag t) nil [6812 6834])
+            ("_LARGEFILE64_SOURCE" variable (:constant-flag t) nil [6875 6894])
+            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [6931 6946])
+            ("_ATFILE_SOURCE" variable (:constant-flag t) nil [6982 6996])
+            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [7339 7354])
+            ("_POSIX_SOURCE" variable (:constant-flag t) nil [8558 8571])
+            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [8608 8623])
+            ("__USE_POSIX" variable (:constant-flag t) nil [9319 9330])
+            ("__USE_POSIX2" variable (:constant-flag t) nil [9427 9439])
+            ("__USE_XOPEN" variable (:constant-flag t) nil [10021 10032])
+            ("__USE_XOPEN_EXTENDED" variable (:constant-flag t) nil [10077 10097])
+            ("__USE_UNIX98" variable (:constant-flag t) nil [10110 10122])
+            ("_LARGEFILE_SOURCE" variable (:constant-flag t) nil [10162 10179])
+            ("__USE_XOPEN2K8" variable (:constant-flag t) nil [10261 10275])
+            ("__USE_XOPEN2K8XSI" variable (:constant-flag t) nil [10290 10307])
+            ("__USE_XOPEN2K" variable (:constant-flag t) nil [10331 10344])
+            ("__USE_XOPEN2KXSI" variable (:constant-flag t) nil [10358 10374])
+            ("__USE_ISOC95" variable (:constant-flag t) nil [10411 10423])
+            ("__USE_ISOC99" variable (:constant-flag t) nil [10461 10473])
+            ("__USE_LARGEFILE" variable (:constant-flag t) nil [10618 10633])
+            ("__USE_LARGEFILE64" variable (:constant-flag t) nil [10680 10697])
+            ("__USE_MISC" variable (:constant-flag t) nil [10841 10851])
+            ("__USE_ATFILE" variable (:constant-flag t) nil [10893 10905])
+            ("__USE_GNU" variable (:constant-flag t) nil [10944 10953])
+            ("__USE_FORTIFY_LEVEL" variable (:constant-flag t) nil [11290 11309])
+            ("stdc-predef.h" include (:system-flag t) nil [11440 11464])
+            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [11897 11912])
+            ("__GLIBC__" variable (:constant-flag t) nil [12056 12065])
+            ("__GLIBC_MINOR__" variable (:constant-flag t) nil [12076 12091])
+            ("__GLIBC_PREREQ" variable (:constant-flag t) nil [12104 12118])
+            ("sys/cdefs.h" include (:system-flag t) nil [12318 12342])
+            ("gnu/stubs.h" include (:system-flag t) nil [13165 13187]))          
       :file "features.h"
-      :pointmax 12986
-      :fsize 12985
-      :lastmodtime '(22852 16999 0 0)
-      :unmatched-syntax '((close-paren 7062 . 7063) (semantic-list 6855 . 7062) (punctuation 6853 . 6854) (punctuation 6852 . 6853))
+      :pointmax 13215
+      :fsize 13214
+      :lastmodtime '(23132 5778 0 0)
+      :unmatched-syntax '((close-paren 9308 . 9309) (number "700" 9295 . 9308) (symbol 9287 . 9294) (punctuation 9285 . 9286) (punctuation 9284 . 9285) (close-paren 9275 . 9276) (number 9274 . 9275) (punctuation 9272 . 9273) (punctuation 9271 . 9272) (number "200809L" 9255 . 9270) (punctuation 9253 . 9254) (punctuation 9252 . 9253) (number "200809L" 9236 . 9251) (symbol 9228 . 9235) (open-paren 9227 . 9228) (punctuation 9225 . 9226) (punctuation 9224 . 9225) (close-paren 7303 . 7304) (semantic-list 7152 . 7303) (punctuation 7150 . 7151) (punctuation 7149 . 7150))
       :lexical-table 
-        '(("__USE_XOPEN" . ((number "1" 9686 . 9687)))
-          ("__USE_XOPEN_EXTENDED" . ((number "1" 9751 . 9752)))
-          ("__USE_BSD" . ((number "1" 10573 . 10574)))
-          ("_ISOC99_SOURCE" . ((number "1" 6146 . 6147)))
-          ("__USE_XOPEN2KXSI" . ((number "1" 10028 . 10029)))
-          ("__USE_ATFILE" . ((number "1" 10677 . 10678)))
-          ("_ISOC95_SOURCE" . ((number "1" 6096 . 6097)))
-          ("_LARGEFILE64_SOURCE" . ((number "1" 6478 . 6479)))
-          ("__USE_LARGEFILE64" . ((number "1" 10351 . 10352)))
+        '(("__USE_XOPEN" . ((number "1" 10033 . 10034)))
+          ("__USE_XOPEN_EXTENDED" . ((number "1" 10098 . 10099)))
+          ("_ISOC99_SOURCE" . ((number "1" 6563 . 6564)))
+          ("__USE_XOPEN2KXSI" . ((number "1" 10375 . 10376)))
+          ("__USE_ATFILE" . ((number "1" 10906 . 10907)))
+          ("_ISOC95_SOURCE" . ((number "1" 6513 . 6514)))
+          ("_LARGEFILE64_SOURCE" . ((number "1" 6895 . 6896)))
+          ("__USE_LARGEFILE64" . ((number "1" 10698 . 10699)))
           ("__KERNEL_STRICT_NAMES")
-          ("_BSD_SOURCE" . ((number "1" 7158 . 7159)))
-          ("_POSIX_SOURCE" . ((number "1" 8421 . 8422)))
-          ("__USE_XOPEN2K8" . ((number "1" 9929 . 9930)))
-          ("__USE_XOPEN2K" . ((number "1" 9998 . 9999)))
-          ("__USE_ISOC95" . ((number "1" 10078 . 10079)))
-          ("__GLIBC__" . ((number "2" 11837 . 11838)))
-          ("_XOPEN_SOURCE_EXTENDED" . ((number "1" 6418 . 6419)))
-          ("__USE_XOPEN2K8XSI" . ((number "1" 9961 . 9962)))
-          ("_XOPEN_SOURCE" . ((number "700" 6350 . 6353)))
-          ("_ATFILE_SOURCE" . ((number "1" 6670 . 6671)))
-          ("__USE_FORTIFY_LEVEL" . ((number "0" 11081 . 11082)))
+          ("_POSIX_SOURCE" . ((number "1" 8572 . 8573)))
+          ("__USE_XOPEN2K8" . ((number "1" 10276 . 10277)))
+          ("__USE_XOPEN2K" . ((number "1" 10345 . 10346)))
+          ("__USE_ISOC95" . ((number "1" 10425 . 10426)))
+          ("__GLIBC__" . ((number "2" 12066 . 12067)))
+          ("_XOPEN_SOURCE_EXTENDED" . ((number "1" 6835 . 6836)))
+          ("__USE_XOPEN2K8XSI" . ((number "1" 10308 . 10309)))
+          ("_XOPEN_SOURCE" . ((number "700" 6767 . 6770)))
+          ("_ATFILE_SOURCE" . ((number "1" 6997 . 6998)))
+          ("__USE_FORTIFY_LEVEL" . ((number "0" 11310 . 11311)))
           ("_FEATURES_H" . ((number "1" 830 . 831)))
-          ("__USE_MISC" . ((number "1" 10525 . 10526)))
-          ("__GNU_LIBRARY__" . ((number "6" 11684 . 11685)))
-          ("__GLIBC_MINOR__" . ((number "19" 11863 . 11865)))
-          ("__GLIBC_PREREQ" (spp-arg-list ("maj" "min") 11889 . 11899) . ((semantic-list "((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))" 11903 . 11965)))
-          ("__GNUC_PREREQ" (spp-arg-list ("maj" "min") 5825 . 5835) . ((semantic-list "((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))" 5839 . 5899)))
-          ("__USE_POSIX2" . ((number "1" 9201 . 9202)))
-          ("__USE_ISOC99" . ((number "1" 10128 . 10129)))
-          ("__USE_GNU" . ((number "1" 10725 . 10726)))
-          ("_ISOC11_SOURCE" . ((number "1" 6196 . 6197)))
-          ("_POSIX_C_SOURCE" . ((number "200809L" 8473 . 8480)))
-          ("__USE_LARGEFILE" . ((number "1" 10287 . 10288)))
-          ("__USE_UNIX98" . ((number "1" 9776 . 9777)))
-          ("__USE_SVID" . ((number "1" 10623 . 10624)))
-          ("_DEFAULT_SOURCE" . ((number "1" 7114 . 7115)))
-          ("_SVID_SOURCE" . ((number "1" 7204 . 7205)))
-          ("__USE_POSIX" . ((number "1" 9092 . 9093)))
-          ("_LARGEFILE_SOURCE" . ((number "1" 9833 . 9834)))
+          ("__USE_MISC" . ((number "1" 10852 . 10853)))
+          ("__GNU_LIBRARY__" . ((number "6" 11913 . 11914)))
+          ("__GLIBC_MINOR__" . ((number "23" 12092 . 12094)))
+          ("__GLIBC_PREREQ" (spp-arg-list ("maj" "min") 12118 . 12128) . ((semantic-list "((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))" 12132 . 12194)))
+          ("__GNUC_PREREQ" (spp-arg-list ("maj" "min") 5651 . 5661) . ((semantic-list "((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))" 5665 . 5725)))
+          ("__USE_POSIX2" . ((number "1" 9440 . 9441)))
+          ("__USE_ISOC99" . ((number "1" 10475 . 10476)))
+          ("__USE_GNU" . ((number "1" 10954 . 10955)))
+          ("_ISOC11_SOURCE" . ((number "1" 6613 . 6614)))
+          ("_POSIX_C_SOURCE" . ((number "200809L" 8624 . 8631)))
+          ("__USE_LARGEFILE" . ((number "1" 10634 . 10635)))
+          ("__USE_UNIX98" . ((number "1" 10123 . 10124)))
+          ("_DEFAULT_SOURCE" . ((number "1" 7355 . 7356)))
+          ("__USE_POSIX" . ((number "1" 9331 . 9332)))
+          ("_LARGEFILE_SOURCE" . ((number "1" 10180 . 10181)))
           )
 )
     (semanticdb-table "stdc-predef.h"
@@ -105,8 +95,8 @@
       :tags nil
       :file "stdc-predef.h"
       :pointmax 2154
-      :fsize 2153
-      :lastmodtime '(22852 16999 0 0)
+      :fsize 2229
+      :lastmodtime '(23132 5778 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "fcntl.h"
       :major-mode 'c-mode
@@ -382,8 +372,8 @@
                 (reparse-symbol extern-c-contents) [1044 1067]))          
       :file "fcntl.h"
       :pointmax 9144
-      :fsize 9143
-      :lastmodtime '(22852 17019 0 0)
+      :fsize 9437
+      :lastmodtime '(23132 5791 0 0)
       :unmatched-syntax '((punctuation 8902 . 8903) (symbol 8896 . 8901) (symbol 8888 . 8895) (punctuation 8886 . 8887) (symbol 8878 . 8886) (symbol 8870 . 8877) (punctuation 8868 . 8869) (symbol 8864 . 8868) (INT 8860 . 8863) (symbol 8841 . 8858) \.\.\.)
       :lexical-table 
         '(("__pid_t_defined")
@@ -2007,8 +1997,8 @@
                 (reparse-symbol extern-c-contents) [1176 1190]))          
       :file "unistd.h"
       :pointmax 42242
-      :fsize 42241
-      :lastmodtime '(22852 17018 0 0)
+      :fsize 42100
+      :lastmodtime '(23132 5790 0 0)
       :unmatched-syntax '((number "1" 38073 . 38083) (symbol 38065 . 38072) (punctuation 38063 . 38064) (punctuation 38062 . 38063) (number "1" 37481 . 37494) (symbol 37473 . 37480) (punctuation 37471 . 37472) (punctuation 37470 . 37471) (number "1" 37449 . 37469) (symbol 37441 . 37448) \.\.\.)
       :lexical-table 
         '(("_XOPEN_LEGACY" . ((number "1" 3844 . 3845)))
@@ -2095,8 +2085,8 @@
             ("le64toh" variable (:constant-flag t) nil [2874 2881]))          
       :file "endian.h"
       :pointmax 2938
-      :fsize 2937
-      :lastmodtime '(22852 17016 0 0)
+      :fsize 2939
+      :lastmodtime '(23132 5789 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BYTE_ORDER" . ((symbol "__BYTE_ORDER" 1829 . 1841)))
@@ -2270,8 +2260,8 @@
                 (reparse-symbol extern-c-contents) [1091 1104]))          
       :file "time.h"
       :pointmax 13725
-      :fsize 13724
-      :lastmodtime '(22852 17017 0 0)
+      :fsize 13543
+      :lastmodtime '(23132 5790 0 0)
       :unmatched-syntax '((punctuation 13622 . 13623) (symbol 13612 . 13621) (punctuation 13600 . 13601) (symbol 13597 . 13599) (STRUCT 13590 . 13596) (punctuation 13580 . 13581) (symbol 13572 . 13580) (punctuation 13560 . 13561) (CHAR 13555 . 13559) (CONST 13549 . 13554) \.\.\.)
       :lexical-table 
         '(("__pid_t_defined")
@@ -2408,7 +2398,7 @@
       :file "getopt.h"
       :pointmax 6645
       :fsize 6644
-      :lastmodtime '(22852 17018 0 0)
+      :lastmodtime '(23132 5790 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_GETOPT_H" . ((number "1" 878 . 879)))
@@ -3357,8 +3347,8 @@
                 (reparse-symbol extern-c-contents) [980 993]))          
       :file "string.h"
       :pointmax 22522
-      :fsize 22521
-      :lastmodtime '(22852 17016 0 0)
+      :fsize 22663
+      :lastmodtime '(23132 5789 0 0)
       :unmatched-syntax '((symbol 18231 . 18244) (number "1" 6442 . 6456) (symbol 6434 . 6441) (punctuation 6432 . 6433) (punctuation 6431 . 6432))
       :lexical-table 
         '(("strdupa" (spp-arg-list ("s") 7029 . 7032) . ((semantic-list "(__extension__							      \\
@@ -5083,8 +5073,8 @@
                 (reparse-symbol extern-c-contents) [1133 1142]))          
       :file "stdlib.h"
       :pointmax 33928
-      :fsize 33927
-      :lastmodtime '(22852 17014 0 0)
+      :fsize 33686
+      :lastmodtime '(23132 5788 0 0)
       :unmatched-syntax '((number "1" 27755 . 27765) (symbol 27747 . 27754) (punctuation 27745 . 27746) (punctuation 27744 . 27745) (symbol 27509 . 27522) (LONG 26982 . 26986) (EXTERN 26975 . 26981) (symbol 26961 . 26974) (TYPEDEF 25893 . 25900) (TYPEDEF 25744 . 25751) \.\.\.)
       :lexical-table 
         '(("RAND_MAX" . ((number "2147483647" 3814 . 3824)))
@@ -5159,7 +5149,7 @@
       :file "xlocale.h"
       :pointmax 1690
       :fsize 1689
-      :lastmodtime '(22852 17000 0 0)
+      :lastmodtime '(23132 5779 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_XLOCALE_H" . ((number "1" 923 . 924)))
@@ -5187,7 +5177,7 @@
       :file "alloca.h"
       :pointmax 1204
       :fsize 1203
-      :lastmodtime '(22852 17014 0 0)
+      :lastmodtime '(23132 5788 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_ALLOCA_H" . ((number "1" 826 . 827)))
@@ -6689,8 +6679,8 @@
                 (reparse-symbol extern-c-contents) [3685 3695]))          
       :file "wchar.h"
       :pointmax 32000
-      :fsize 31999
-      :lastmodtime '(22852 17017 0 0)
+      :fsize 32124
+      :lastmodtime '(23132 5790 0 0)
       :unmatched-syntax '((LONG 18878 . 18882) (UNSIGNED 18869 . 18877) (EXTERN 18862 . 18868) (symbol 18848 . 18861) (LONG 18710 . 18714) (EXTERN 18703 . 18709) (symbol 18689 . 18702) (LONG 17424 . 17428) (UNSIGNED 17415 . 17423) (EXTERN 17408 . 17414) \.\.\.)
       :lexical-table 
         '(("__need___FILE")
@@ -7234,8 +7224,8 @@
                 (reparse-symbol extern-c-contents) [1316 1336]))          
       :file "ctype.h"
       :pointmax 11749
-      :fsize 11748
-      :lastmodtime '(22852 17010 0 0)
+      :fsize 11652
+      :lastmodtime '(23132 5786 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_ISbit" (spp-arg-list ("bit") 1387 . 1392) . ((semantic-list "(1 << (bit))" 1393 . 1405)))
@@ -8691,8 +8681,8 @@
                 (reparse-symbol extern-c-contents) [1031 1044]))          
       :file "stdio.h"
       :pointmax 31640
-      :fsize 31639
-      :lastmodtime '(22852 17015 0 0)
+      :fsize 31365
+      :lastmodtime '(23132 5789 0 0)
       :unmatched-syntax '((punctuation 30837 . 30838) (symbol 30820 . 30828) (punctuation 30819 . 30820) (symbol 30814 . 30818) (symbol 30801 . 30812) (VOID 30796 . 30800) (EXTERN 30789 . 30795) (punctuation 30734 . 30735) (symbol 30711 . 30719) (punctuation 30710 . 30711) \.\.\.)
       :lexical-table 
         '(("putc" (spp-arg-list ("_ch" "_fp") 19106 . 19116) . ((symbol "_IO_putc" 19117 . 19125) (semantic-list "(_ch, _fp)" 19126 . 19136)))
@@ -8963,7 +8953,7 @@
       :file "locale.h"
       :pointmax 7942
       :fsize 7941
-      :lastmodtime '(22852 17000 0 0)
+      :lastmodtime '(23132 5779 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("LC_COLLATE" . ((symbol "__LC_COLLATE" 1269 . 1281)))
@@ -9626,8 +9616,8 @@
                 (reparse-symbol extern-c-contents) [12077 12113]))          
       :file "libio.h"
       :pointmax 17249
-      :fsize 17248
-      :lastmodtime '(22852 17015 0 0)
+      :fsize 17179
+      :lastmodtime '(23132 5789 0 0)
       :unmatched-syntax '((TYPEDEF 11196 . 11203) (TYPEDEF 11102 . 11109) (TYPEDEF 10737 . 10744) (TYPEDEF 10272 . 10279) (semantic-list 2228 . 2284))
       :lexical-table 
         '(("_IO_fpos64_t" . ((symbol "_G_fpos64_t" 1499 . 1510)))
@@ -11527,8 +11517,8 @@
                 (reparse-symbol extern-c-contents) [6818 7027]))          
       :file "pthread.h"
       :pointmax 41513
-      :fsize 41512
-      :lastmodtime '(22852 17025 0 0)
+      :fsize 41225
+      :lastmodtime '(23132 5794 0 0)
       :unmatched-syntax '((semantic-list 6958 . 6966) (semantic-list 6939 . 6957) (spp-macro-def 6208 . 6235) (spp-macro-def 6122 . 6145) (spp-macro-def 6030 . 6052) (spp-macro-def 5951 . 5972) (spp-macro-def 5384 . 5406) (spp-macro-def 5303 . 5326) (spp-macro-def 5171 . 5192) (spp-macro-def 5094 . 5114) \.\.\.)
       :lexical-table 
         '(("PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP" . ((semantic-list "{ { 0, 0, 0, PTHREAD_MUTEX_ADAPTIVE_NP, 0, { __PTHREAD_SPINS } } }" 3410 . 3476)))
@@ -11604,7 +11594,7 @@
       :file "_G_config.h"
       :pointmax 1288
       :fsize 1287
-      :lastmodtime '(22852 17015 0 0)
+      :lastmodtime '(23132 5789 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_G_va_list" . ((symbol "__gnuc_va_list" 1013 . 1027)))
@@ -11839,8 +11829,8 @@
                 (reparse-symbol extern-c-contents) [1435 1525]))          
       :file "sched.h"
       :pointmax 4630
-      :fsize 4629
-      :lastmodtime '(22852 17018 0 0)
+      :fsize 4659
+      :lastmodtime '(23132 5790 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__pid_t_defined")
@@ -12318,7 +12308,7 @@
       :file "wctype.h"
       :pointmax 11131
       :fsize 11130
-      :lastmodtime '(22852 17021 0 0)
+      :lastmodtime '(23132 5792 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_WCTYPE_H" . ((number "1" 998 . 999)))
@@ -12397,8 +12387,8 @@
             ("__ASSERT_FUNCTION" variable (:constant-flag t) nil [3398 3415]))          
       :file "assert.h"
       :pointmax 3653
-      :fsize 3652
-      :lastmodtime '(22852 17010 0 0)
+      :fsize 3583
+      :lastmodtime '(23132 5786 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__ASSERT_VOID_CAST" . ((semantic-list "(void)" 1169 . 1175)))
@@ -12428,7 +12418,7 @@
       :file "limits.h"
       :pointmax 4490
       :fsize 4489
-      :lastmodtime '(22852 16999 0 0)
+      :lastmodtime '(23132 5778 0 0)
       :unmatched-syntax '((punctuation 3851 . 3852) (symbol 3850 . 3851) (punctuation 3849 . 3850) (symbol 3843 . 3849) (punctuation 3842 . 3843) (symbol 3829 . 3841) (punctuation 3827 . 3828))
       :lexical-table 
         '(("LLONG_MAX" . ((symbol "__LONG_LONG_MAX__" 4174 . 4191)))
@@ -12447,7 +12437,7 @@
       :file "memory.h"
       :pointmax 956
       :fsize 955
-      :lastmodtime '(22852 17016 0 0)
+      :lastmodtime '(23132 5789 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_MEMORY_H" . ((number "1" 842 . 843)))
@@ -12864,8 +12854,8 @@
                 (reparse-symbol extern-c-contents) [1069 1095]))          
       :file "math.h"
       :pointmax 16477
-      :fsize 16476
-      :lastmodtime '(22852 17012 0 0)
+      :fsize 18371
+      :lastmodtime '(23132 5787 0 0)
       :unmatched-syntax '((number "4" 6732 . 6741) (spp-macro-def 6714 . 6723) (punctuation 6703 . 6704) (number "3" 6675 . 6687) (spp-macro-def 6654 . 6666) (punctuation 6643 . 6644) (number "2" 6617 . 6624) (spp-macro-def 6601 . 6608) (punctuation 6590 . 6591) (number "1" 6565 . 6576) (spp-macro-def 6545 . 6556) (punctuation 6534 . 6535) (number "0" 6510 . 6516) (spp-macro-def 6495 . 6501) (punctuation 6484 . 6485) (symbol 3340 . 3353) (symbol 3332 . 3339) (punctuation 3330 . 3331) (punctuation 3329 . 3330))
       :lexical-table 
         '(("isinf" (spp-arg-list ("x") 8725 . 8728) . ((semantic-list "(sizeof (x) == sizeof (float)					      \\
@@ -13125,8 +13115,8 @@
             ("UINTMAX_C" variable (:constant-flag t) nil [7955 7964]))          
       :file "stdint.h"
       :pointmax 8008
-      :fsize 8007
-      :lastmodtime '(22852 17014 0 0)
+      :fsize 8094
+      :lastmodtime '(23132 5788 0 0)
       :unmatched-syntax '((LONG 3342 . 3346) (UNSIGNED 3333 . 3341) (TYPEDEF 3325 . 3332) (symbol 3311 . 3324) (LONG 3286 . 3290) (TYPEDEF 3278 . 3285) (symbol 3264 . 3277) (LONG 2779 . 2783) (UNSIGNED 2770 . 2778) (TYPEDEF 2762 . 2769) (symbol 2748 . 2761) (LONG 2433 . 2437) (TYPEDEF 2425 . 2432) (symbol 2411 . 2424) (LONG 2124 . 2128) (UNSIGNED 2115 . 2123) (TYPEDEF 2107 . 2114) (symbol 2093 . 2106) (LONG 1850 . 1854) (TYPEDEF 1842 . 1849) (symbol 1828 . 1841) (LONG 1601 . 1605) (UNSIGNED 1592 . 1600) (TYPEDEF 1584 . 1591) (symbol 1570 . 1583) (LONG 1287 . 1291) (TYPEDEF 1279 . 1286) (symbol 1265 . 1278))
       :lexical-table 
         '(("__int8_t_defined")
@@ -13229,11 +13219,431 @@
       :file "errno.h"
       :pointmax 2368
       :fsize 2367
-      :lastmodtime '(22852 17014 0 0)
+      :lastmodtime '(23132 5788 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_ERRNO_H" . ((number "1" 1019 . 1020)))
           ("__error_t_defined" . ((number "1" 2328 . 2329)))
+          )
+)
+    (semanticdb-table "inttypes.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_INTTYPES_H" variable (:constant-flag t) nil [890 901])
+            ("features.h" include (:system-flag t) nil [905 926])
+            ("stdint.h" include (:system-flag t) nil [960 979])
+            ("__gwchar_t" variable (:constant-flag t) nil [1117 1127])
+            ("____gwchar_t_defined" variable (:constant-flag t) nil [1300 1320])
+            ("__PRI64_PREFIX" variable (:constant-flag t) nil [1429 1443])
+            ("__PRIPTR_PREFIX" variable (:constant-flag t) nil [1459 1474])
+            ("PRId8" variable (:constant-flag t) nil [1565 1570])
+            ("PRId16" variable (:constant-flag t) nil [1585 1591])
+            ("PRId32" variable (:constant-flag t) nil [1606 1612])
+            ("PRId64" variable (:constant-flag t) nil [1627 1633])
+            ("PRIdLEAST8" variable (:constant-flag t) nil [1664 1674])
+            ("PRIdLEAST16" variable (:constant-flag t) nil [1688 1699])
+            ("PRIdLEAST32" variable (:constant-flag t) nil [1713 1724])
+            ("PRIdLEAST64" variable (:constant-flag t) nil [1738 1749])
+            ("PRIdFAST8" variable (:constant-flag t) nil [1779 1788])
+            ("PRIdFAST16" variable (:constant-flag t) nil [1802 1812])
+            ("PRIdFAST32" variable (:constant-flag t) nil [1842 1852])
+            ("PRIdFAST64" variable (:constant-flag t) nil [1882 1892])
+            ("PRIi8" variable (:constant-flag t) nil [1923 1928])
+            ("PRIi16" variable (:constant-flag t) nil [1943 1949])
+            ("PRIi32" variable (:constant-flag t) nil [1964 1970])
+            ("PRIi64" variable (:constant-flag t) nil [1985 1991])
+            ("PRIiLEAST8" variable (:constant-flag t) nil [2022 2032])
+            ("PRIiLEAST16" variable (:constant-flag t) nil [2046 2057])
+            ("PRIiLEAST32" variable (:constant-flag t) nil [2071 2082])
+            ("PRIiLEAST64" variable (:constant-flag t) nil [2096 2107])
+            ("PRIiFAST8" variable (:constant-flag t) nil [2137 2146])
+            ("PRIiFAST16" variable (:constant-flag t) nil [2160 2170])
+            ("PRIiFAST32" variable (:constant-flag t) nil [2200 2210])
+            ("PRIiFAST64" variable (:constant-flag t) nil [2240 2250])
+            ("PRIo8" variable (:constant-flag t) nil [2303 2308])
+            ("PRIo16" variable (:constant-flag t) nil [2323 2329])
+            ("PRIo32" variable (:constant-flag t) nil [2344 2350])
+            ("PRIo64" variable (:constant-flag t) nil [2365 2371])
+            ("PRIoLEAST8" variable (:constant-flag t) nil [2402 2412])
+            ("PRIoLEAST16" variable (:constant-flag t) nil [2426 2437])
+            ("PRIoLEAST32" variable (:constant-flag t) nil [2451 2462])
+            ("PRIoLEAST64" variable (:constant-flag t) nil [2476 2487])
+            ("PRIoFAST8" variable (:constant-flag t) nil [2517 2526])
+            ("PRIoFAST16" variable (:constant-flag t) nil [2540 2550])
+            ("PRIoFAST32" variable (:constant-flag t) nil [2580 2590])
+            ("PRIoFAST64" variable (:constant-flag t) nil [2620 2630])
+            ("PRIu8" variable (:constant-flag t) nil [2686 2691])
+            ("PRIu16" variable (:constant-flag t) nil [2706 2712])
+            ("PRIu32" variable (:constant-flag t) nil [2727 2733])
+            ("PRIu64" variable (:constant-flag t) nil [2748 2754])
+            ("PRIuLEAST8" variable (:constant-flag t) nil [2785 2795])
+            ("PRIuLEAST16" variable (:constant-flag t) nil [2809 2820])
+            ("PRIuLEAST32" variable (:constant-flag t) nil [2834 2845])
+            ("PRIuLEAST64" variable (:constant-flag t) nil [2859 2870])
+            ("PRIuFAST8" variable (:constant-flag t) nil [2900 2909])
+            ("PRIuFAST16" variable (:constant-flag t) nil [2923 2933])
+            ("PRIuFAST32" variable (:constant-flag t) nil [2963 2973])
+            ("PRIuFAST64" variable (:constant-flag t) nil [3003 3013])
+            ("PRIx8" variable (:constant-flag t) nil [3082 3087])
+            ("PRIx16" variable (:constant-flag t) nil [3102 3108])
+            ("PRIx32" variable (:constant-flag t) nil [3123 3129])
+            ("PRIx64" variable (:constant-flag t) nil [3144 3150])
+            ("PRIxLEAST8" variable (:constant-flag t) nil [3181 3191])
+            ("PRIxLEAST16" variable (:constant-flag t) nil [3205 3216])
+            ("PRIxLEAST32" variable (:constant-flag t) nil [3230 3241])
+            ("PRIxLEAST64" variable (:constant-flag t) nil [3255 3266])
+            ("PRIxFAST8" variable (:constant-flag t) nil [3296 3305])
+            ("PRIxFAST16" variable (:constant-flag t) nil [3319 3329])
+            ("PRIxFAST32" variable (:constant-flag t) nil [3359 3369])
+            ("PRIxFAST64" variable (:constant-flag t) nil [3399 3409])
+            ("PRIX8" variable (:constant-flag t) nil [3478 3483])
+            ("PRIX16" variable (:constant-flag t) nil [3498 3504])
+            ("PRIX32" variable (:constant-flag t) nil [3519 3525])
+            ("PRIX64" variable (:constant-flag t) nil [3540 3546])
+            ("PRIXLEAST8" variable (:constant-flag t) nil [3577 3587])
+            ("PRIXLEAST16" variable (:constant-flag t) nil [3601 3612])
+            ("PRIXLEAST32" variable (:constant-flag t) nil [3626 3637])
+            ("PRIXLEAST64" variable (:constant-flag t) nil [3651 3662])
+            ("PRIXFAST8" variable (:constant-flag t) nil [3692 3701])
+            ("PRIXFAST16" variable (:constant-flag t) nil [3715 3725])
+            ("PRIXFAST32" variable (:constant-flag t) nil [3755 3765])
+            ("PRIXFAST64" variable (:constant-flag t) nil [3795 3805])
+            ("PRIdMAX" variable (:constant-flag t) nil [3891 3898])
+            ("PRIiMAX" variable (:constant-flag t) nil [3927 3934])
+            ("PRIoMAX" variable (:constant-flag t) nil [3963 3970])
+            ("PRIuMAX" variable (:constant-flag t) nil [3999 4006])
+            ("PRIxMAX" variable (:constant-flag t) nil [4035 4042])
+            ("PRIXMAX" variable (:constant-flag t) nil [4071 4078])
+            ("PRIdPTR" variable (:constant-flag t) nil [4164 4171])
+            ("PRIiPTR" variable (:constant-flag t) nil [4201 4208])
+            ("PRIoPTR" variable (:constant-flag t) nil [4238 4245])
+            ("PRIuPTR" variable (:constant-flag t) nil [4275 4282])
+            ("PRIxPTR" variable (:constant-flag t) nil [4312 4319])
+            ("PRIXPTR" variable (:constant-flag t) nil [4349 4356])
+            ("SCNd8" variable (:constant-flag t) nil [4467 4472])
+            ("SCNd16" variable (:constant-flag t) nil [4489 4495])
+            ("SCNd32" variable (:constant-flag t) nil [4511 4517])
+            ("SCNd64" variable (:constant-flag t) nil [4532 4538])
+            ("SCNdLEAST8" variable (:constant-flag t) nil [4569 4579])
+            ("SCNdLEAST16" variable (:constant-flag t) nil [4595 4606])
+            ("SCNdLEAST32" variable (:constant-flag t) nil [4621 4632])
+            ("SCNdLEAST64" variable (:constant-flag t) nil [4646 4657])
+            ("SCNdFAST8" variable (:constant-flag t) nil [4687 4696])
+            ("SCNdFAST16" variable (:constant-flag t) nil [4712 4722])
+            ("SCNdFAST32" variable (:constant-flag t) nil [4752 4762])
+            ("SCNdFAST64" variable (:constant-flag t) nil [4792 4802])
+            ("SCNi8" variable (:constant-flag t) nil [4864 4869])
+            ("SCNi16" variable (:constant-flag t) nil [4886 4892])
+            ("SCNi32" variable (:constant-flag t) nil [4908 4914])
+            ("SCNi64" variable (:constant-flag t) nil [4929 4935])
+            ("SCNiLEAST8" variable (:constant-flag t) nil [4966 4976])
+            ("SCNiLEAST16" variable (:constant-flag t) nil [4992 5003])
+            ("SCNiLEAST32" variable (:constant-flag t) nil [5018 5029])
+            ("SCNiLEAST64" variable (:constant-flag t) nil [5043 5054])
+            ("SCNiFAST8" variable (:constant-flag t) nil [5084 5093])
+            ("SCNiFAST16" variable (:constant-flag t) nil [5109 5119])
+            ("SCNiFAST32" variable (:constant-flag t) nil [5149 5159])
+            ("SCNiFAST64" variable (:constant-flag t) nil [5189 5199])
+            ("SCNu8" variable (:constant-flag t) nil [5263 5268])
+            ("SCNu16" variable (:constant-flag t) nil [5285 5291])
+            ("SCNu32" variable (:constant-flag t) nil [5307 5313])
+            ("SCNu64" variable (:constant-flag t) nil [5328 5334])
+            ("SCNuLEAST8" variable (:constant-flag t) nil [5365 5375])
+            ("SCNuLEAST16" variable (:constant-flag t) nil [5391 5402])
+            ("SCNuLEAST32" variable (:constant-flag t) nil [5417 5428])
+            ("SCNuLEAST64" variable (:constant-flag t) nil [5442 5453])
+            ("SCNuFAST8" variable (:constant-flag t) nil [5483 5492])
+            ("SCNuFAST16" variable (:constant-flag t) nil [5508 5518])
+            ("SCNuFAST32" variable (:constant-flag t) nil [5548 5558])
+            ("SCNuFAST64" variable (:constant-flag t) nil [5588 5598])
+            ("SCNo8" variable (:constant-flag t) nil [5651 5656])
+            ("SCNo16" variable (:constant-flag t) nil [5673 5679])
+            ("SCNo32" variable (:constant-flag t) nil [5695 5701])
+            ("SCNo64" variable (:constant-flag t) nil [5716 5722])
+            ("SCNoLEAST8" variable (:constant-flag t) nil [5753 5763])
+            ("SCNoLEAST16" variable (:constant-flag t) nil [5779 5790])
+            ("SCNoLEAST32" variable (:constant-flag t) nil [5805 5816])
+            ("SCNoLEAST64" variable (:constant-flag t) nil [5830 5841])
+            ("SCNoFAST8" variable (:constant-flag t) nil [5871 5880])
+            ("SCNoFAST16" variable (:constant-flag t) nil [5896 5906])
+            ("SCNoFAST32" variable (:constant-flag t) nil [5936 5946])
+            ("SCNoFAST64" variable (:constant-flag t) nil [5976 5986])
+            ("SCNx8" variable (:constant-flag t) nil [6045 6050])
+            ("SCNx16" variable (:constant-flag t) nil [6067 6073])
+            ("SCNx32" variable (:constant-flag t) nil [6089 6095])
+            ("SCNx64" variable (:constant-flag t) nil [6110 6116])
+            ("SCNxLEAST8" variable (:constant-flag t) nil [6147 6157])
+            ("SCNxLEAST16" variable (:constant-flag t) nil [6173 6184])
+            ("SCNxLEAST32" variable (:constant-flag t) nil [6199 6210])
+            ("SCNxLEAST64" variable (:constant-flag t) nil [6224 6235])
+            ("SCNxFAST8" variable (:constant-flag t) nil [6265 6274])
+            ("SCNxFAST16" variable (:constant-flag t) nil [6290 6300])
+            ("SCNxFAST32" variable (:constant-flag t) nil [6330 6340])
+            ("SCNxFAST64" variable (:constant-flag t) nil [6370 6380])
+            ("SCNdMAX" variable (:constant-flag t) nil [6466 6473])
+            ("SCNiMAX" variable (:constant-flag t) nil [6502 6509])
+            ("SCNoMAX" variable (:constant-flag t) nil [6538 6545])
+            ("SCNuMAX" variable (:constant-flag t) nil [6574 6581])
+            ("SCNxMAX" variable (:constant-flag t) nil [6610 6617])
+            ("SCNdPTR" variable (:constant-flag t) nil [6701 6708])
+            ("SCNiPTR" variable (:constant-flag t) nil [6738 6745])
+            ("SCNoPTR" variable (:constant-flag t) nil [6775 6782])
+            ("SCNuPTR" variable (:constant-flag t) nil [6812 6819])
+            ("SCNxPTR" variable (:constant-flag t) nil [6849 6856])
+            ("wcstoumax" function
+               (:type ("uintmax_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__nptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8194 8230])
+                    ("__endptr" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8238 8272])
+                    ("__base" variable (:type "int") (reparse-symbol arg-sub-list) [8273 8284]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8166 8298])
+            ("wcstoimax" function
+               (:type ("intmax_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__nptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8012 8048])
+                    ("__endptr" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8055 8088])
+                    ("__base" variable (:type "int") (reparse-symbol arg-sub-list) [8089 8100]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7985 8114])
+            ("strtoumax" function
+               (:type ("uintmax_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__nptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7848 7878])
+                    ("__endptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7886 7914])
+                    ("__base" variable (:type "int") (reparse-symbol arg-sub-list) [7915 7926]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7820 7935])
+            ("strtoimax" function
+               (:type ("intmax_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__nptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7683 7713])
+                    ("__endptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7720 7747])
+                    ("__base" variable (:type "int") (reparse-symbol arg-sub-list) [7748 7759]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7656 7768])
+            ("imaxdiv" function
+               (:type ("imaxdiv_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__numer" variable (:type ("intmax_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7528 7545])
+                    ("__denom" variable (:type ("intmax_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7546 7563]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7502 7606])
+            ("imaxabs" function
+               (:type ("intmax_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__n" variable (:type ("intmax_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7372 7385]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7347 7422])
+            ("imaxdiv_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("quot" variable (:type "long int") (reparse-symbol classsubparts) [7199 7213])
+                          ("rem" variable (:type "long int") (reparse-symbol classsubparts) [7254 7267]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [7157 7300]))          
+      :file "inttypes.h"
+      :pointmax 11893
+      :fsize 11892
+      :lastmodtime '(23132 5788 0 0)
+      :unmatched-syntax '((LONG 7249 . 7253) (symbol 7235 . 7248) (LONG 7194 . 7198) (symbol 7180 . 7193) (punctuation 1199 . 1200) (WCHAR "wchar_t" 1189 . 1199) (INT "int" 1174 . 1188) (TYPEDEF 1166 . 1173))
+      :lexical-table 
+        '(("PRIdLEAST16" . ((string "\"d\"" 1700 . 1703)))
+          ("PRIdLEAST64" . ((symbol "__PRI64_PREFIX" 1750 . 1764) (string "\"d\"" 1765 . 1768)))
+          ("PRIoLEAST8" . ((string "\"o\"" 2413 . 2416)))
+          ("PRIXFAST16" . ((symbol "__PRIPTR_PREFIX" 3726 . 3741) (string "\"X\"" 3742 . 3745)))
+          ("PRIXFAST64" . ((symbol "__PRI64_PREFIX" 3806 . 3820) (string "\"X\"" 3821 . 3824)))
+          ("SCNdLEAST16" . ((string "\"hd\"" 4607 . 4611)))
+          ("SCNdLEAST64" . ((symbol "__PRI64_PREFIX" 4658 . 4672) (string "\"d\"" 4673 . 4676)))
+          ("SCNoLEAST8" . ((string "\"hho\"" 5764 . 5769)))
+          ("PRIdFAST32" . ((symbol "__PRIPTR_PREFIX" 1853 . 1868) (string "\"d\"" 1869 . 1872)))
+          ("PRIi16" . ((string "\"i\"" 1951 . 1954)))
+          ("PRIi64" . ((symbol "__PRI64_PREFIX" 1993 . 2007) (string "\"i\"" 2008 . 2011)))
+          ("PRIoFAST8" . ((string "\"o\"" 2527 . 2530)))
+          ("PRIuLEAST32" . ((string "\"u\"" 2846 . 2849)))
+          ("PRIxMAX" . ((symbol "__PRI64_PREFIX" 4043 . 4057) (string "\"x\"" 4058 . 4061)))
+          ("PRIxPTR" . ((symbol "__PRIPTR_PREFIX" 4320 . 4335) (string "\"x\"" 4336 . 4339)))
+          ("SCNdFAST32" . ((symbol "__PRIPTR_PREFIX" 4763 . 4778) (string "\"d\"" 4779 . 4782)))
+          ("SCNi16" . ((string "\"hi\"" 4894 . 4898)))
+          ("SCNi64" . ((symbol "__PRI64_PREFIX" 4937 . 4951) (string "\"i\"" 4952 . 4955)))
+          ("SCNuLEAST32" . ((string "\"u\"" 5429 . 5432)))
+          ("SCNoFAST8" . ((string "\"hho\"" 5881 . 5886)))
+          ("SCNxMAX" . ((symbol "__PRI64_PREFIX" 6618 . 6632) (string "\"x\"" 6633 . 6636)))
+          ("SCNxPTR" . ((symbol "__PRIPTR_PREFIX" 6857 . 6872) (string "\"x\"" 6873 . 6876)))
+          ("PRIdLEAST8" . ((string "\"d\"" 1675 . 1678)))
+          ("PRIdLEAST32" . ((string "\"d\"" 1725 . 1728)))
+          ("PRIiLEAST16" . ((string "\"i\"" 2058 . 2061)))
+          ("PRIiLEAST64" . ((symbol "__PRI64_PREFIX" 2108 . 2122) (string "\"i\"" 2123 . 2126)))
+          ("PRIXFAST8" . ((string "\"X\"" 3702 . 3705)))
+          ("PRIXFAST32" . ((symbol "__PRIPTR_PREFIX" 3766 . 3781) (string "\"X\"" 3782 . 3785)))
+          ("SCNdLEAST8" . ((string "\"hhd\"" 4580 . 4585)))
+          ("SCNdLEAST32" . ((string "\"d\"" 4633 . 4636)))
+          ("SCNiLEAST16" . ((string "\"hi\"" 5004 . 5008)))
+          ("SCNiLEAST64" . ((symbol "__PRI64_PREFIX" 5055 . 5069) (string "\"i\"" 5070 . 5073)))
+          ("PRIi32" . ((string "\"i\"" 1972 . 1975)))
+          ("PRIo8" . ((string "\"o\"" 2310 . 2313)))
+          ("PRIo16" . ((string "\"o\"" 2331 . 2334)))
+          ("PRIo64" . ((symbol "__PRI64_PREFIX" 2373 . 2387) (string "\"o\"" 2388 . 2391)))
+          ("PRIuFAST8" . ((string "\"u\"" 2910 . 2913)))
+          ("PRIuFAST16" . ((symbol "__PRIPTR_PREFIX" 2934 . 2949) (string "\"u\"" 2950 . 2953)))
+          ("PRIuFAST64" . ((symbol "__PRI64_PREFIX" 3014 . 3028) (string "\"u\"" 3029 . 3032)))
+          ("PRIXLEAST8" . ((string "\"X\"" 3588 . 3591)))
+          ("PRIXLEAST16" . ((string "\"X\"" 3613 . 3616)))
+          ("PRIXLEAST64" . ((symbol "__PRI64_PREFIX" 3663 . 3677) (string "\"X\"" 3678 . 3681)))
+          ("SCNi32" . ((string "\"i\"" 4916 . 4919)))
+          ("SCNuFAST8" . ((string "\"hhu\"" 5493 . 5498)))
+          ("SCNuFAST16" . ((symbol "__PRIPTR_PREFIX" 5519 . 5534) (string "\"u\"" 5535 . 5538)))
+          ("SCNuFAST64" . ((symbol "__PRI64_PREFIX" 5599 . 5613) (string "\"u\"" 5614 . 5617)))
+          ("SCNo8" . ((string "\"hho\"" 5658 . 5663)))
+          ("SCNo16" . ((string "\"ho\"" 5681 . 5685)))
+          ("SCNo64" . ((symbol "__PRI64_PREFIX" 5724 . 5738) (string "\"o\"" 5739 . 5742)))
+          ("PRIiLEAST32" . ((string "\"i\"" 2083 . 2086)))
+          ("PRIiFAST16" . ((symbol "__PRIPTR_PREFIX" 2171 . 2186) (string "\"i\"" 2187 . 2190)))
+          ("PRIiFAST64" . ((symbol "__PRI64_PREFIX" 2251 . 2265) (string "\"i\"" 2266 . 2269)))
+          ("PRIx8" . ((string "\"x\"" 3089 . 3092)))
+          ("PRIxFAST8" . ((string "\"x\"" 3306 . 3309)))
+          ("PRIX16" . ((string "\"X\"" 3506 . 3509)))
+          ("PRIX64" . ((symbol "__PRI64_PREFIX" 3548 . 3562) (string "\"X\"" 3563 . 3566)))
+          ("SCNiLEAST32" . ((string "\"i\"" 5030 . 5033)))
+          ("SCNiFAST16" . ((symbol "__PRIPTR_PREFIX" 5120 . 5135) (string "\"i\"" 5136 . 5139)))
+          ("SCNiFAST64" . ((symbol "__PRI64_PREFIX" 5200 . 5214) (string "\"i\"" 5215 . 5218)))
+          ("SCNx8" . ((string "\"hhx\"" 6052 . 6057)))
+          ("SCNxFAST8" . ((string "\"hhx\"" 6275 . 6280)))
+          ("PRIo32" . ((string "\"o\"" 2352 . 2355)))
+          ("PRIu16" . ((string "\"u\"" 2714 . 2717)))
+          ("PRIu64" . ((symbol "__PRI64_PREFIX" 2756 . 2770) (string "\"u\"" 2771 . 2774)))
+          ("PRIuFAST32" . ((symbol "__PRIPTR_PREFIX" 2974 . 2989) (string "\"u\"" 2990 . 2993)))
+          ("PRIXLEAST32" . ((string "\"X\"" 3638 . 3641)))
+          ("PRIoMAX" . ((symbol "__PRI64_PREFIX" 3971 . 3985) (string "\"o\"" 3986 . 3989)))
+          ("PRIoPTR" . ((symbol "__PRIPTR_PREFIX" 4246 . 4261) (string "\"o\"" 4262 . 4265)))
+          ("SCNu16" . ((string "\"hu\"" 5293 . 5297)))
+          ("SCNu64" . ((symbol "__PRI64_PREFIX" 5336 . 5350) (string "\"u\"" 5351 . 5354)))
+          ("SCNuFAST32" . ((symbol "__PRIPTR_PREFIX" 5559 . 5574) (string "\"u\"" 5575 . 5578)))
+          ("SCNo32" . ((string "\"o\"" 5703 . 5706)))
+          ("SCNoMAX" . ((symbol "__PRI64_PREFIX" 6546 . 6560) (string "\"o\"" 6561 . 6564)))
+          ("SCNoPTR" . ((symbol "__PRIPTR_PREFIX" 6783 . 6798) (string "\"o\"" 6799 . 6802)))
+          ("PRIdFAST8" . ((string "\"d\"" 1789 . 1792)))
+          ("PRIiFAST32" . ((symbol "__PRIPTR_PREFIX" 2211 . 2226) (string "\"i\"" 2227 . 2230)))
+          ("PRIuLEAST8" . ((string "\"u\"" 2796 . 2799)))
+          ("PRIx16" . ((string "\"x\"" 3110 . 3113)))
+          ("PRIx64" . ((symbol "__PRI64_PREFIX" 3152 . 3166) (string "\"x\"" 3167 . 3170)))
+          ("PRIxFAST16" . ((symbol "__PRIPTR_PREFIX" 3330 . 3345) (string "\"x\"" 3346 . 3349)))
+          ("PRIxFAST64" . ((symbol "__PRI64_PREFIX" 3410 . 3424) (string "\"x\"" 3425 . 3428)))
+          ("PRIX32" . ((string "\"X\"" 3527 . 3530)))
+          ("SCNdFAST8" . ((string "\"hhd\"" 4697 . 4702)))
+          ("SCNiFAST32" . ((symbol "__PRIPTR_PREFIX" 5160 . 5175) (string "\"i\"" 5176 . 5179)))
+          ("SCNuLEAST8" . ((string "\"hhu\"" 5376 . 5381)))
+          ("SCNx16" . ((string "\"hx\"" 6075 . 6079)))
+          ("SCNx64" . ((symbol "__PRI64_PREFIX" 6118 . 6132) (string "\"x\"" 6133 . 6136)))
+          ("SCNxFAST16" . ((symbol "__PRIPTR_PREFIX" 6301 . 6316) (string "\"x\"" 6317 . 6320)))
+          ("SCNxFAST64" . ((symbol "__PRI64_PREFIX" 6381 . 6395) (string "\"x\"" 6396 . 6399)))
+          ("__PRI64_PREFIX" . ((string "\"ll\"" 1444 . 1448)))
+          ("PRIiLEAST8" . ((string "\"i\"" 2033 . 2036)))
+          ("PRIoLEAST16" . ((string "\"o\"" 2438 . 2441)))
+          ("PRIoLEAST64" . ((symbol "__PRI64_PREFIX" 2488 . 2502) (string "\"o\"" 2503 . 2506)))
+          ("PRIu32" . ((string "\"u\"" 2735 . 2738)))
+          ("PRIdMAX" . ((symbol "__PRI64_PREFIX" 3899 . 3913) (string "\"d\"" 3914 . 3917)))
+          ("PRIdPTR" . ((symbol "__PRIPTR_PREFIX" 4172 . 4187) (string "\"d\"" 4188 . 4191)))
+          ("SCNiLEAST8" . ((string "\"hhi\"" 4977 . 4982)))
+          ("SCNu32" . ((string "\"u\"" 5315 . 5318)))
+          ("SCNoLEAST16" . ((string "\"ho\"" 5791 . 5795)))
+          ("SCNoLEAST64" . ((symbol "__PRI64_PREFIX" 5842 . 5856) (string "\"o\"" 5857 . 5860)))
+          ("SCNdMAX" . ((symbol "__PRI64_PREFIX" 6474 . 6488) (string "\"d\"" 6489 . 6492)))
+          ("SCNdPTR" . ((symbol "__PRIPTR_PREFIX" 6709 . 6724) (string "\"d\"" 6725 . 6728)))
+          ("PRId16" . ((string "\"d\"" 1593 . 1596)))
+          ("PRId64" . ((symbol "__PRI64_PREFIX" 1635 . 1649) (string "\"d\"" 1650 . 1653)))
+          ("PRIu8" . ((string "\"u\"" 2693 . 2696)))
+          ("PRIx32" . ((string "\"x\"" 3131 . 3134)))
+          ("PRIxLEAST16" . ((string "\"x\"" 3217 . 3220)))
+          ("PRIxLEAST64" . ((symbol "__PRI64_PREFIX" 3267 . 3281) (string "\"x\"" 3282 . 3285)))
+          ("PRIxFAST32" . ((symbol "__PRIPTR_PREFIX" 3370 . 3385) (string "\"x\"" 3386 . 3389)))
+          ("PRIXMAX" . ((symbol "__PRI64_PREFIX" 4079 . 4093) (string "\"X\"" 4094 . 4097)))
+          ("PRIXPTR" . ((symbol "__PRIPTR_PREFIX" 4357 . 4372) (string "\"X\"" 4373 . 4376)))
+          ("SCNd16" . ((string "\"hd\"" 4497 . 4501)))
+          ("SCNd64" . ((symbol "__PRI64_PREFIX" 4540 . 4554) (string "\"d\"" 4555 . 4558)))
+          ("SCNu8" . ((string "\"hhu\"" 5270 . 5275)))
+          ("SCNx32" . ((string "\"x\"" 6097 . 6100)))
+          ("SCNxLEAST16" . ((string "\"hx\"" 6185 . 6189)))
+          ("SCNxLEAST64" . ((symbol "__PRI64_PREFIX" 6236 . 6250) (string "\"x\"" 6251 . 6254)))
+          ("SCNxFAST32" . ((symbol "__PRIPTR_PREFIX" 6341 . 6356) (string "\"x\"" 6357 . 6360)))
+          ("_INTTYPES_H" . ((number "1" 902 . 903)))
+          ("__PRIPTR_PREFIX")
+          ("PRId8" . ((string "\"d\"" 1572 . 1575)))
+          ("PRIoLEAST32" . ((string "\"o\"" 2463 . 2466)))
+          ("PRIxLEAST8" . ((string "\"x\"" 3192 . 3195)))
+          ("SCNd8" . ((string "\"hhd\"" 4474 . 4479)))
+          ("SCNoLEAST32" . ((string "\"o\"" 5817 . 5820)))
+          ("SCNxLEAST8" . ((string "\"hhx\"" 6158 . 6163)))
+          ("__gwchar_t" . ((WCHAR "wchar_t" 1128 . 1135)))
+          ("PRId32" . ((string "\"d\"" 1614 . 1617)))
+          ("PRIoFAST16" . ((symbol "__PRIPTR_PREFIX" 2551 . 2566) (string "\"o\"" 2567 . 2570)))
+          ("PRIoFAST64" . ((symbol "__PRI64_PREFIX" 2631 . 2645) (string "\"o\"" 2646 . 2649)))
+          ("PRIxLEAST32" . ((string "\"x\"" 3242 . 3245)))
+          ("SCNd32" . ((string "\"d\"" 4519 . 4522)))
+          ("SCNoFAST16" . ((symbol "__PRIPTR_PREFIX" 5907 . 5922) (string "\"o\"" 5923 . 5926)))
+          ("SCNoFAST64" . ((symbol "__PRI64_PREFIX" 5987 . 6001) (string "\"o\"" 6002 . 6005)))
+          ("SCNxLEAST32" . ((string "\"x\"" 6211 . 6214)))
+          ("PRIi8" . ((string "\"i\"" 1930 . 1933)))
+          ("PRIuMAX" . ((symbol "__PRI64_PREFIX" 4007 . 4021) (string "\"u\"" 4022 . 4025)))
+          ("PRIuPTR" . ((symbol "__PRIPTR_PREFIX" 4283 . 4298) (string "\"u\"" 4299 . 4302)))
+          ("SCNi8" . ((string "\"hhi\"" 4871 . 4876)))
+          ("SCNuMAX" . ((symbol "__PRI64_PREFIX" 6582 . 6596) (string "\"u\"" 6597 . 6600)))
+          ("SCNuPTR" . ((symbol "__PRIPTR_PREFIX" 6820 . 6835) (string "\"u\"" 6836 . 6839)))
+          ("____gwchar_t_defined" . ((number "1" 1321 . 1322)))
+          ("PRIdFAST16" . ((symbol "__PRIPTR_PREFIX" 1813 . 1828) (string "\"d\"" 1829 . 1832)))
+          ("PRIdFAST64" . ((symbol "__PRI64_PREFIX" 1893 . 1907) (string "\"d\"" 1908 . 1911)))
+          ("PRIiFAST8" . ((string "\"i\"" 2147 . 2150)))
+          ("PRIoFAST32" . ((symbol "__PRIPTR_PREFIX" 2591 . 2606) (string "\"o\"" 2607 . 2610)))
+          ("PRIuLEAST16" . ((string "\"u\"" 2821 . 2824)))
+          ("PRIuLEAST64" . ((symbol "__PRI64_PREFIX" 2871 . 2885) (string "\"u\"" 2886 . 2889)))
+          ("PRIX8" . ((string "\"X\"" 3485 . 3488)))
+          ("PRIiMAX" . ((symbol "__PRI64_PREFIX" 3935 . 3949) (string "\"i\"" 3950 . 3953)))
+          ("PRIiPTR" . ((symbol "__PRIPTR_PREFIX" 4209 . 4224) (string "\"i\"" 4225 . 4228)))
+          ("SCNdFAST16" . ((symbol "__PRIPTR_PREFIX" 4723 . 4738) (string "\"d\"" 4739 . 4742)))
+          ("SCNdFAST64" . ((symbol "__PRI64_PREFIX" 4803 . 4817) (string "\"d\"" 4818 . 4821)))
+          ("SCNiFAST8" . ((string "\"hhi\"" 5094 . 5099)))
+          ("SCNuLEAST16" . ((string "\"hu\"" 5403 . 5407)))
+          ("SCNuLEAST64" . ((symbol "__PRI64_PREFIX" 5454 . 5468) (string "\"u\"" 5469 . 5472)))
+          ("SCNoFAST32" . ((symbol "__PRIPTR_PREFIX" 5947 . 5962) (string "\"o\"" 5963 . 5966)))
+          ("SCNiMAX" . ((symbol "__PRI64_PREFIX" 6510 . 6524) (string "\"i\"" 6525 . 6528)))
+          ("SCNiPTR" . ((symbol "__PRIPTR_PREFIX" 6746 . 6761) (string "\"i\"" 6762 . 6765)))
           )
 ))
   :file "!usr!include!semantic.cache"

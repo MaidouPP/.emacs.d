@@ -4,42 +4,42 @@
   :tables
   (list
     (semanticdb-table "stubs.h"
-      :major-mode 'c-mode
+      :major-mode 'c++-mode
       :tags 
         '( ("gnu/stubs-64.h" include (:system-flag t) nil [272 298]))          
       :file "stubs.h"
       :pointmax 385
       :fsize 384
-      :lastmodtime '(22737 32037 0 0)
+      :lastmodtime '(23132 5778 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "stubs-64.h"
-      :major-mode 'c-mode
+      :major-mode 'c++-mode
       :tags 
-        '( ("__stub_bdflush" variable (:constant-flag t) nil [300 314])
-            ("__stub_chflags" variable (:constant-flag t) nil [323 337])
-            ("__stub_fattach" variable (:constant-flag t) nil [346 360])
-            ("__stub_fchflags" variable (:constant-flag t) nil [369 384])
-            ("__stub_fdetach" variable (:constant-flag t) nil [393 407])
-            ("__stub_getmsg" variable (:constant-flag t) nil [416 429])
-            ("__stub_gtty" variable (:constant-flag t) nil [438 449])
-            ("__stub_lchmod" variable (:constant-flag t) nil [458 471])
-            ("__stub_putmsg" variable (:constant-flag t) nil [480 493])
-            ("__stub_revoke" variable (:constant-flag t) nil [502 515])
-            ("__stub_setlogin" variable (:constant-flag t) nil [524 539])
-            ("__stub_sigreturn" variable (:constant-flag t) nil [548 564])
-            ("__stub_sstk" variable (:constant-flag t) nil [573 584])
-            ("__stub_stty" variable (:constant-flag t) nil [593 604]))          
+        '( ("__stub___compat_bdflush" variable (:constant-flag t) nil [300 323])
+            ("__stub_chflags" variable (:constant-flag t) nil [332 346])
+            ("__stub_fattach" variable (:constant-flag t) nil [355 369])
+            ("__stub_fchflags" variable (:constant-flag t) nil [378 393])
+            ("__stub_fdetach" variable (:constant-flag t) nil [402 416])
+            ("__stub_getmsg" variable (:constant-flag t) nil [425 438])
+            ("__stub_gtty" variable (:constant-flag t) nil [447 458])
+            ("__stub_lchmod" variable (:constant-flag t) nil [467 480])
+            ("__stub_putmsg" variable (:constant-flag t) nil [489 502])
+            ("__stub_revoke" variable (:constant-flag t) nil [511 524])
+            ("__stub_setlogin" variable (:constant-flag t) nil [533 548])
+            ("__stub_sigreturn" variable (:constant-flag t) nil [557 573])
+            ("__stub_sstk" variable (:constant-flag t) nil [582 593])
+            ("__stub_stty" variable (:constant-flag t) nil [602 613]))          
       :file "stubs-64.h"
-      :pointmax 605
-      :fsize 604
-      :lastmodtime '(22737 32075 0 0)
+      :pointmax 614
+      :fsize 613
+      :lastmodtime '(23132 5801 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__stub_fattach")
           ("__stub_revoke")
+          ("__stub___compat_bdflush")
           ("__stub_setlogin")
           ("__stub_sigreturn")
-          ("__stub_bdflush")
           ("__stub_chflags")
           ("__stub_stty")
           ("__stub_fdetach")

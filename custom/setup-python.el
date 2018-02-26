@@ -9,6 +9,9 @@
 (exec-path-from-shell-copy-env "PYTHONPATH")
 
 ;; (add-hook 'python-mode-hook 'semantic-mode)
+(add-hook 'python-mode-hook 'guess-style-guess-tabs-mode)
+(add-hook 'python-mode-hook (lambda ()
+                              (guess-style-guess-tab-width)))
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)                      ; optional
 (setq jedi:complete-on-dot t)                 ; optional
