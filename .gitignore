@@ -57,3 +57,6 @@ recentf
 
 # semantics
 semanticdb
+
+# python
+.python*
