@@ -1,6 +1,9 @@
 (require 'elpy)
 (elpy-enable)
 
+(local-set-key (kbd "M-.") 'elpy:goto-definition)
+(local-set-key (kbd "M-,") 'elpy:goto-definition-pop-marker)
+
 ;; (defun my/python-mode-hook ()
 ;;   (add-to-list 'company-backends 'company-jedi))
 ;; (require 'auto-complete)
@@ -9,19 +12,16 @@
 (exec-path-from-shell-copy-env "PYTHONPATH")
 
 ;; (add-hook 'python-mode-hook 'semantic-mode)
-(add-hook 'python-mode-hook 'guess-style-guess-tabs-mode)
-(add-hook 'python-mode-hook (lambda ()
-                              (guess-style-guess-tab-width)))
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)                      ; optional
-(setq jedi:complete-on-dot t)                 ; optional
+;;(add-hook 'python-mode-hook (lambda ()
+;;                              (guess-style-guess-tab-width)))
+;;(add-hook 'python-mode-hook 'jedi:setup)
+;;(setq jedi:setup-keys t)                      ; optional
+;;(setq jedi:complete-on-dot t)                 ; optional
 
 ;; (add-hook 'python-mode-hook 'run-python)
 ;; (add-hook 'python-mode-hook 'anaconda-mode)
 ;; (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 ;; (add-to-list 'company-backends '(company-anaconda :with company-yasnippet))
-(global-set-key (kbd "M-.") 'jedi:goto-definition)
-(global-set-key (kbd "M-,") 'jedi:goto-definition-pop-marker)
 
 (auto-insert-mode) ;;; Adds hook to find-files-hook
 (setq auto-insert-directory "~/.emacs.d/template/") ;;; Or use custom, *NOTE* Trailing slash important

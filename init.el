@@ -3,6 +3,7 @@
          '("melpa" . "http://melpa.org/packages/") t)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
+(add-to-list 'load-path "~/.emacs.d/others")
 
 (package-initialize)
 
@@ -29,6 +30,8 @@
 (require 'setup-editing)
 (require 'setup-srefac)
 (require 'setup-python)
+(require 'setup-header2)
+(require 'setup-sh)
 
 ;; function-args
 (require 'function-args)
@@ -53,7 +56,7 @@
  )
  
  ;; tex-mode
- (setq TeX-auto-save t)
+(setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq TeX-save-query nil)
 (add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
@@ -61,8 +64,19 @@
 ;(setq TeX-PDF-mode t)
 (put 'downcase-region 'disabled nil)
 
-;; store all backup and autosave files in the tmp dir
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
+;; make backup to a designated dir, mirroring the full path
+
+(defun my-backup-file-name (fpath)
+  "Return a new file path of a given file path.
+If the new path's directories does not exist, create them."
+  (let* (
+        (backupRootDir "~/.emacs.d/emacs-backup/")
+        (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath )) ; remove Windows driver letter in path, for example, “C:”
+        (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
+        )
+    (make-directory (file-name-directory backupFilePath) (file-name-directory backupFilePath))
+    backupFilePath
+  )
+)
+
+(setq make-backup-file-name-function 'my-backup-file-name)

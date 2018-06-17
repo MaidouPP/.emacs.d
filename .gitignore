@@ -60,3 +60,7 @@ semanticdb
 
 # python
 .python*
+
+# some dirs
+auto-save-list
+emacs-backup
