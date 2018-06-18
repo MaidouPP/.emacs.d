@@ -33,7 +33,7 @@
 (require 'setup-python)
 (require 'setup-header2)
 (require 'setup-sh)
-(require 'setup-c')
+(require 'setup-c)
 
 ;; function-args
 (require 'function-args)

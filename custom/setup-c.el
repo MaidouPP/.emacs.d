@@ -37,7 +37,6 @@
   "Allman-style formatting for C."
   (interactive)
   (progn
-    ;; (newline-and-indent)
     (previous-line) (search-forward "{") (newline-and-indent)
     (indent-according-to-mode)))
 
