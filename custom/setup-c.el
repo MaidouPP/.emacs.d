@@ -1,4 +1,5 @@
 ;; company-c-headers
+(use-package smartparens)
 (use-package company-c-headers
   :init
   (add-to-list 'company-backends 'company-c-headers))
@@ -32,5 +33,15 @@
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
 
+(defun my-create-newline-and-allman-format (&rest _ignored)
+  "Allman-style formatting for C."
+  (interactive)
+  (progn
+    ;; (newline-and-indent)
+    (previous-line) (search-forward "{") (newline-and-indent)
+    (indent-according-to-mode)))
+
+(sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
+(sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 
 (provide 'setup-c)

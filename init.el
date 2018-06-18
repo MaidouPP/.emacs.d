@@ -8,6 +8,7 @@
 (package-initialize)
 
 (global-linum-mode t)
+(global-company-mode t)
 (load-theme 'tango-dark)
 
 (when (not package-archive-contents)
@@ -32,6 +33,7 @@
 (require 'setup-python)
 (require 'setup-header2)
 (require 'setup-sh)
+(require 'setup-c')
 
 ;; function-args
 (require 'function-args)
@@ -80,3 +82,6 @@
                   week))
       (message "%s" file)
       (delete-file file))))
+
+;; change cursor type to bar
+(setq-default cursor-type 'bar)
