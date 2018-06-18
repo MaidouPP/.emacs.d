@@ -129,12 +129,12 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
-;;; 设置备份策略
-(setq make-backup-files t)
-(setq kept-old-versions 2)
-(setq kept-new-versions 2)
-(setq delete-old-versions t)
-(setq backup-directory-alist '(("" . "~/.emacsbackup")))
+;; ;;; set backup strategy
+;; (setq make-backup-files t)
+;; (setq kept-old-versions 2)
+;; (setq kept-new-versions 2)
+;; (setq delete-old-versions t)
+;; (setq backup-directory-alist '(("" . "~/.emacsbackup")))
 
 ;; Change between horizontal buffer and vertical buffer
 (defun window-split-toggle ()
@@ -150,5 +150,10 @@
       (save-selected-window
         (other-window 1)
         (switch-to-buffer (other-buffer))))))
+
+;; Save whatever’s in the current (system) clipboard before
+;; replacing it with the Emacs’ text.
+;; https://github.com/dakrone/eos/blob/master/eos.org
+(setq save-interprogram-paste-before-kill t)
 
 (provide 'setup-general)
