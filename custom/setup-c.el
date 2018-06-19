@@ -1,4 +1,6 @@
-;; company-c-headers
+;; === General Configuration
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
 (use-package smartparens)
 (use-package company-c-headers
   :init

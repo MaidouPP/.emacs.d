@@ -101,7 +101,7 @@
     (define-key minibuffer-local-map (kbd "M-p") 'helm-minibuffer-history)
     (define-key minibuffer-local-map (kbd "M-n") 'helm-minibuffer-history)
 
-    (define-key global-map [remap find-tag] 'helm-etags-select)
+    ;; (define-key global-map [remap find-tag] 'helm-etags-select)
 
     (define-key global-map [remap list-buffers] 'helm-buffers-list)
 
