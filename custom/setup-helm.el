@@ -136,6 +136,7 @@
     (use-package helm-projectile
       :init
       (helm-projectile-on)
+      (setq projectile-switch-project-action 'helm-projectile)
       (setq projectile-completion-system 'helm)
       (setq projectile-indexing-method 'alien))))
 
