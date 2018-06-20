@@ -39,7 +39,7 @@ flycheck_*.el
 /server/
 
 # projectiles files
-.projectile
+*.projectile
 
 # directory configuration
 .dir-locals.el
@@ -48,8 +48,8 @@ flycheck_*.el
 ~
 
 # else
-.dat
-.cache
+*.dat
+*.cache
 session.*
 
 # recent files
