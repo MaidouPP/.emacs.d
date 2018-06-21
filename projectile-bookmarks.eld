@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/init_new_machine/" "~/map-content-builder/")
