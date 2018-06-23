@@ -156,4 +156,31 @@
 ;; https://github.com/dakrone/eos/blob/master/eos.org
 (setq save-interprogram-paste-before-kill t)
 
+;; Select Text between Quotes/Brackets
+(defun xah-select-text-in-quote ()
+  "Select text between the nearest left and right delimiters.
+Delimiters here includes the following chars: \"<>(){}[]“”‘’‹›«»「」『』【】〖〗《》〈〉〔〕（）
+This command select between any bracket chars, not the inner text of a bracket. For example, if text is
+
+ (a(b)c▮)
+
+ the selected char is “c”, not “a(b)c”.
+
+URL `http://ergoemacs.org/emacs/modernization_mark-word.html'
+Version 2016-12-18"
+  (interactive)
+  (let (
+        ($skipChars
+         (if (boundp 'xah-brackets)
+             (concat "^\"" xah-brackets)
+           "^\"<>(){}[]“”‘’‹›«»「」『』【】〖〗《》〈〉〔〕（）"))
+        $pos
+        )
+    (skip-chars-backward $skipChars)
+    (setq $pos (point))
+    (skip-chars-forward $skipChars)
+    (set-mark $pos)))
+
+(global-set-key (kbd "C-x C-SPC") 'xah-select-text-in-quote)
+
 (provide 'setup-general)

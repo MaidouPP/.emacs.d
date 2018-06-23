@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/init_new_machine/" "~/map-content-builder/")
+("~/.emacs.d/" "~/gsoc/robosherlock_docs/" "~/init_new_machine/" "~/map-content-builder/")
