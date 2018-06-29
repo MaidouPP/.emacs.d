@@ -35,6 +35,7 @@
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
 
+;; Parens indentation
 (defun my-create-newline-and-allman-format (&rest _ignored)
   "Allman-style formatting for C."
   (interactive)

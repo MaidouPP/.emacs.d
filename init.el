@@ -31,7 +31,7 @@
 (require 'setup-editing)
 (require 'setup-srefac)
 (require 'setup-python)
-(require 'setup-header2)
+;; (require 'setup-header2)
 (require 'setup-sh)
 (require 'setup-c)
 
@@ -91,6 +91,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; for enabling copy and paste from system clipboard
 (setq x-select-enable-clipboard t
       x-select-enable-primary t)
 
