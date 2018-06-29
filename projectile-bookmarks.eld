@@ -1,1 +1,0 @@
-("~/.emacs.d/" "~/catkin_ws/src/robosherlock/" "~/catkin_ws/src/uimacpp_ros/" "~/tusimple/map-content-builder/" "~/init_new_machine/" "~/map-content-builder/" "~/gsoc/robosherlock_docs/")
