@@ -11,6 +11,9 @@
 (global-company-mode t)
 (load-theme 'tango-dark)
 
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized))))) ;; start maximized
+
 (when (not package-archive-contents)
     (package-refresh-contents))
 

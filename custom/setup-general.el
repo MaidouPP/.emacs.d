@@ -1,8 +1,12 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
+
+;; THE FAMOUS RAINBOW CAT!!!!!!!
+(nyan-mode 1)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -126,7 +130,7 @@
 (require 'cdlatex)
 
 (recentf-mode 1)
-(setq recentf-max-menu-items 25)
+(setq recentf-max-menu-items 40)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ;; ;;; set backup strategy

@@ -253,4 +253,7 @@ Position the cursor at it's beginning, according to the current mode."
 (global-set-key (kbd "M-o") 'prelude-smart-open-line)
 (global-set-key (kbd "M-o") 'open-line)
 
+;; keeps highlighting instead of just disappear
+(setq lazy-highlight-cleanup nil)
+
 (provide 'setup-editing)

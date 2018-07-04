@@ -22,10 +22,10 @@
 ;; “user”: When you want to define your own style
 (setq c-default-style) "linux" ;; set style to "linux"
 
-(use-package cc-mode
-  :init
-  (define-key c-mode-map  [(tab)] 'company-complete)
-  (define-key c++-mode-map  [(tab)] 'company-complete))
+;; (use-package cc-mode
+;;   :init
+;;   (define-key c-mode-map  [(tab)] 'company-complete)
+;;   (define-key c++-mode-map  [(tab)] 'company-complete))
 
 ;; company
 (require 'company)
