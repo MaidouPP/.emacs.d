@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/catkin_ws/src/robosherlock/")
+("~/.emacs.d/" "~/catkin_ws/src/mongodb_log/" "~/catkin_ws/src/robosherlock/")

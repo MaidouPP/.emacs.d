@@ -1,9 +1,9 @@
 (require 'cc-mode)
 (require 'semantic)
 
-;; (global-semanticdb-minor-mode 1)
-(global-semantic-idle-scheduler-mode 1)
-(global-semantic-stickyfunc-mode 1)
+(global-semanticdb-minor-mode -1)
+;; (global-semantic-idle-scheduler-mode 1)
+;; (global-semantic-stickyfunc-mode 1)
 
 (semantic-mode 1)
 
@@ -29,7 +29,7 @@
   (add-to-list 'semantic-inhibit-functions 'my-inhibit-semantic-p))
 
 ;; Enable EDE only in C/C++
-(require 'ede)
-(global-ede-mode)
+;; (require 'ede)
+;; (global-ede-mode)
 
 (provide 'setup-cedet)
