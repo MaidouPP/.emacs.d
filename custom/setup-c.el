@@ -48,4 +48,7 @@
 (sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 (sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 
+(require 'ede)
+(global-ede-mode)
+
 (provide 'setup-c)

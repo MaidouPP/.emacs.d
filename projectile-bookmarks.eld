@@ -1,1 +1,1 @@
-("~/LearnVIORB/" "~/lidar_imu_calib/" "~/.emacs.d/" "~/catkin_ws/src/mongodb_log/" "~/catkin_ws/src/robosherlock/")
+("~/LearnVIORB/" "~/.emacs.d/" "~/lidar_imu_calib/" "~/catkin_ws/src/mongodb_log/" "~/catkin_ws/src/robosherlock/")
