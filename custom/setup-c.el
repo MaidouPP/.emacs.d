@@ -9,6 +9,8 @@
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 
+(setq-default c-basic-offset 4)
+
 ;; Available C style:
 ;; “gnu”: The default style for GNU projects
 ;; “k&r”: What Kernighan and Ritchie, the authors of C used in their book
