@@ -1,5 +1,6 @@
 ;; === General Configuration
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.hpp\\'" . c++-mode))
 
 (use-package smartparens)
 (use-package company-c-headers
@@ -34,8 +35,9 @@
 (require 'company-c-headers)
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-c-headers)
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
+(add-to-list 'company-backends 'company-irony)
+;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
+;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
 
 ;; Parens indentation
 (defun my-create-newline-and-allman-format (&rest _ignored)
@@ -47,6 +49,13 @@
 
 (sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 (sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
+
+;; cpputils-cmake
+;; (add-hook 'c-mode-common-hook
+;;           (lambda ()
+;;             (if (derived-mode-p 'c-mode 'c++-mode)
+;;                 (cppcm-reload-all)
+;;               )))
 
 (require 'ede)
 (global-ede-mode)
