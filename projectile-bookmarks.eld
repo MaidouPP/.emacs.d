@@ -1,1 +1,1 @@
-("~/LearnVIORB/" "~/.emacs.d/" "~/lidar_imu_calib/" "~/catkin_ws/src/mongodb_log/" "~/catkin_ws/src/robosherlock/")
+("~/init_new_machine/" "~/catkin_ws/src/uimacpp_ros/" "~/catkin_ws/src/robosherlock/" "~/.emacs.d/" "~/lidar_imu_calib/" "~/LearnVIORB/" "~/catkin_ws/src/mongodb_log/" "~/ORB-SLAM2/")
