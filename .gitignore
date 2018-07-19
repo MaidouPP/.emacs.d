@@ -68,3 +68,6 @@ emacs-backup
 *.cache
 recentf*
 ede-projects.el
+
+# elpa folder
+elpa

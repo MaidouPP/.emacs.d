@@ -1,5 +1,7 @@
-(add-hook 'sh-mode-hook 'auto-complete-mode)
+(use-package auto-complete-mode)
+(use-package auto-insert-mode)
 
+(add-hook 'sh-mode-hook 'auto-complete-mode)
 (auto-insert-mode)
 (setq auto-insert-directory "~/.emacs.d/template/")
 

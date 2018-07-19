@@ -6,8 +6,11 @@
 (setq inhibit-startup-message t)
 
 ;; THE FAMOUS RAINBOW CAT!!!!!!!
-(nyan-mode 1)
+(use-package nyan-mode
+  :init
+  (nyan-mode 1))
 
+;; simplify the answer
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; show unncessary whitespace that can mess up your diff
@@ -36,22 +39,6 @@
  gdb-show-main t
  )
 
-;; ;; company
-;; (use-package company
-;;   :init
-;;   (global-company-mode 1)
-;;   (delete 'company-semantic company-backends))
-;; ;; (define-key c-mode-map  [(control tab)] 'company-complete)
-;; ;; (define-key c++-mode-map  [(control tab)] 'company-complete)
-
-;; ;; company
-;; (require 'company)
-;; (require 'company-c-headers)
-;; (add-hook 'after-init-hook 'global-company-mode)
-;; (add-to-list 'company-backends 'company-c-headers)
-;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
-;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
-
 ;; Package: projejctile
 (use-package projectile
   :init
@@ -71,24 +58,26 @@
 
 ;; set sr-speedbar
 (require 'sr-speedbar)
-(setq sr-speedbar-right-side nil)
-(setq sr-speedbar-width 25)
-(setq sr-speedbar-skip-other-window-p t)
-(global-set-key (kbd "<f4>") (lambda()
-          (interactive)
-          (sr-speedbar-toggle)))
+(use-package sr-speedbar
+  :init
+  (setq sr-speedbar-right-side nil)
+  (setq sr-speedbar-width 25)
+  (setq sr-speedbar-skip-other-window-p t)
+  (global-set-key (kbd "<f4>") (lambda()
+                                 (interactive)
+                                 (sr-speedbar-toggle))))
 
 ;; highlight paren     
 (show-paren-mode 1)
 
 (global-set-key [f6] 'goto-line)
 
-;;水平分割窗口,alt+2
+;; horizontal split
 (global-set-key (kbd "M-2") 'split-window-vertically)
-;;垂直分割窗口,alt+3
+;; vertical split
 (global-set-key (kbd "M-3") 'split-window-horizontally)
 
-;; 各窗口间切换  
+;; switch between windows
 (global-set-key [C-left] 'windmove-left)  
 (global-set-key [C-right] 'windmove-right)  
 (global-set-key [C-up] 'windmove-up)  
@@ -101,18 +90,11 @@
 (put 'upcase-region 'disabled nil)
 
 ;; Package: smartparens
-(require 'smartparens)
-(show-smartparens-global-mode +1)
-(smartparens-global-mode 1)
+;; (require 'smartparens)
+;; (show-smartparens-global-mode +1)
+;; (smartparens-global-mode 1)
 
-;; ;; when you press RET, the curly braces automatically
-;; ;; add another newline
-;; (sp-with-modes '(c-mode c++-mode)
-;;   (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
-;;   (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
-;;                                             ("* ||\n[i]" "RET"))))
-
-;; comment                                       
+;; comment
 (global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)  
 
 (defun my-comment-or-uncomment-region (beg end &optional arg)  
@@ -124,14 +106,11 @@
   )
 (global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region) 
 
-;; auctex
-(load "auctex.el" nil t t)
-(load "preview.el" nil t t)
-(require 'cdlatex)
-
-(recentf-mode 1)
-(setq recentf-max-menu-items 40)
-(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+(use-package recentf-mode:
+  :init
+  (recentf-mode 1)
+  (setq recentf-max-menu-items 40)
+  (global-set-key "\C-x\ \C-r" 'recentf-open-files))
 
 ;; ;;; set backup strategy
 ;; (setq make-backup-files t)

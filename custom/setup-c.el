@@ -2,14 +2,21 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.hpp\\'" . c++-mode))
 
+;; use-package list
 (use-package smartparens)
+(use-package company
+  :init
+  (add-hook 'after-init-hook 'global-company-mode))
 (use-package company-c-headers
   :init
   (add-to-list 'company-backends 'company-c-headers))
 
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
+(global-set-key (kbd "C-+") 'toggle-hiding)
+(global-set-key (kbd "C-\\") 'toggle-selective-display)
 
+;; indentation
 (setq-default c-basic-offset 4)
 
 ;; Available C style:
@@ -25,20 +32,6 @@
 ;; “user”: When you want to define your own style
 (setq c-default-style "linux") ;; set style to "linux"
 
-;; (use-package cc-mode
-;;   :init
-;;   (define-key c-mode-map  [(tab)] 'company-complete)
-;;   (define-key c++-mode-map  [(tab)] 'company-complete))
-
-;; company
-(require 'company)
-(require 'company-c-headers)
-(add-hook 'after-init-hook 'global-company-mode)
-(add-to-list 'company-backends 'company-c-headers)
-(add-to-list 'company-backends 'company-irony)
-;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8/")
-;; (add-to-list 'company-c-headers-path-system "/usr/include/c++/4.8.4/")
-
 ;; Parens indentation
 (defun my-create-newline-and-allman-format (&rest _ignored)
   "Allman-style formatting for C."
@@ -47,8 +40,8 @@
     (previous-line) (search-forward "{") (newline-and-indent)
     (indent-according-to-mode)))
 
-(sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
-(sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
+;; (sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
+;; (sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 
 ;; cpputils-cmake
 ;; (add-hook 'c-mode-common-hook
@@ -57,7 +50,7 @@
 ;;                 (cppcm-reload-all)
 ;;               )))
 
-(require 'ede)
-(global-ede-mode)
+;; (require 'ede)
+;; (global-ede-mode)
 
 (provide 'setup-c)

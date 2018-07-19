@@ -8,6 +8,10 @@
 ;; (add-hook 'python-mode-hook (lambda ()
 ;;                              (guess-style-guess-tab-width)))
 
+(use-package flymake-mode)
+(use-package pyvenv-mode)
+;; (use-package yas-minor-mode)
+
 (defun my-elpy-mode-config ()
   "For use in `elpy-mode-hook'."
   (add-hook 'elpy-mode-hook (lambda () (flymake-mode 0)))
