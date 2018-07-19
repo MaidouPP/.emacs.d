@@ -1,4 +1,7 @@
-(elpy-enable)
+(use-package elpy
+  :commands elpy-enable
+  :init
+  (elpy-enable))
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))

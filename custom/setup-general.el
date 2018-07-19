@@ -40,10 +40,10 @@
  )
 
 ;; Package: projejctile
-(use-package projectile
-  :init
-  (projectile-global-mode)
-  (setq projectile-enable-caching t))
+;;(use-package projectile
+;;  :init
+;;  (projectile-global-mode)
+;;  (setq projectile-enable-caching t))
 
 ;; Package zygospore
 (use-package zygospore
@@ -57,7 +57,6 @@
 (windmove-default-keybindings)
 
 ;; set sr-speedbar
-(require 'sr-speedbar)
 (use-package sr-speedbar
   :init
   (setq sr-speedbar-right-side nil)
@@ -106,11 +105,9 @@
   )
 (global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region) 
 
-(use-package recentf-mode:
-  :init
-  (recentf-mode 1)
-  (setq recentf-max-menu-items 40)
-  (global-set-key "\C-x\ \C-r" 'recentf-open-files))
+(recentf-mode 1)
+(setq recentf-max-menu-items 40)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ;; ;;; set backup strategy
 ;; (setq make-backup-files t)
