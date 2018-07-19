@@ -40,10 +40,10 @@
  )
 
 ;; Package: projejctile
-;;(use-package projectile
-;;  :init
-;;  (projectile-global-mode)
-;;  (setq projectile-enable-caching t))
+(use-package projectile
+ :init
+ (projectile-global-mode)
+ (setq projectile-enable-caching t))
 
 ;; Package zygospore
 (use-package zygospore
