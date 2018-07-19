@@ -1,5 +1,4 @@
-(use-package auto-complete-mode)
-(use-package auto-insert-mode)
+(use-package auto-complete)
 
 (add-hook 'sh-mode-hook 'auto-complete-mode)
 (auto-insert-mode)

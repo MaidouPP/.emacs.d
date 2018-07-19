@@ -1,19 +1,14 @@
-(use-package elpy
-  :commands elpy-enable
-  :init
-  (elpy-enable))
+(use-package flymake)
+(use-package pyvenv)
+;; (use-package yas-minor-mode)
 
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
-(exec-path-from-shell-copy-env "PYTHONPATH")
+(use-package elpy)
+(elpy-enable)
 
 ;; (add-hook 'python-mode-hook 'semantic-mode)
 ;; (add-hook 'python-mode-hook (lambda ()
 ;;                              (guess-style-guess-tab-width)))
 
-(use-package flymake-mode)
-(use-package pyvenv-mode)
-;; (use-package yas-minor-mode)
 
 (defun my-elpy-mode-config ()
   "For use in `elpy-mode-hook'."
