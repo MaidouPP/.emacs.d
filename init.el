@@ -7,12 +7,21 @@
 
 (package-initialize)
 
-;; (global-linum-mode t)
+(global-linum-mode t)
 ;; (global-company-mode t)
 (load-theme 'tango-dark)
 
 (custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized))))) ;; start maximized
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(package-selected-packages
+   (quote
+    (company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
+ '(send-mail-function (quote mailclient-send-it)))
+ ;; start maximized
 
 (when (not package-archive-contents)
     (package-refresh-contents))
@@ -81,12 +90,7 @@
 
 ;; change cursor type to bar
 (setq-default cursor-type 'bar)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(send-mail-function (quote mailclient-send-it)))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
