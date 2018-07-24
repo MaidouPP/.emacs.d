@@ -89,9 +89,9 @@
 (put 'upcase-region 'disabled nil)
 
 ;; Package: smartparens
-;; (require 'smartparens)
-;; (show-smartparens-global-mode +1)
-;; (smartparens-global-mode 1)
+(require 'smartparens)
+(show-smartparens-global-mode +1)
+(smartparens-global-mode 1)
 
 ;; comment
 (global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)  
