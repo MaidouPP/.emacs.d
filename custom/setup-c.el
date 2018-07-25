@@ -40,8 +40,8 @@
     (previous-line) (search-forward "{") (newline-and-indent)
     (indent-according-to-mode)))
 
-;; (sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
-;; (sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
+(sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
+(sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 
 ;; cpputils-cmake
 ;; (add-hook 'c-mode-common-hook
