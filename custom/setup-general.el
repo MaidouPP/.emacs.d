@@ -89,7 +89,7 @@
 (put 'upcase-region 'disabled nil)
 
 ;; Package: smartparens
-(require 'smartparens)
+(use-package smartparens)
 (show-smartparens-global-mode +1)
 (smartparens-global-mode 1)
 
