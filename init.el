@@ -8,7 +8,6 @@
 (package-initialize)
 
 (global-linum-mode t)
-;; (global-company-mode t)
 (load-theme 'tango-dark)
 
 (custom-set-variables
