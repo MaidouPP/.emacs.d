@@ -131,14 +131,21 @@
       ;; If nil, you can slightly boost invoke speed in exchange for text color
       (setq helm-swoop-speed-or-color t))
 
-    (helm-mode 1)
-
     (use-package helm-projectile
       :init
-      (helm-projectile-on)
-      (setq projectile-switch-project-action 'helm-projectile)
       (setq projectile-completion-system 'helm)
-      (setq projectile-indexing-method 'alien)))
+      (setq projectile-indexing-method 'alien)
+      :config
+      (setq projectile-switch-project-action 'helm-projectile)
+      ;; (setq projectile-keymap-prefix (kbd "C-c p")) ;; This doesn't work!!!
+      ;; https://github.com/bbatsov/projectile/issues/991
+      (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+      (projectile-global-mode)
+      (helm-projectile-on)
+      )
+
+    (helm-mode 1)
+    )
 )
 
 (provide 'setup-helm)
