@@ -163,4 +163,7 @@ Version 2016-12-18"
 
 (global-set-key (kbd "C-x C-SPC") 'xah-select-text-in-quote)
 
+(unless (display-graphic-p)
+  (setq linum-format "%d "))
+
 (provide 'setup-general)

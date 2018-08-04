@@ -4,11 +4,13 @@
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/others")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (package-initialize)
 
 (global-linum-mode t)
-(load-theme 'tango-dark)
+;; (load-theme 'tango-dark)
+(load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
