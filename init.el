@@ -9,8 +9,8 @@
 (package-initialize)
 
 (global-linum-mode t)
-;; (load-theme 'tango-dark)
-(load-theme 'zenburn t)
+(load-theme 'tango-dark)
+;; (load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

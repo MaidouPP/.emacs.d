@@ -14,7 +14,7 @@
   :config
   (use-package company-irony)
   (setq company-idle-delay 0.2)
-  (setq company-backends '((company-irony company-gtags)))
+  (setq company-backends '((company-irony)))
   )
 
 (use-package company-c-headers
