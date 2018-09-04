@@ -2,14 +2,28 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.hpp\\'" . c++-mode))
 
+(use-package irony)
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+
 ;; use-package list
 (use-package smartparens)
 (use-package company
   :init
-  (add-hook 'after-init-hook 'global-company-mode))
+  (add-hook 'after-init-hook 'global-company-mode)
+  :config
+  (use-package company-irony)
+  (setq company-idle-delay 0.2)
+  (setq company-backends '((company-irony company-gtags)))
+  )
+
 (use-package company-c-headers
   :init
   (add-to-list 'company-backends 'company-c-headers))
+
+;; (use-package company-irony)
+;; (eval-after-load 'company
+;;   '(add-to-list 'company-backends 'company-irony))
 
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
