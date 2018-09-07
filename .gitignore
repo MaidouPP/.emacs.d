@@ -71,3 +71,9 @@ ede-projects.el
 
 # elpa folder
 elpa
+
+# irony
+irony/*
+
+# whatever
+srecode-map.el
