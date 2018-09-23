@@ -9,8 +9,8 @@
 (package-initialize)
 
 (global-linum-mode t)
-;; (load-theme 'tango-dark)
-(load-theme 'zenburn t)
+(load-theme 'tango-dark)
+;; (load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -20,7 +20,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (projectile cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
+    (flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
  '(send-mail-function (quote mailclient-send-it)))
  ;; start maximized
 
@@ -47,6 +47,7 @@
 ;; (require 'setup-header2)
 (require 'setup-sh)
 (require 'setup-c)
+(require 'setup-md)
 
 ;; (custom-set-variables
 ;;  ;; custom-set-variables was added by Custom.
