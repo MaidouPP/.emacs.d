@@ -53,4 +53,9 @@
 ;; (require 'ede)
 ;; (global-ede-mode)
 
+;; Google C-style
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
 (provide 'setup-c)

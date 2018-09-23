@@ -166,4 +166,9 @@ Version 2016-12-18"
 (unless (display-graphic-p)
   (setq linum-format "%d "))
 
+;; Google C-style
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
 (provide 'setup-general)
