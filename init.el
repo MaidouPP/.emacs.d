@@ -20,7 +20,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
+    (protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
  '(send-mail-function (quote mailclient-send-it)))
  ;; start maximized
 
@@ -49,21 +49,6 @@
 (require 'setup-c)
 (require 'setup-md)
 
-;; (custom-set-variables
-;;  ;; custom-set-variables was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(package-selected-packages
-;;    (quote
-;;     (zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  )
- 
 ;; tex-mode
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)

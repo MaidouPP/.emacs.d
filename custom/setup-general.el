@@ -171,4 +171,7 @@ Version 2016-12-18"
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
+(require 'column-marker)
+(add-hook 'c-mode-common-hook (lambda () (interactive) (column-marker-1 80)))
+
 (provide 'setup-general)
