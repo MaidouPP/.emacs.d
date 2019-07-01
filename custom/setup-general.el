@@ -174,4 +174,8 @@ Version 2016-12-18"
 (require 'column-marker)
 (add-hook 'c-mode-common-hook (lambda () (interactive) (column-marker-1 80)))
 
+;; Zoom mode
+(require 'zoom)
+(custom-set-variables '(zoom-mode t))
+
 (provide 'setup-general)

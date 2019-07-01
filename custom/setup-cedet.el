@@ -23,4 +23,6 @@
 (with-eval-after-load 'semantic
   (add-to-list 'semantic-inhibit-functions 'my-inhibit-semantic-p))
 
+(add-to-list 'auto-mode-alist '("\\.tpp\\'" . c++-mode))
+
 (provide 'setup-cedet)
