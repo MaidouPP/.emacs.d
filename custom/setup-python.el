@@ -33,4 +33,5 @@
 
 ;; (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
+(setq python-shell-completion-native-enable nil)
 (provide 'setup-python)

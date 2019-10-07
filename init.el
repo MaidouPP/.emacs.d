@@ -8,9 +8,16 @@
 
 (package-initialize)
 
+;; Use Google emacs support on a corporate machine
 (require 'google)
+;; To use Google p4 support
+(require 'p4-google)
+(require 'p4-files)
+(p4-enable-file-name-handler)
+;; To rotate between .h and .cc
+(require 'rotate-among-files)
+(global-set-key (kbd "C-c r") #'google-rotate-among-files)
 
-(global-linum-mode t)
 (load-theme 'tango-dark)
 ;; (load-theme 'zenburn t)
 
@@ -61,38 +68,9 @@
 ;(setq TeX-PDF-mode t)
 (put 'downcase-region 'disabled nil)
 
-;; set backup files in /tmp directory
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
-
-;; delete the outdated files (1 week)
-(message "Deleting old backup files...")
-(let ((week (* 60 60 24 7))
-      (current (float-time (current-time))))
-  (dolist (file (directory-files temporary-file-directory t))
-    (when (and (backup-file-name-p file)
-               (> (- current (float-time (fifth (file-attributes file))))
-                  week))
-      (message "%s" file)
-      (delete-file file))))
-
-;; change cursor type to bar
-(setq-default cursor-type 'bar)
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-;; for enabling copy and paste from system clipboard
-(setq x-select-enable-clipboard t
-      x-select-enable-primary t)
-
-;; Save whatever’s in the current (system) clipboard before
-;; replacing it with the Emacs’ text.
-;; https://github.com/dakrone/eos/blob/master/eos.org
-(setq save-interprogram-paste-before-kill t)

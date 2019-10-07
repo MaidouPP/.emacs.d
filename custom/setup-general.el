@@ -5,23 +5,23 @@
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
 
-;; THE FAMOUS RAINBOW CAT!!!!!!!
+;; Use **THE FAMOUS RAINBOW CAT**
 (use-package nyan-mode
   :init
   (nyan-mode 1))
 
-;; simplify the answer
+;; Simplify the answer
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; show unncessary whitespace that can mess up your diff
+;; Show unncessary whitespace that can mess up your diff
 (add-hook 'prog-mode-hook
           (lambda () (interactive)
             (setq show-trailing-whitespace 1)))
 
-;; use space to indent by default
+;; Use space to indent by default
 (setq-default indent-tabs-mode nil)
 
-;; set appearance of a tab that is represented by 4 spaces
+;; Set appearance of a tab that is represented by 4 spaces
 (setq-default tab-width 4)
 
 ;; Compilation
@@ -30,33 +30,7 @@
                                (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))
 
-;; setup GDB
-(setq
- ;; use gdb-many-windows by default
- gdb-many-windows t
-
- ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
- )
-
-;; Package: projejctile
-(use-package projectile
- :init
- (projectile-global-mode)
- (setq projectile-enable-caching t))
-
-;; Package zygospore
-(use-package zygospore
-  :bind (("C-x 1" . zygospore-toggle-delete-other-windows)
-         ("RET" .   newline-and-indent)))
-
-  ; automatically indent when press RET
-
-;; activate whitespace-mode to view all whitespace characters
-(global-set-key (kbd "C-c w") 'whitespace-mode)
-(windmove-default-keybindings)
-
-;; set sr-speedbar
+;; Set sr-speedbar
 (use-package sr-speedbar
   :init
   (setq sr-speedbar-right-side nil)
@@ -109,13 +83,6 @@
 (setq recentf-max-menu-items 40)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
-;; ;;; set backup strategy
-;; (setq make-backup-files t)
-;; (setq kept-old-versions 2)
-;; (setq kept-new-versions 2)
-;; (setq delete-old-versions t)
-;; (setq backup-directory-alist '(("" . "~/.emacsbackup")))
-
 ;; Change between horizontal buffer and vertical buffer
 (defun window-split-toggle ()
   "Toggle between horizontal and vertical split with two windows."
@@ -163,13 +130,9 @@ Version 2016-12-18"
 
 (global-set-key (kbd "C-x C-SPC") 'xah-select-text-in-quote)
 
+;; Correct display when in terminal
 (unless (display-graphic-p)
   (setq linum-format "%d "))
-
-;; Google C-style
-(require 'google-c-style)
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 (require 'column-marker)
 (add-hook 'c-mode-common-hook (lambda () (interactive) (column-marker-1 80)))
@@ -177,5 +140,37 @@ Version 2016-12-18"
 ;; Zoom mode
 (require 'zoom)
 (custom-set-variables '(zoom-mode t))
+
+;; Line number display mode
+(global-linum-mode t)
+
+;; Set backup files in /tmp directory
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+;; Delete the outdated files (1 week)
+(message "Deleting old backup files...")
+(let ((week (* 60 60 24 7))
+      (current (float-time (current-time))))
+  (dolist (file (directory-files temporary-file-directory t))
+    (when (and (backup-file-name-p file)
+               (> (- current (float-time (fifth (file-attributes file))))
+                  week))
+      (message "%s" file)
+      (delete-file file))))
+
+;; Change cursor type to bar
+(setq-default cursor-type 'bar)
+
+;; Enable copy and paste from system clipboard
+(setq x-select-enable-clipboard t
+      x-select-enable-primary t)
+
+;; Save whatever’s in the current (system) clipboard before
+;; replacing it with the Emacs’ text.
+;; https://github.com/dakrone/eos/blob/master/eos.org
+(setq save-interprogram-paste-before-kill t)
 
 (provide 'setup-general)
