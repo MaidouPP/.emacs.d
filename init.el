@@ -8,7 +8,6 @@
 
 (package-initialize)
 
-(global-linum-mode t)
 (load-theme 'tango-dark)
 ;; (load-theme 'zenburn t)
 
@@ -36,7 +35,6 @@
 (require 'setup-general)
 (if (version< emacs-version "24.4")
     (require 'setup-ivy-counsel))
-
 (require 'setup-helm)
 (require 'setup-helm-gtags)
 ;;(require 'setup-ggtags)
@@ -75,21 +73,9 @@
       (message "%s" file)
       (delete-file file))))
 
-;; change cursor type to bar
-(setq-default cursor-type 'bar)
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-;; for enabling copy and paste from system clipboard
-(setq x-select-enable-clipboard t
-      x-select-enable-primary t)
-
-;; Save whatever’s in the current (system) clipboard before
-;; replacing it with the Emacs’ text.
-;; https://github.com/dakrone/eos/blob/master/eos.org
-(setq save-interprogram-paste-before-kill t)

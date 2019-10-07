@@ -5,23 +5,23 @@
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
 
-;; THE FAMOUS RAINBOW CAT!!!!!!!
+;; Use **THE FAMOUS RAINBOW CAT**
 (use-package nyan-mode
   :init
   (nyan-mode 1))
 
-;; simplify the answer
+;; Simplify the answer
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; show unncessary whitespace that can mess up your diff
+;; Show unncessary whitespace that can mess up your diff
 (add-hook 'prog-mode-hook
           (lambda () (interactive)
             (setq show-trailing-whitespace 1)))
 
-;; use space to indent by default
+;; Use space to indent by default
 (setq-default indent-tabs-mode nil)
 
-;; set appearance of a tab that is represented by 4 spaces
+;; Set appearance of a tab that is represented by 4 spaces
 (setq-default tab-width 4)
 
 ;; Compilation
@@ -30,33 +30,7 @@
                                (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))
 
-;; setup GDB
-(setq
- ;; use gdb-many-windows by default
- gdb-many-windows t
-
- ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
- )
-
-;; Package: projejctile
-(use-package projectile
- :init
- (projectile-global-mode)
- (setq projectile-enable-caching t))
-
-;; Package zygospore
-(use-package zygospore
-  :bind (("C-x 1" . zygospore-toggle-delete-other-windows)
-         ("RET" .   newline-and-indent)))
-
-  ; automatically indent when press RET
-
-;; activate whitespace-mode to view all whitespace characters
-(global-set-key (kbd "C-c w") 'whitespace-mode)
-(windmove-default-keybindings)
-
-;; set sr-speedbar
+;; Set sr-speedbar
 (use-package sr-speedbar
   :init
   (setq sr-speedbar-right-side nil)
@@ -66,7 +40,7 @@
                                  (interactive)
                                  (sr-speedbar-toggle))))
 
-;; highlight paren     
+;; highlight paren
 (show-paren-mode 1)
 
 (global-set-key [f6] 'goto-line)
@@ -77,9 +51,9 @@
 (global-set-key (kbd "M-3") 'split-window-horizontally)
 
 ;; switch between windows
-(global-set-key [C-left] 'windmove-left)  
-(global-set-key [C-right] 'windmove-right)  
-(global-set-key [C-up] 'windmove-up)  
+(global-set-key [C-left] 'windmove-left)
+(global-set-key [C-right] 'windmove-right)
+(global-set-key [C-up] 'windmove-up)
 (global-set-key [C-down] 'windmove-down)
 
 ;; set shift+tab as buffer switcher
@@ -94,27 +68,20 @@
 (smartparens-global-mode 1)
 
 ;; comment
-(global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)  
+(global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)
 
-(defun my-comment-or-uncomment-region (beg end &optional arg)  
-  (interactive (if (use-region-p)  
-                   (list (region-beginning) (region-end) nil)  
-                 (list (line-beginning-position)  
-                       (line-beginning-position 2))))  
-  (comment-or-uncomment-region beg end arg)  
+(defun my-comment-or-uncomment-region (beg end &optional arg)
+  (interactive (if (use-region-p)
+                   (list (region-beginning) (region-end) nil)
+                 (list (line-beginning-position)
+                       (line-beginning-position 2))))
+  (comment-or-uncomment-region beg end arg)
   )
-(global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region) 
+(global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region)
 
 (recentf-mode 1)
 (setq recentf-max-menu-items 40)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
-
-;; ;;; set backup strategy
-;; (setq make-backup-files t)
-;; (setq kept-old-versions 2)
-;; (setq kept-new-versions 2)
-;; (setq delete-old-versions t)
-;; (setq backup-directory-alist '(("" . "~/.emacsbackup")))
 
 ;; Change between horizontal buffer and vertical buffer
 (defun window-split-toggle ()
@@ -163,13 +130,9 @@ Version 2016-12-18"
 
 (global-set-key (kbd "C-x C-SPC") 'xah-select-text-in-quote)
 
+;; Correct display when in terminal
 (unless (display-graphic-p)
   (setq linum-format "%d "))
-
-;; Google C-style
-(require 'google-c-style)
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 (require 'column-marker)
 (add-hook 'c-mode-common-hook (lambda () (interactive) (column-marker-1 80)))
@@ -177,5 +140,23 @@ Version 2016-12-18"
 ;; Zoom mode
 (require 'zoom)
 (custom-set-variables '(zoom-mode t))
+
+;; Line number display mode
+(global-linum-mode t)
+
+;; Disable Emacs backup mechanism because in google3 we don't need it
+(setq make-backup-files nil)
+
+;; Change cursor type to bar
+(setq-default cursor-type 'bar)
+
+;; Enable copy and paste from system clipboard
+(setq x-select-enable-clipboard t
+      x-select-enable-primary t)
+
+;; Save whatever’s in the current (system) clipboard before
+;; replacing it with the Emacs’ text.
+;; https://github.com/dakrone/eos/blob/master/eos.org
+(setq save-interprogram-paste-before-kill t)
 
 (provide 'setup-general)
