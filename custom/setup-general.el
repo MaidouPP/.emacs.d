@@ -40,7 +40,7 @@
                                  (interactive)
                                  (sr-speedbar-toggle))))
 
-;; highlight paren     
+;; highlight paren
 (show-paren-mode 1)
 
 (global-set-key [f6] 'goto-line)
@@ -51,9 +51,9 @@
 (global-set-key (kbd "M-3") 'split-window-horizontally)
 
 ;; switch between windows
-(global-set-key [C-left] 'windmove-left)  
-(global-set-key [C-right] 'windmove-right)  
-(global-set-key [C-up] 'windmove-up)  
+(global-set-key [C-left] 'windmove-left)
+(global-set-key [C-right] 'windmove-right)
+(global-set-key [C-up] 'windmove-up)
 (global-set-key [C-down] 'windmove-down)
 
 ;; set shift+tab as buffer switcher
@@ -68,16 +68,16 @@
 (smartparens-global-mode 1)
 
 ;; comment
-(global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)  
+(global-set-key [?\C-c ?\C-/] 'comment-or-uncomment-region)
 
-(defun my-comment-or-uncomment-region (beg end &optional arg)  
-  (interactive (if (use-region-p)  
-                   (list (region-beginning) (region-end) nil)  
-                 (list (line-beginning-position)  
-                       (line-beginning-position 2))))  
-  (comment-or-uncomment-region beg end arg)  
+(defun my-comment-or-uncomment-region (beg end &optional arg)
+  (interactive (if (use-region-p)
+                   (list (region-beginning) (region-end) nil)
+                 (list (line-beginning-position)
+                       (line-beginning-position 2))))
+  (comment-or-uncomment-region beg end arg)
   )
-(global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region) 
+(global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region)
 
 (recentf-mode 1)
 (setq recentf-max-menu-items 40)
@@ -144,22 +144,8 @@ Version 2016-12-18"
 ;; Line number display mode
 (global-linum-mode t)
 
-;; Set backup files in /tmp directory
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
-
-;; Delete the outdated files (1 week)
-(message "Deleting old backup files...")
-(let ((week (* 60 60 24 7))
-      (current (float-time (current-time))))
-  (dolist (file (directory-files temporary-file-directory t))
-    (when (and (backup-file-name-p file)
-               (> (- current (float-time (fifth (file-attributes file))))
-                  week))
-      (message "%s" file)
-      (delete-file file))))
+;; Disable Emacs backup mechanism because in google3 we don't need it
+(setq make-backup-files nil)
 
 ;; Change cursor type to bar
 (setq-default cursor-type 'bar)
@@ -172,5 +158,9 @@ Version 2016-12-18"
 ;; replacing it with the Emacs’ text.
 ;; https://github.com/dakrone/eos/blob/master/eos.org
 (setq save-interprogram-paste-before-kill t)
+
+;; To rotate between .h and .cc
+(require 'rotate-among-files)
+(global-set-key (kbd "C-c p a") #'google-rotate-among-files)
 
 (provide 'setup-general)

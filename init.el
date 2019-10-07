@@ -14,9 +14,6 @@
 (require 'p4-google)
 (require 'p4-files)
 (p4-enable-file-name-handler)
-;; To rotate between .h and .cc
-(require 'rotate-among-files)
-(global-set-key (kbd "C-c r") #'google-rotate-among-files)
 
 (load-theme 'tango-dark)
 ;; (load-theme 'zenburn t)
@@ -46,13 +43,12 @@
 (require 'setup-general)
 (if (version< emacs-version "24.4")
     (require 'setup-ivy-counsel))
-
 (require 'setup-helm)
-(require 'setup-helm-gtags)
+;; (require 'setup-helm-gtags)
 ;;(require 'setup-ggtags)
 (require 'setup-cedet)
 (require 'setup-editing)
-(require 'setup-srefac)
+;; (require 'setup-srefac)
 (require 'setup-python)
 ;; (require 'setup-header2)
 (require 'setup-sh)
