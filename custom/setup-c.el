@@ -1,30 +1,28 @@
-;; === General Configuration
+;; General Configuration
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.hpp\\'" . c++-mode))
 
-(use-package irony
-  :config
-  (progn
-    ;; If irony server was never installed, install it.
-    (unless (irony--find-server-executable) (call-interactively #'irony-install-server))
-    (add-hook 'c++-mode-hook 'irony-mode)
-    (add-hook 'c-mode-hook 'irony-mode)
-    ))
+;; CiderLSP for IDE features
+(require 'google3-eglot)
+(customize-set-variable google3-eglot-c++-server 'clangd)
+(google3-eglot-setup)
 
-(use-package smartparens)
-
+;; Company mode is for **dynamic** auto-completion
 (use-package company
   :init
   (add-hook 'after-init-hook 'global-company-mode)
   :config
-  (use-package company-irony)
-  (setq company-idle-delay 0.2)
-  (setq company-backends '((company-irony)))
-  )
+  (add-to-list 'company-backends 'company-capf))
 
-(use-package company-c-headers
-  :init
-  (add-to-list 'company-backends 'company-c-headers))
+;; Enable BUILD file completion
+(google3-build-capf-enable-completions)
+
+;; Collections of snippets for Google specific codes
+(require 'google-yasnippets)
+(google-yasnippets-load)
+
+;; Smart parens
+(use-package smartparens)
 
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
@@ -41,22 +39,5 @@
 
 (sp-local-pair '(c-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
 (sp-local-pair '(c++-mode) "{" nil :post-handlers '((my-create-newline-and-allman-format "RET")))
-
-;; cpputils-cmake
-(use-package cpputils-cmake
-  :init
-  (add-hook 'c-mode-common-hook
-            (lambda ()
-              (if (derived-mode-p 'c-mode 'c++-mode)
-                  (cppcm-reload-all)
-                )))
-  ;; OPTIONAL, avoid typing full path when starting gdb
-  (global-set-key (kbd "C-c C-g")
-                  '(lambda ()(interactive) (gud-gdb (concat "gdb --fullname " (cppcm-get-exe-path-current-buffer)))))
-  ;; OPTIONAL, some users need specify extra flags forwarded to compiler
-  (setq cppcm-extra-preprocss-flags-from-user '("-I/usr/src/linux/include" "-DNDEBUG"))
-  )
-
-(add-to-list 'auto-mode-alist '("\\.tpp\\'" . c++-mode))
 
 (provide 'setup-c)

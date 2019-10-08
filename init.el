@@ -18,18 +18,18 @@
 (load-theme 'tango-dark)
 ;; (load-theme 'zenburn t)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(package-selected-packages
-   (quote
-    (helm-core protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
- '(send-mail-function (quote mailclient-send-it))
- '(zoom-mode t nil (zoom)))
- ;; start maximized
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(initial-frame-alist (quote ((fullscreen . maximized))))
+;;  '(package-selected-packages
+;;    (quote
+;;     (company-capf helm-core protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
+;;  '(send-mail-function (quote mailclient-send-it))
+;;  '(zoom-mode t nil (zoom)))
+;;  ;; start maximized
 
 (when (not package-archive-contents)
     (package-refresh-contents))
@@ -45,8 +45,8 @@
     (require 'setup-ivy-counsel))
 (require 'setup-helm)
 ;; (require 'setup-helm-gtags)
-;;(require 'setup-ggtags)
-(require 'setup-cedet)
+;; (require 'setup-ggtags)
+;; (require 'setup-cedet)
 (require 'setup-editing)
 ;; (require 'setup-srefac)
 (require 'setup-python)
