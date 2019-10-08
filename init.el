@@ -55,6 +55,7 @@
 (require 'setup-c)
 (require 'setup-md)
 
+;; TODO(shixinli): Move this to another setup elisp file
 ;; tex-mode
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)

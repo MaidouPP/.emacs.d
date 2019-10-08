@@ -2,12 +2,17 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.hpp\\'" . c++-mode))
 
-(use-package irony)
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
+(use-package irony
+  :config
+  (progn
+    ;; If irony server was never installed, install it.
+    (unless (irony--find-server-executable) (call-interactively #'irony-install-server))
+    (add-hook 'c++-mode-hook 'irony-mode)
+    (add-hook 'c-mode-hook 'irony-mode)
+    ))
 
-;; use-package list
 (use-package smartparens)
+
 (use-package company
   :init
   (add-hook 'after-init-hook 'global-company-mode)
@@ -51,11 +56,6 @@
   ;; OPTIONAL, some users need specify extra flags forwarded to compiler
   (setq cppcm-extra-preprocss-flags-from-user '("-I/usr/src/linux/include" "-DNDEBUG"))
   )
-
-;; Google C-style
-(require 'google-c-style)
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 (add-to-list 'auto-mode-alist '("\\.tpp\\'" . c++-mode))
 
