@@ -3,7 +3,7 @@
   ;; (use-package srefactor-lisp)
 
   ;; OPTIONAL: ADD IT ONLY IF YOU USE C/C++.
-  (semantic-mode 1) ;; -> this is optional for Lisp
+  ;; (semantic-mode 1) ;; -> this is optional for Lisp
 
   (define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
   (define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
