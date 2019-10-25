@@ -20,6 +20,5 @@
 ;; In the latex fragment, cdlatex will complete with tab
 (use-package cdlatex)
 (add-hook 'org-mode-hook 'cdlatex-mode)
-(add-hook 'org-mode-hook 'LaTex-math-mode)
 
 (provide 'setup-org)
