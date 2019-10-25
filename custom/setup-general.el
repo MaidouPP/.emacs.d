@@ -159,4 +159,8 @@ Version 2016-12-18"
 ;; https://github.com/dakrone/eos/blob/master/eos.org
 (setq save-interprogram-paste-before-kill t)
 
+;; Use yasnippet for template code
+(require 'yasnippet)
+(yas-global-mode 1)
+
 (provide 'setup-general)

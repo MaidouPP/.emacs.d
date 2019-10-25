@@ -19,8 +19,9 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
- '(send-mail-function (quote mailclient-send-it)))
+    (org-ref cdlatex org-edit-latex company-math latex auctex-latexmk protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
+ '(send-mail-function (quote mailclient-send-it))
+ '(zoom-mode t nil (zoom)))
  ;; start maximized
 
 (when (not package-archive-contents)
@@ -46,15 +47,7 @@
 (require 'setup-sh)
 (require 'setup-c)
 (require 'setup-md)
-
-;; tex-mode
-(setq TeX-auto-save t)
-(setq TeX-parse-self t)
-(setq TeX-save-query nil)
-(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
-(add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
-;(setq TeX-PDF-mode t)
-(put 'downcase-region 'disabled nil)
+(require 'setup-org)
 
 ;; set backup files in /tmp directory
 (setq backup-directory-alist
