@@ -138,8 +138,8 @@ Version 2016-12-18"
 (add-hook 'c-mode-common-hook (lambda () (interactive) (column-marker-1 80)))
 
 ;; Zoom mode
-(require 'zoom)
-(custom-set-variables '(zoom-mode t))
+;;(require 'zoom)
+;;(custom-set-variables '(zoom-mode t))
 
 ;; Line number display mode
 (global-linum-mode t)

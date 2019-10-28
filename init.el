@@ -20,8 +20,7 @@
  '(package-selected-packages
    (quote
     (org-ref cdlatex org-edit-latex company-math latex auctex-latexmk protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
- '(send-mail-function (quote mailclient-send-it))
- '(zoom-mode t nil (zoom)))
+ '(send-mail-function (quote mailclient-send-it)))
  ;; start maximized
 
 (when (not package-archive-contents)
@@ -72,3 +71,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setenv "PATH" (getenv "PATH"))
