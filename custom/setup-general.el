@@ -10,6 +10,9 @@
   :init
   (nyan-mode 1))
 
+;; Use yasnippet
+(use-package yasnippet)
+
 ;; Simplify the answer
 (defalias 'yes-or-no-p 'y-or-n-p)
 
