@@ -10,6 +10,11 @@
 
 ;; Use Google emacs support on a corporate machine
 (require 'google)
+(require 'google-imports)
+(require 'cs)
+(global-set-key [f5] #'cs)
+;; Shows google logo
+(require 'google-logo)
 ;; To use Google p4 support
 (require 'p4-google)
 (require 'p4-files)
