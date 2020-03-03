@@ -3,4 +3,7 @@ My emacs setup.
 
 This is my adapted version of Emacs Setup of following:
 
-Emacs demo setup for C/C++ describe here: http://tuhdo.github.io/c-ide.html
+Support&Customize:
+1. C/C++: adpat from here: http://tuhdo.github.io/c-ide.html
+2. Python
+3. Org-mode
