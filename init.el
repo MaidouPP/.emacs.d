@@ -73,3 +73,4 @@
  )
 
 (setenv "PATH" (getenv "PATH"))
+(put 'downcase-region 'disabled nil)
