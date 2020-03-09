@@ -18,8 +18,10 @@
 (setq org-agenda-files (list "~/org/research.org"
                              "~/org/evenings.org"))
 
-;; Key bindings
+;; Key bindings.
 (global-set-key (kbd "<f12>") 'org-agenda)
 
+;; Create close timestamp for TODO item.
+(setq org-log-done 'time)
 
 (provide 'setup-org)
