@@ -24,4 +24,8 @@
 ;; Create close timestamp for TODO item.
 (setq org-log-done 'time)
 
+;; When hit 80 columns, make a newline.
+(add-hook 'org-mode-hook '(lambda () (setq fill-column 80)))
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+
 (provide 'setup-org)
