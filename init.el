@@ -11,6 +11,7 @@
 ;; Use Google emacs support on a corporate machine
 (require 'google)
 (require 'google-imports)
+(require 'google-piper-browse)
 (require 'cs)
 (global-set-key [f5] #'cs)
 ;; Shows google logo
@@ -21,23 +22,6 @@
 (p4-enable-file-name-handler)
 
 (load-theme 'tango-dark)
-;; (load-theme 'zenburn t)
-
-;; (custom-set-variables
-;;  ;; custom-set-variables was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(initial-frame-alist (quote ((fullscreen . maximized))))
-;;  '(package-selected-packages
-;;    (quote
-;;     (company-capf helm-core protobuf-mode irony projectile flymd markdown markdown-mode+ markdown-mode irony-mode company-irony cpputils-cmake cmake-mode company-c-headers smartparens auto-complete elpy pyvenv srefactor iedit anzu ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree volatile-highlights helm-gtags helm-projectile helm-swoop helm sr-speedbar zygospore nyan-mode use-package)))
-;;  '(send-mail-function (quote mailclient-send-it))
-;;  '(zoom-mode t nil (zoom)))
-;;  ;; start maximized
-
-;; Make M-w and similar commands copy to the macOS system clipboard.
-(setq xterm-extra-capabilities '(setSelection modifyOtherKeys))
 
 (when (not package-archive-contents)
     (package-refresh-contents))

@@ -159,4 +159,14 @@ Version 2016-12-18"
 (require 'rotate-among-files)
 (global-set-key (kbd "C-c p a") #'google-rotate-among-files)
 
+;; Make M-w and similar commands copy to the macOS system clipboard.
+(setq xterm-extra-capabilities '(setSelection modifyOtherKeys))
+
+(defun shixinli-csearch-filename (filename)
+  (interactive "sEnter partial filename regex: ")
+  (find-file
+   (ido-completing-read "Open file: "
+                        (process-lines "csearch" "-l" "-local" "-f" filename)
+                        nil :require-match)))
+
 (provide 'setup-general)
